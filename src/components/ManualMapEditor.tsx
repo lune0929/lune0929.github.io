@@ -51,6 +51,14 @@ interface FormField {
   name: string;
   label: string;
   type?: "number" | "textarea";
+  className?: string;
+}
+
+interface ContextMenuState {
+  latitude: number;
+  longitude: number;
+  x: number;
+  y: number;
 }
 
 const SCALE_FIELDS: FormField[] = [
@@ -62,16 +70,16 @@ const SCALE_FIELDS: FormField[] = [
   { name: "detail_status", label: "detail_status" },
   { name: "phone", label: "phone" },
   { name: "office_phone", label: "office_phone" },
-  { name: "sido", label: "sido" },
-  { name: "sigungu", label: "sigungu" },
-  { name: "address", label: "address", type: "textarea" },
-  { name: "road_address", label: "road_address", type: "textarea" },
-  { name: "latitude", label: "latitude", type: "number" },
-  { name: "longitude", label: "longitude", type: "number" },
-  { name: "coordinate_note", label: "coordinate_note", type: "textarea" },
-  { name: "manual_note", label: "manual_note", type: "textarea" },
-  { name: "geocode_status", label: "geocode_status" },
-  { name: "geocode_source", label: "geocode_source" },
+  { name: "sido", label: "sido", className: "half" },
+  { name: "sigungu", label: "sigungu", className: "half" },
+  { name: "address", label: "address", type: "textarea", className: "full" },
+  { name: "road_address", label: "road_address", type: "textarea", className: "full" },
+  { name: "latitude", label: "latitude", type: "number", className: "half" },
+  { name: "longitude", label: "longitude", type: "number", className: "half" },
+  { name: "coordinate_note", label: "coordinate_note", type: "textarea", className: "full" },
+  { name: "manual_note", label: "manual_note", type: "textarea", className: "full" },
+  { name: "geocode_status", label: "geocode_status", className: "half" },
+  { name: "geocode_source", label: "geocode_source", className: "half" },
 ];
 
 const HIGHWAY_FIELDS: FormField[] = [
@@ -81,17 +89,17 @@ const HIGHWAY_FIELDS: FormField[] = [
   { name: "normalized_office_name", label: "normalized_office_name" },
   { name: "route_name", label: "route_name" },
   { name: "direction", label: "direction" },
-  { name: "sido", label: "sido" },
-  { name: "sigungu", label: "sigungu" },
-  { name: "address", label: "address", type: "textarea" },
-  { name: "road_address", label: "road_address", type: "textarea" },
-  { name: "latitude", label: "latitude", type: "number" },
-  { name: "longitude", label: "longitude", type: "number" },
-  { name: "geocode_status", label: "geocode_status" },
-  { name: "geocode_source", label: "geocode_source" },
-  { name: "geocode_query", label: "geocode_query", type: "textarea" },
-  { name: "coordinate_note", label: "coordinate_note", type: "textarea" },
-  { name: "manual_note", label: "manual_note", type: "textarea" },
+  { name: "sido", label: "sido", className: "half" },
+  { name: "sigungu", label: "sigungu", className: "half" },
+  { name: "address", label: "address", type: "textarea", className: "full" },
+  { name: "road_address", label: "road_address", type: "textarea", className: "full" },
+  { name: "latitude", label: "latitude", type: "number", className: "half" },
+  { name: "longitude", label: "longitude", type: "number", className: "half" },
+  { name: "geocode_status", label: "geocode_status", className: "half" },
+  { name: "geocode_source", label: "geocode_source", className: "half" },
+  { name: "geocode_query", label: "geocode_query" },
+  { name: "coordinate_note", label: "coordinate_note", type: "textarea", className: "full" },
+  { name: "manual_note", label: "manual_note", type: "textarea", className: "full" },
 ];
 
 const DEFAULT_CENTER = { latitude: 36.5, longitude: 127.8 };
@@ -265,6 +273,7 @@ export default function ManualMapEditor({
   const tempMarkerRef = useRef<KakaoMarker | null>(null);
   const infoWindowRef = useRef<KakaoInfoWindow | null>(null);
   const editModeRef = useRef(false);
+  const contextPointerRef = useRef<{ x: number; y: number } | null>(null);
 
   const fields = datasetType === "scale" ? SCALE_FIELDS : HIGHWAY_FIELDS;
   const kakaoKey = import.meta.env.VITE_KAKAO_JAVASCRIPT_KEY as string | undefined;
@@ -282,9 +291,13 @@ export default function ManualMapEditor({
   const [mapError, setMapError] = useState("");
   const [message, setMessage] = useState("");
   const [copyState, setCopyState] = useState("");
+  const [contextMenu, setContextMenu] = useState<ContextMenuState | null>(null);
 
   useEffect(() => {
     editModeRef.current = editMode;
+    if (!editMode) {
+      setContextMenu(null);
+    }
   }, [editMode]);
 
   const mergedItems = useMemo(() => applyEdits(baseItems, edits), [baseItems, edits]);
@@ -345,6 +358,7 @@ export default function ManualMapEditor({
       }
       setSelectedId(office.id);
       setSelectedFailedKey(null);
+      setContextMenu(null);
       setFormFromItem(item);
 
       const map = mapRef.current;
@@ -367,6 +381,87 @@ export default function ManualMapEditor({
       }
     },
     [mergedItems, setFormFromItem],
+  );
+
+  const showTempMarker = useCallback((latitude: number, longitude: number) => {
+    const map = mapRef.current;
+    if (!map || !window.kakao) {
+      return;
+    }
+    const position = new window.kakao.maps.LatLng(latitude, longitude);
+    if (!tempMarkerRef.current) {
+      tempMarkerRef.current = new window.kakao.maps.Marker({
+        map,
+        position,
+        title: "선택한 좌표",
+        image: new window.kakao.maps.MarkerImage(
+          `data:image/svg+xml;charset=UTF-8,${markerSvg("#dc2626")}`,
+          new window.kakao.maps.Size(34, 42),
+        ),
+      });
+    } else {
+      tempMarkerRef.current.setPosition?.(position);
+      tempMarkerRef.current.setMap(map);
+    }
+  }, []);
+
+  const fillAddressFromCoordinate = useCallback((latitude: number, longitude: number) => {
+    if (!window.kakao?.maps.services) {
+      return;
+    }
+    const geocoder = new window.kakao.maps.services.Geocoder();
+    geocoder.coord2Address(longitude, latitude, (result, status) => {
+      if (status !== window.kakao?.maps.services?.Status.OK || !result[0]) {
+        return;
+      }
+      const road = result[0].road_address;
+      const address = result[0].address;
+      setForm((current) => ({
+        ...current,
+        road_address: current.road_address || road?.address_name || "",
+        address: current.address || address?.address_name || "",
+        sido: current.sido || road?.region_1depth_name || address?.region_1depth_name || "",
+        sigungu: current.sigungu || road?.region_2depth_name || address?.region_2depth_name || "",
+      }));
+    });
+  }, []);
+
+  const startAddAtCoordinate = useCallback(
+    (latitude: number, longitude: number) => {
+      setSelectedId(null);
+      setContextMenu(null);
+      showTempMarker(latitude, longitude);
+      setForm((current) => ({
+        ...(selectedFailedKey ? current : emptyForm(datasetType)),
+        latitude: latitude.toFixed(7),
+        longitude: longitude.toFixed(7),
+        geocode_status: "manual_added",
+        geocode_source: "manual_map_right_click",
+      }));
+      fillAddressFromCoordinate(latitude, longitude);
+      setMessage("우클릭 위치를 새 항목 좌표로 입력했습니다.");
+    },
+    [datasetType, fillAddressFromCoordinate, selectedFailedKey, showTempMarker],
+  );
+
+  const moveSelectedToCoordinate = useCallback(
+    (latitude: number, longitude: number) => {
+      if (!selectedId) {
+        return;
+      }
+      setContextMenu(null);
+      showTempMarker(latitude, longitude);
+      setForm((current) => ({
+        ...current,
+        latitude: latitude.toFixed(7),
+        longitude: longitude.toFixed(7),
+        geocode_status: "manual_corrected",
+        geocode_source: "manual_map_right_click",
+      }));
+      fillAddressFromCoordinate(latitude, longitude);
+      setMessage("선택 항목 좌표를 우클릭 위치로 옮겼습니다. 저장하려면 선택 항목 좌표 수정을 누르세요.");
+    },
+    [fillAddressFromCoordinate, selectedId, showTempMarker],
   );
 
   useEffect(() => {
@@ -444,54 +539,44 @@ export default function ManualMapEditor({
       return;
     }
 
-    window.kakao.maps.event.addListener(map, "click", (event) => {
-      if (!editModeRef.current || !window.kakao) {
+    window.kakao.maps.event.addListener(map, "click", () => {
+      setContextMenu(null);
+    });
+
+    window.kakao.maps.event.addListener(map, "rightclick", (event) => {
+      if (!editModeRef.current) {
+        setContextMenu(null);
         return;
       }
       const latitude = event.latLng.getLat();
       const longitude = event.latLng.getLng();
-      const position = new window.kakao.maps.LatLng(latitude, longitude);
-      if (!tempMarkerRef.current) {
-        tempMarkerRef.current = new window.kakao.maps.Marker({
-          map,
-          position,
-          title: "선택한 좌표",
-          image: new window.kakao.maps.MarkerImage(
-            `data:image/svg+xml;charset=UTF-8,${markerSvg("#dc2626")}`,
-            new window.kakao.maps.Size(34, 42),
-          ),
-        });
-      } else {
-        tempMarkerRef.current.setPosition?.(position);
-        tempMarkerRef.current.setMap(map);
-      }
-      setForm((current) => ({
-        ...current,
-        latitude: latitude.toFixed(7),
-        longitude: longitude.toFixed(7),
-        geocode_status: current.geocode_status || "manual_selected",
-        geocode_source: current.geocode_source || "manual_map_click",
-      }));
-
-      const geocoder = window.kakao.maps.services ? new window.kakao.maps.services.Geocoder() : null;
-      if (!geocoder || !window.kakao.maps.services) {
-        return;
-      }
-      geocoder.coord2Address(longitude, latitude, (result, status) => {
-        if (status !== window.kakao?.maps.services?.Status.OK || !result[0]) {
-          return;
-        }
-        const road = result[0].road_address;
-        const address = result[0].address;
-        setForm((current) => ({
-          ...current,
-          road_address: current.road_address || road?.address_name || "",
-          address: current.address || address?.address_name || "",
-          sido: current.sido || road?.region_1depth_name || address?.region_1depth_name || "",
-          sigungu: current.sigungu || road?.region_2depth_name || address?.region_2depth_name || "",
-        }));
+      const pointer = contextPointerRef.current;
+      const mapRect = mapNodeRef.current?.getBoundingClientRect();
+      setContextMenu({
+        latitude,
+        longitude,
+        x: pointer && mapRect ? pointer.x - mapRect.left + 8 : 20,
+        y: pointer && mapRect ? pointer.y - mapRect.top + 8 : 20,
       });
     });
+  }, [mapReady]);
+
+  useEffect(() => {
+    const node = mapNodeRef.current;
+    if (!node) {
+      return;
+    }
+
+    const handleContextMenu = (event: MouseEvent) => {
+      if (!editModeRef.current) {
+        return;
+      }
+      event.preventDefault();
+      contextPointerRef.current = { x: event.clientX, y: event.clientY };
+    };
+
+    node.addEventListener("contextmenu", handleContextMenu);
+    return () => node.removeEventListener("contextmenu", handleContextMenu);
   }, [mapReady]);
 
   useEffect(() => {
@@ -562,7 +647,7 @@ export default function ManualMapEditor({
         coordinate_note: asText(form.coordinate_note),
         manual_note: asText(form.manual_note),
         geocode_status: asText(form.geocode_status) || "manual_added",
-        geocode_source: asText(form.geocode_source) || "manual_map_click",
+        geocode_source: asText(form.geocode_source) || "manual_map_right_click",
         source: "manual",
       };
     }
@@ -586,7 +671,7 @@ export default function ManualMapEditor({
       phone: "",
       source: "manual",
       geocode_status: asText(form.geocode_status) || "manual_added",
-      geocode_source: asText(form.geocode_source) || "manual_map_click",
+      geocode_source: asText(form.geocode_source) || "manual_map_right_click",
       geocode_query: asText(form.geocode_query),
       coordinate_note: asText(form.coordinate_note),
       manual_note: asText(form.manual_note),
@@ -638,7 +723,7 @@ export default function ManualMapEditor({
     const duplicate = findDuplicate(item);
     if (duplicate) {
       setMessage(
-        `중복 가능 항목이 있습니다: ${getItemName(duplicate)}. 기존 항목을 선택한 뒤 수정 적용을 사용하세요.`,
+        `중복 가능 항목이 있습니다: ${getItemName(duplicate)}. 기존 항목을 선택한 뒤 선택 항목 좌표 수정을 사용하세요.`,
       );
       return;
     }
@@ -673,7 +758,7 @@ export default function ManualMapEditor({
 
     setEdits((current) => [...current, ...nextEdits]);
     setSelectedId(getItemId(item, mergedItems.length));
-    setMessage(selectedFailedKey ? "좌표 미확인 항목을 확정 추가했습니다." : "신규 항목을 추가했습니다.");
+    setMessage(selectedFailedKey ? "좌표 미확인 항목을 추가하고 해결 처리했습니다." : "새 항목을 추가했습니다.");
   }, [
     createItemFromForm,
     datasetType,
@@ -697,6 +782,7 @@ export default function ManualMapEditor({
       setMessage("선택한 항목을 찾지 못했습니다.");
       return;
     }
+    const after = { ...before, ...item, source: before.source } as EditableItem;
     const now = new Date().toISOString();
     setEdits((current) => [
       ...current,
@@ -705,11 +791,11 @@ export default function ManualMapEditor({
         kind: "update",
         itemId: selectedId,
         before,
-        after: item,
+        after,
         createdAt: now,
       },
     ]);
-    setMessage("수정 사항을 적용했습니다.");
+    setMessage("선택 항목 좌표 수정을 변경사항에 추가했습니다.");
   }, [createItemFromForm, mergedItems, selectedId]);
 
   const selectFailed = useCallback(
@@ -731,9 +817,9 @@ export default function ManualMapEditor({
         road_address: asText(failed.road_address),
         geocode_query: asText(failed.tried_queries),
         geocode_status: "manual_added",
-        geocode_source: "manual_map_click",
+        geocode_source: "manual_map_right_click",
       });
-      setMessage("좌표 미확인 항목을 불러왔습니다. 편집 모드에서 지도를 클릭해 좌표를 선택하세요.");
+      setMessage("좌표 미확인 항목을 불러왔습니다. 편집 모드에서 지도를 우클릭해 좌표를 선택하세요.");
     },
     [datasetType],
   );
@@ -747,7 +833,7 @@ export default function ManualMapEditor({
     setSelectedId(null);
     setSelectedFailedKey(null);
     setForm(emptyForm(datasetType));
-    setMessage("임시 저장을 초기화했습니다.");
+    setMessage("임시 변경사항을 초기화했습니다.");
   }, [datasetType]);
 
   const finalFailedForDownload = useMemo(
@@ -785,7 +871,7 @@ export default function ManualMapEditor({
           </div>
           <div>
             <h1>{title}</h1>
-            <p>지도 클릭으로 누락 좌표를 선택하고 JSON으로 다운로드합니다.</p>
+            <p>편집 모드에서 지도를 우클릭해 좌표를 선택하고 최종 JSON으로 다운로드합니다.</p>
           </div>
         </div>
 
@@ -797,7 +883,7 @@ export default function ManualMapEditor({
           >
             편집 모드 {editMode ? "ON" : "OFF"}
           </button>
-          {editMode && <span className="edit-badge">편집 모드 ON - 지도 클릭으로 좌표 선택</span>}
+          {editMode && <span className="edit-badge">편집 모드 ON · 우클릭으로 좌표 선택</span>}
         </div>
 
         <label className="search-box editor-search">
@@ -860,7 +946,7 @@ export default function ManualMapEditor({
 
       <section className="editor-main">
         <section className="editor-map-panel" aria-label="편집 지도">
-          {editMode && <div className="map-edit-badge">편집 모드 ON - 지도 클릭으로 좌표 선택</div>}
+          {editMode && <div className="map-edit-badge">편집 모드 ON · 우클릭으로 좌표 선택</div>}
           {!kakaoKey && (
             <div className="map-overlay">
               <strong>카카오 지도 키가 필요합니다.</strong>
@@ -873,13 +959,41 @@ export default function ManualMapEditor({
               <span>{mapError}</span>
             </div>
           )}
+          {contextMenu && (
+            <div
+              className="map-context-menu"
+              style={{ left: contextMenu.x, top: contextMenu.y }}
+              role="menu"
+            >
+              <button
+                type="button"
+                role="menuitem"
+                onClick={() => startAddAtCoordinate(contextMenu.latitude, contextMenu.longitude)}
+              >
+                여기에 새 항목 추가
+              </button>
+              <button
+                type="button"
+                role="menuitem"
+                disabled={!selectedId}
+                onClick={() =>
+                  moveSelectedToCoordinate(contextMenu.latitude, contextMenu.longitude)
+                }
+              >
+                선택 항목 좌표를 여기로 이동
+              </button>
+              <button type="button" role="menuitem" onClick={() => setContextMenu(null)}>
+                메뉴 닫기
+              </button>
+            </div>
+          )}
           <div ref={mapNodeRef} className="map-node" />
         </section>
 
         <section className="editor-bottom">
           <form className="editor-form" onSubmit={(event) => event.preventDefault()}>
             <div className="editor-section-heading">
-              <strong>{selectedId ? "선택 항목 수정" : selectedFailedKey ? "좌표 미확인 항목 확정" : "신규 추가"}</strong>
+              <strong>{selectedId ? "선택 항목 수정" : selectedFailedKey ? "좌표 미확인 항목 확정" : "새 항목 추가"}</strong>
               <button
                 type="button"
                 onClick={() => {
@@ -894,7 +1008,10 @@ export default function ManualMapEditor({
 
             <div className="field-grid">
               {fields.map((field) => (
-                <label key={field.name} className={field.type === "textarea" ? "wide" : ""}>
+                <label
+                  key={field.name}
+                  className={["form-field", field.className || ""].filter(Boolean).join(" ")}
+                >
                   {field.label}
                   {field.type === "textarea" ? (
                     <textarea
@@ -920,22 +1037,22 @@ export default function ManualMapEditor({
             <div className="editor-actions">
               <button className="primary" type="button" onClick={addItem}>
                 <Save size={16} aria-hidden="true" />
-                {selectedFailedKey ? "확정 추가" : "신규 추가"}
+                새 항목 추가
               </button>
               <button type="button" onClick={updateItem}>
-                수정 적용
+                선택 항목 좌표 수정
               </button>
               <button type="button" onClick={resetEdits}>
                 <RotateCcw size={16} aria-hidden="true" />
-                임시 저장 초기화
+                임시 변경사항 초기화
               </button>
               <button type="button" onClick={() => downloadJson(downloadFileName, mergedItems)}>
                 <Download size={16} aria-hidden="true" />
-                수정된 JSON 다운로드
+                최종 JSON 다운로드
               </button>
               <button type="button" onClick={copyJson}>
                 <Clipboard size={16} aria-hidden="true" />
-                JSON 클립보드 복사
+                최종 JSON 복사
               </button>
               {datasetType === "highway" && failedDownloadFileName && (
                 <button
@@ -960,7 +1077,9 @@ export default function ManualMapEditor({
               ["해결", resolutions],
             ].map(([label, items]) => (
               <div className="change-group" key={label as string}>
-                <h2>{label as string}</h2>
+                <h2>
+                  {label as string} <span>{(items as ManualEdit[]).length}</span>
+                </h2>
                 {(items as ManualEdit[]).length === 0 && <p>변경 없음</p>}
                 {(items as ManualEdit[]).map((edit) => (
                   <div className="change-item" key={edit.id}>

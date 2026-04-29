@@ -134,17 +134,24 @@ a {
 }
 
 .home-edit-link {
-  justify-self: start;
-  margin-top: -6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 10px 14px;
   color: #38505f;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 800;
-  text-decoration: underline;
-  text-underline-offset: 3px;
+  background: #f8fbfc;
+  border: 1px solid #d7e0e7;
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.06);
 }
 
 .home-edit-link:hover {
-  color: #1d6f65;
+  color: #ffffff;
+  background: #1d6f65;
+  border-color: #1d6f65;
 }
 
 .app-shell {
@@ -705,19 +712,51 @@ button.primary.active {
   border-bottom: 1px solid #cbd5dd;
 }
 
+.map-context-menu {
+  position: absolute;
+  z-index: 12;
+  display: grid;
+  gap: 4px;
+  width: 220px;
+  padding: 6px;
+  background: #ffffff;
+  border: 1px solid #cfd9e1;
+  border-radius: 8px;
+  box-shadow: 0 16px 38px rgba(15, 23, 42, 0.2);
+}
+
+.map-context-menu button {
+  justify-content: flex-start;
+  min-height: 32px;
+  padding: 0 10px;
+  font-size: 13px;
+  background: transparent;
+  border: 0;
+}
+
+.map-context-menu button:hover:not(:disabled) {
+  color: #ffffff;
+  background: #1d6f65;
+}
+
+.map-context-menu button:disabled {
+  color: #9aa6b2;
+  cursor: not-allowed;
+}
+
 .editor-bottom {
   display: grid;
   grid-template-columns: minmax(0, 1.5fr) minmax(280px, 0.7fr);
-  gap: 16px;
+  gap: 12px;
   min-height: 0;
-  padding: 18px;
+  padding: 12px;
   overflow: hidden;
 }
 
 .editor-form,
 .changes-panel {
   min-height: 0;
-  padding: 16px;
+  padding: 12px;
   background: #ffffff;
   border: 1px solid #d9e2e8;
   border-radius: 8px;
@@ -726,32 +765,40 @@ button.primary.active {
 
 .field-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 10px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px 10px;
 }
 
-.field-grid label {
+.form-field {
   display: grid;
-  gap: 6px;
+  gap: 3px;
   color: #465562;
   font-size: 12px;
   font-weight: 800;
 }
 
-.field-grid label.wide {
-  grid-column: span 3;
+.form-field.full {
+  grid-column: 1 / -1;
+}
+
+.form-field.half {
+  grid-column: span 1;
 }
 
 .field-grid input {
-  padding: 0 10px;
+  min-height: 34px;
+  height: 34px;
+  padding: 6px 8px;
+  font-size: 13px;
 }
 
 textarea {
   width: 100%;
-  min-height: 62px;
-  padding: 10px;
+  min-height: 48px;
+  padding: 6px 8px;
   color: #17202a;
   font: inherit;
+  font-size: 13px;
   background: #ffffff;
   border: 1px solid #ccd6df;
   border-radius: 8px;
@@ -767,32 +814,45 @@ textarea:focus {
 .editor-actions {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
-  margin-top: 14px;
+  gap: 6px;
+  margin-top: 10px;
+}
+
+.editor-actions button {
+  min-height: 34px;
+  padding: 0 10px;
+  font-size: 12px;
 }
 
 .changes-panel {
   display: grid;
   align-content: start;
-  gap: 10px;
+  gap: 8px;
 }
 
 .change-group {
-  padding: 10px;
+  padding: 8px;
   background: #f7fafb;
   border: 1px solid #e2e8ed;
   border-radius: 8px;
 }
 
 .change-group h2 {
-  margin: 0 0 8px;
-  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 6px;
+  font-size: 13px;
+}
+
+.change-group h2 span {
+  color: #657482;
+  font-size: 12px;
 }
 
 .change-group p {
   margin: 0;
   color: #6a7885;
-  font-size: 13px;
+  font-size: 12px;
 }
 
 .change-item {
@@ -800,7 +860,7 @@ textarea:focus {
   gap: 8px;
   align-items: center;
   justify-content: space-between;
-  padding: 7px 0;
+  padding: 5px 0;
   border-top: 1px solid #e4ebf0;
 }
 
@@ -811,7 +871,7 @@ textarea:focus {
 .change-item span {
   min-width: 0;
   color: #263746;
-  font-size: 13px;
+  font-size: 12px;
   overflow-wrap: anywhere;
 }
 
@@ -824,9 +884,9 @@ textarea:focus {
 .static-save-note {
   grid-column: 1 / -1;
   margin: 0;
-  padding: 12px 14px;
+  padding: 8px 10px;
   color: #6d2f08;
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 700;
   line-height: 1.5;
   background: #fff7ed;
@@ -951,7 +1011,8 @@ textarea:focus {
     grid-template-columns: 1fr;
   }
 
-  .field-grid label.wide {
+  .form-field.full,
+  .form-field.half {
     grid-column: auto;
   }
 }
