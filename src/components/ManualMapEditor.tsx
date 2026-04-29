@@ -25,6 +25,7 @@ type EditableItem = ScaleOffice | HighwayTollOffice;
 type EditableRecord = Record<string, string | number | null | string[] | boolean | undefined>;
 type ChangeKind = "add" | "update" | "resolve";
 type FieldErrors = Record<string, string>;
+type ActiveOperation = "none" | "add" | "update" | "resolveFailed" | "dragUpdate";
 
 interface EditorConfig {
   datasetType: DatasetType;
@@ -604,6 +605,7 @@ export default function ManualMapEditor({
   const tempMarkerRef = useRef<KakaoMarker | null>(null);
   const infoWindowRef = useRef<KakaoInfoWindow | null>(null);
   const editModeRef = useRef(false);
+  const activeOperationRef = useRef<ActiveOperation>("none");
   const contextPointerRef = useRef<{ x: number; y: number } | null>(null);
   const fieldRefs = useRef<Map<string, HTMLElement>>(new Map());
   const preserveViewportOnceRef = useRef(false);
@@ -629,13 +631,24 @@ export default function ManualMapEditor({
   const [selectedEdit, setSelectedEdit] = useState<ManualEdit | null>(null);
   const [isMarkerDragEditMode, setIsMarkerDragEditMode] = useState(false);
   const [activeDragItemKey, setActiveDragItemKey] = useState<string | null>(null);
+  const [activeOperation, setActiveOperation] = useState<ActiveOperation>("none");
 
   useEffect(() => {
     editModeRef.current = editMode;
     if (!editMode) {
       setContextMenu(null);
+      setActiveOperation("none");
+      setIsMarkerDragEditMode(false);
+      setActiveDragItemKey(null);
+      selectedMarkerRef.current?.setDraggable(false);
+      tempMarkerRef.current?.setDraggable(false);
+      tempMarkerRef.current?.setMap(null);
     }
   }, [editMode]);
+
+  useEffect(() => {
+    activeOperationRef.current = activeOperation;
+  }, [activeOperation]);
 
   const mergedItems = useMemo(() => applyEdits(baseItems, edits), [baseItems, edits]);
   const mergedFailedItems = useMemo(
@@ -774,6 +787,9 @@ export default function ManualMapEditor({
       setContextMenu(null);
       setIsMarkerDragEditMode(false);
       setActiveDragItemKey(null);
+      selectedMarkerRef.current?.setDraggable(false);
+      tempMarkerRef.current?.setDraggable(false);
+      setActiveOperation(editModeRef.current ? "update" : "none");
       setFormFromItem(item);
 
       const map = mapRef.current;
@@ -853,16 +869,27 @@ export default function ManualMapEditor({
 
   const startAddAtCoordinate = useCallback(
     (latitude: number, longitude: number) => {
+      if (!editModeRef.current) {
+        setMessage("편집 모드를 먼저 켜 주세요.");
+        return;
+      }
       setSelectedId(null);
+      setSelectedFailedKey(null);
+      setActiveOperation("add");
+      setIsMarkerDragEditMode(false);
+      setActiveDragItemKey(null);
+      selectedMarkerRef.current?.setDraggable(false);
+      selectedMarkerRef.current?.setMap(null);
+      selectedMarkerRef.current = null;
       setContextMenu(null);
       showTempMarker(latitude, longitude);
       setForm((current) => ({
-        ...(selectedFailedKey ? current : emptyForm(datasetType)),
+        ...emptyForm(datasetType),
         latitude: formatCoordinate(latitude),
         longitude: formatCoordinate(longitude),
         geocode_status: "manual_added",
         geocode_source: "manual_map_right_click",
-        source: asText(form.source) || "manual",
+        source: "manual",
       }));
       setFormErrors((current) => {
         const { latitude: _lat, longitude: _lng, geocode_status: _status, geocode_source: _source, ...rest } = current;
@@ -871,15 +898,22 @@ export default function ManualMapEditor({
       fillAddressFromCoordinate(latitude, longitude);
       setMessage("우클릭 위치를 새 항목 좌표로 입력했습니다.");
     },
-    [datasetType, fillAddressFromCoordinate, selectedFailedKey, showTempMarker],
+    [datasetType, fillAddressFromCoordinate, showTempMarker],
   );
 
   const moveSelectedToCoordinate = useCallback(
     (latitude: number, longitude: number) => {
+      if (!editModeRef.current) {
+        setMessage("편집 모드를 먼저 켜 주세요.");
+        return;
+      }
       if (!selectedId && !selectedFailedKey) {
         return;
       }
       setContextMenu(null);
+      setActiveOperation(selectedFailedKey ? "resolveFailed" : "update");
+      setIsMarkerDragEditMode(false);
+      setActiveDragItemKey(null);
       showTempMarker(latitude, longitude);
       setForm((current) => ({
         ...current,
@@ -1228,6 +1262,11 @@ export default function ManualMapEditor({
 
   const commitDraggedCoordinate = useCallback(
     (latitude: number, longitude: number) => {
+      if (!editModeRef.current || activeOperationRef.current !== "dragUpdate") {
+        selectedMarkerRef.current?.setDraggable(false);
+        tempMarkerRef.current?.setDraggable(false);
+        return;
+      }
       const nextForm = {
         ...form,
         latitude: formatCoordinate(latitude),
@@ -1252,59 +1291,7 @@ export default function ManualMapEditor({
       }
       const now = new Date().toISOString();
 
-      if (selectedFailedKey && !selectedId) {
-        const duplicate = findDuplicate(item);
-        if (duplicate) {
-          setMessage(
-            `중복 가능 항목이 있습니다: ${getItemName(duplicate)}. 기존 항목을 선택한 뒤 다시 수정하세요.`,
-          );
-          return;
-        }
-        const failedIndex = mergedFailedItems.findIndex(
-          (failed, index) => getFailedKey(failed, index) === selectedFailedKey,
-        );
-        const failed = mergedFailedItems[failedIndex];
-        const addEdit: ManualEdit = {
-          id: `edit-${now}-${Math.random().toString(36).slice(2)}`,
-          type: "add",
-          kind: "add",
-          datasetType,
-          itemKey: getItemKey(datasetType, item),
-          displayName: getItemName(item),
-          timestamp: now,
-          itemId: getItemId(item, mergedItems.length),
-          after: item,
-          changedFields: buildChangedFields("add", undefined, item),
-          createdAt: now,
-        };
-        const resolveEdit: ManualEdit | null = failed
-          ? {
-              id: `resolve-${now}-${Math.random().toString(36).slice(2)}`,
-              type: "resolve",
-              kind: "resolve",
-              datasetType,
-              itemKey: selectedFailedKey,
-              displayName: failed.office_name || failed.search_name || "좌표 미확인 항목",
-              timestamp: now,
-              failedKey: selectedFailedKey,
-              failedBefore: failed,
-              failedAfter: { ...failed, resolved: true },
-              changedFields: buildResolveFields(failed, { ...failed, resolved: true }),
-              createdAt: now,
-            }
-          : null;
-        setEdits((current) => [
-          ...current.filter(
-            (existing) =>
-              existing.failedKey !== selectedFailedKey &&
-              existing.itemKey !== getItemKey(datasetType, item),
-          ),
-          addEdit,
-          ...(resolveEdit ? [resolveEdit] : []),
-        ]);
-        setSelectedId(getItemId(item, mergedItems.length));
-        setSelectedFailedKey(null);
-      } else if (selectedId) {
+      if (selectedId) {
         const before = mergedItems.find(
           (candidate, index) => getItemId(candidate, index) === selectedId,
         );
@@ -1332,6 +1319,7 @@ export default function ManualMapEditor({
       preserveViewportOnceRef.current = true;
       setIsMarkerDragEditMode(false);
       setActiveDragItemKey(null);
+      setActiveOperation("update");
       selectedMarkerRef.current?.setDraggable(false);
       tempMarkerRef.current?.setDraggable(false);
       setMessage("좌표가 수정되었습니다. 최종 JSON 다운로드로 저장하세요.");
@@ -1339,19 +1327,24 @@ export default function ManualMapEditor({
     [
       createItemFromRecord,
       datasetType,
-      findDuplicate,
       form,
       getValidationErrors,
-      mergedFailedItems,
       mergedItems,
-      selectedFailedKey,
       selectedId,
       upsertUpdateEdit,
     ],
   );
 
   const startMarkerDragEdit = useCallback(() => {
-    if (!selectedId && !selectedFailedKey) {
+    if (!editModeRef.current) {
+      setMessage("편집 모드를 먼저 켜 주세요.");
+      return;
+    }
+    if (activeOperationRef.current !== "update" && activeOperationRef.current !== "dragUpdate") {
+      setMessage("기존 항목 수정 모드에서만 마커 이동을 시작할 수 있습니다.");
+      return;
+    }
+    if (!selectedId) {
       setMessage("좌표를 수정할 항목을 먼저 선택하세요.");
       return;
     }
@@ -1412,7 +1405,8 @@ export default function ManualMapEditor({
     marker.setMap(map);
     marker.setDraggable(true);
     setIsMarkerDragEditMode(true);
-    setActiveDragItemKey(selectedId || selectedFailedKey);
+    setActiveOperation("dragUpdate");
+    setActiveDragItemKey(selectedId);
     setContextMenu(null);
     window.kakao.maps.event.addListener(marker, "dragend", () => {
       const position = marker!.getPosition();
@@ -1421,6 +1415,18 @@ export default function ManualMapEditor({
   }, [commitDraggedCoordinate, form.latitude, form.longitude, selectedFailedKey, selectedId]);
 
   const addItem = useCallback(() => {
+    if (!editModeRef.current) {
+      setMessage("편집 모드를 먼저 켜 주세요.");
+      return;
+    }
+    if (activeOperationRef.current !== "add" && activeOperationRef.current !== "resolveFailed") {
+      setMessage("새 항목 추가는 새 항목 추가 또는 좌표 미확인 항목 해결 모드에서만 가능합니다.");
+      return;
+    }
+    if (selectedId) {
+      setMessage("기존 항목 선택 상태에서는 새 항목으로 추가할 수 없습니다.");
+      return;
+    }
     if (!validateForm()) {
       return;
     }
@@ -1481,6 +1487,7 @@ export default function ManualMapEditor({
     if (selectedFailedKey) {
       setSelectedFailedKey(null);
     }
+    setActiveOperation("none");
     setFormErrors({});
     setMessage(selectedFailedKey ? "좌표 미확인 항목을 추가하고 해결 처리했습니다." : "새 항목을 추가했습니다.");
   }, [
@@ -1610,6 +1617,8 @@ export default function ManualMapEditor({
       setActiveDragItemKey(null);
       selectedMarkerRef.current?.setMap(null);
       selectedMarkerRef.current = null;
+      tempMarkerRef.current?.setDraggable(false);
+      setActiveOperation(editModeRef.current ? "resolveFailed" : "none");
       setForm({
         ...emptyForm(datasetType),
         id: asText(failed.id || failed.office_code),
@@ -1643,6 +1652,11 @@ export default function ManualMapEditor({
     setSelectedId(null);
     setSelectedFailedKey(null);
     setForm(emptyForm(datasetType));
+    setActiveOperation("none");
+    setIsMarkerDragEditMode(false);
+    setActiveDragItemKey(null);
+    selectedMarkerRef.current?.setDraggable(false);
+    tempMarkerRef.current?.setDraggable(false);
     setMessage("임시 변경사항을 초기화했습니다.");
   }, [datasetType]);
 
@@ -1667,6 +1681,12 @@ export default function ManualMapEditor({
   const resolutions = edits.filter((edit) => edit.kind === "resolve");
   const selectedEditFields = selectedEdit ? getEditFields(selectedEdit) : [];
   const hasSelectedTarget = Boolean(selectedId || selectedFailedKey);
+  const canAddItem =
+    editMode && !selectedId && (activeOperation === "add" || activeOperation === "resolveFailed");
+  const canStartMarkerDrag =
+    editMode &&
+    Boolean(selectedId) &&
+    (activeOperation === "update" || activeOperation === "dragUpdate");
 
   return (
     <main className="editor-shell">
@@ -1795,15 +1815,26 @@ export default function ManualMapEditor({
               role="menu"
             >
               {hasSelectedTarget ? (
-                <button
-                  type="button"
-                  role="menuitem"
-                  onClick={() =>
-                    moveSelectedToCoordinate(contextMenu.latitude, contextMenu.longitude)
-                  }
-                >
-                  이 위치를 선택 항목 좌표로 사용
-                </button>
+                <>
+                  <button
+                    type="button"
+                    role="menuitem"
+                    onClick={() =>
+                      moveSelectedToCoordinate(contextMenu.latitude, contextMenu.longitude)
+                    }
+                  >
+                    {selectedFailedKey
+                      ? "이 위치를 좌표 미확인 항목 좌표로 사용"
+                      : "이 위치로 선택 항목 좌표 이동"}
+                  </button>
+                  <button
+                    type="button"
+                    role="menuitem"
+                    onClick={() => startAddAtCoordinate(contextMenu.latitude, contextMenu.longitude)}
+                  >
+                    여기에 새 항목 추가
+                  </button>
+                </>
               ) : (
                 <button
                   type="button"
@@ -1832,6 +1863,7 @@ export default function ManualMapEditor({
                   setSelectedFailedKey(null);
                   setIsMarkerDragEditMode(false);
                   setActiveDragItemKey(null);
+                  setActiveOperation("none");
                   selectedMarkerRef.current?.setDraggable(false);
                   tempMarkerRef.current?.setDraggable(false);
                   setForm(emptyForm(datasetType));
@@ -1910,7 +1942,7 @@ export default function ManualMapEditor({
             </div>
 
             <div className="editor-actions">
-              <button className="primary" type="button" onClick={addItem}>
+              <button className="primary" type="button" onClick={addItem} disabled={!canAddItem}>
                 <Save size={16} aria-hidden="true" />
                 새 항목 추가
               </button>
@@ -1918,6 +1950,7 @@ export default function ManualMapEditor({
                 className={isMarkerDragEditMode ? "primary active" : ""}
                 type="button"
                 onClick={startMarkerDragEdit}
+                disabled={!canStartMarkerDrag}
               >
                 선택 마커 이동으로 좌표 수정
               </button>
