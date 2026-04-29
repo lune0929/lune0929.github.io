@@ -606,6 +606,7 @@ export default function ManualMapEditor({
   const editModeRef = useRef(false);
   const contextPointerRef = useRef<{ x: number; y: number } | null>(null);
   const fieldRefs = useRef<Map<string, HTMLElement>>(new Map());
+  const preserveViewportOnceRef = useRef(false);
 
   const fields = datasetType === "scale" ? SCALE_FIELDS : HIGHWAY_FIELDS;
   const kakaoKey = import.meta.env.VITE_KAKAO_JAVASCRIPT_KEY as string | undefined;
@@ -1092,6 +1093,11 @@ export default function ManualMapEditor({
     clusterer.addMarkers(markers);
     clustererRef.current = clusterer;
     markersRef.current = markers;
+    if (preserveViewportOnceRef.current) {
+      preserveViewportOnceRef.current = false;
+      return;
+    }
+
     if (filteredOffices.length === 1) {
       map.setCenter(
         new window.kakao.maps.LatLng(filteredOffices[0].latitude, filteredOffices[0].longitude),
@@ -1323,6 +1329,7 @@ export default function ManualMapEditor({
         });
       }
 
+      preserveViewportOnceRef.current = true;
       setIsMarkerDragEditMode(false);
       setActiveDragItemKey(null);
       selectedMarkerRef.current?.setDraggable(false);
