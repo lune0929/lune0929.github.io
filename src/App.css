@@ -785,11 +785,64 @@ button.primary.active {
   grid-column: span 1;
 }
 
-.field-grid input {
+.field-grid input,
+.field-grid select {
   min-height: 34px;
   height: 34px;
   padding: 6px 8px;
   font-size: 13px;
+}
+
+.field-label {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  align-items: center;
+}
+
+.required-mark {
+  color: #dc2626;
+  font-weight: 900;
+}
+
+.recommended-badge {
+  padding: 1px 5px;
+  color: #52606d;
+  font-size: 10px;
+  font-weight: 800;
+  background: #edf2f6;
+  border-radius: 999px;
+}
+
+.field-help,
+.field-error {
+  font-size: 11px;
+  line-height: 1.25;
+}
+
+.field-help {
+  color: #7a8793;
+}
+
+.field-error {
+  color: #b42318;
+}
+
+.form-field.invalid input,
+.form-field.invalid select,
+.form-field.invalid textarea {
+  border-color: #dc2626;
+  box-shadow: 0 0 0 2px rgba(220, 38, 38, 0.12);
+}
+
+.form-field.readonly input,
+.form-field.readonly select,
+.form-field.readonly textarea,
+input[readonly],
+textarea[readonly],
+select:disabled {
+  color: #69727d;
+  background: #f1f4f6;
 }
 
 textarea {

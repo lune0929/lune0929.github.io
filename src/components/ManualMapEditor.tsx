@@ -23,6 +23,7 @@ type DatasetType = "scale" | "highway";
 type EditableItem = ScaleOffice | HighwayTollOffice;
 type EditableRecord = Record<string, string | number | null | string[] | boolean | undefined>;
 type ChangeKind = "add" | "update" | "resolve";
+type FieldErrors = Record<string, string>;
 
 interface EditorConfig {
   datasetType: DatasetType;
@@ -52,6 +53,11 @@ interface FormField {
   label: string;
   type?: "number" | "textarea";
   className?: string;
+  required?: boolean;
+  recommended?: boolean;
+  readOnly?: boolean;
+  options?: Array<{ value: string; label: string }>;
+  helpText?: string;
 }
 
 interface ContextMenuState {
@@ -61,45 +67,131 @@ interface ContextMenuState {
   y: number;
 }
 
+const SCALE_STATUS_OPTIONS = ["영업/정상", "폐업", "휴업", "취소/말소", "정보 없음"];
+const SCALE_DETAIL_STATUS_OPTIONS = [
+  "영업/정상",
+  "폐업",
+  "휴업",
+  "제외/삭제/전출",
+  "취소/말소",
+  "정보 없음",
+];
+const SCALE_GEOCODE_STATUS_OPTIONS = [
+  "success_from_csv_coordinate",
+  "success_from_kakao_address",
+  "success_from_kakao_keyword",
+  "manual_added",
+  "manual_corrected",
+  "failed",
+  "information_missing",
+];
+const SCALE_GEOCODE_SOURCE_OPTIONS = [
+  "csv_coordinate",
+  "kakao_address",
+  "kakao_keyword",
+  "manual_map_click",
+  "manual_map_right_click",
+  "unknown",
+];
+const SCALE_SOURCE_OPTIONS = ["local_csv", "manual", "unknown"];
+
+const HIGHWAY_DIRECTION_OPTIONS = [
+  { value: "", label: "없음" },
+  ..."상행 하행 서울방면 부산방면 목포방면 대전방면 천안방면 순천방면 진입 진출 입구 출구"
+    .split(" ")
+    .map((value) => ({ value, label: value })),
+];
+const HIGHWAY_GEOCODE_STATUS_OPTIONS = [
+  "success_from_api_coordinate",
+  "success_from_kakao_local",
+  "success_from_naver_local",
+  "manual_added",
+  "manual_corrected",
+  "failed_no_exact_match",
+  "failed_no_candidate",
+  "information_missing",
+];
+const HIGHWAY_GEOCODE_SOURCE_OPTIONS = [
+  "ex_api_coordinate",
+  "kakao_local",
+  "naver_local",
+  "manual_map_click",
+  "manual_map_right_click",
+  "manual_required",
+  "unknown",
+];
+const HIGHWAY_SOURCE_OPTIONS = ["한국도로공사_영업소 위치정보 OpenAPI", "manual", "unknown"];
+
+function toOptions(values: string[]) {
+  return values.map((value) => ({ value, label: value }));
+}
+
 const SCALE_FIELDS: FormField[] = [
-  { name: "id", label: "id" },
+  { name: "id", label: "id", readOnly: true, helpText: "비어 있으면 자동 생성" },
   { name: "management_id", label: "management_id" },
-  { name: "business_name", label: "business_name" },
-  { name: "normalized_name", label: "normalized_name" },
-  { name: "status", label: "status" },
-  { name: "detail_status", label: "detail_status" },
-  { name: "phone", label: "phone" },
+  { name: "business_name", label: "business_name", required: true },
+  { name: "normalized_name", label: "normalized_name", readOnly: true },
+  { name: "status", label: "status", recommended: true, options: toOptions(SCALE_STATUS_OPTIONS) },
+  {
+    name: "detail_status",
+    label: "detail_status",
+    recommended: true,
+    options: toOptions(SCALE_DETAIL_STATUS_OPTIONS),
+  },
+  { name: "phone", label: "phone", recommended: true },
   { name: "office_phone", label: "office_phone" },
-  { name: "sido", label: "sido", className: "half" },
-  { name: "sigungu", label: "sigungu", className: "half" },
-  { name: "address", label: "address", type: "textarea", className: "full" },
-  { name: "road_address", label: "road_address", type: "textarea", className: "full" },
-  { name: "latitude", label: "latitude", type: "number", className: "half" },
-  { name: "longitude", label: "longitude", type: "number", className: "half" },
+  { name: "sido", label: "sido", className: "half", recommended: true },
+  { name: "sigungu", label: "sigungu", className: "half", recommended: true },
+  { name: "address", label: "address", type: "textarea", className: "full", required: true },
+  { name: "road_address", label: "road_address", type: "textarea", className: "full", required: true },
+  { name: "latitude", label: "latitude", type: "number", className: "half", required: true },
+  { name: "longitude", label: "longitude", type: "number", className: "half", required: true },
   { name: "coordinate_note", label: "coordinate_note", type: "textarea", className: "full" },
   { name: "manual_note", label: "manual_note", type: "textarea", className: "full" },
-  { name: "geocode_status", label: "geocode_status", className: "half" },
-  { name: "geocode_source", label: "geocode_source", className: "half" },
+  {
+    name: "geocode_status",
+    label: "geocode_status",
+    className: "half",
+    options: toOptions(SCALE_GEOCODE_STATUS_OPTIONS),
+  },
+  {
+    name: "geocode_source",
+    label: "geocode_source",
+    className: "half",
+    options: toOptions(SCALE_GEOCODE_SOURCE_OPTIONS),
+  },
+  { name: "source", label: "source", options: toOptions(SCALE_SOURCE_OPTIONS) },
 ];
 
 const HIGHWAY_FIELDS: FormField[] = [
-  { name: "id", label: "id" },
-  { name: "office_code", label: "office_code" },
-  { name: "office_name", label: "office_name" },
-  { name: "normalized_office_name", label: "normalized_office_name" },
-  { name: "route_name", label: "route_name" },
-  { name: "direction", label: "direction" },
-  { name: "sido", label: "sido", className: "half" },
-  { name: "sigungu", label: "sigungu", className: "half" },
-  { name: "address", label: "address", type: "textarea", className: "full" },
-  { name: "road_address", label: "road_address", type: "textarea", className: "full" },
-  { name: "latitude", label: "latitude", type: "number", className: "half" },
-  { name: "longitude", label: "longitude", type: "number", className: "half" },
-  { name: "geocode_status", label: "geocode_status", className: "half" },
-  { name: "geocode_source", label: "geocode_source", className: "half" },
+  { name: "id", label: "id", readOnly: true, helpText: "비어 있으면 자동 생성" },
+  { name: "office_code", label: "office_code", recommended: true },
+  { name: "office_name", label: "office_name", required: true },
+  { name: "normalized_office_name", label: "normalized_office_name", recommended: true, readOnly: true },
+  { name: "route_name", label: "route_name", required: true },
+  { name: "direction", label: "direction", recommended: true, options: HIGHWAY_DIRECTION_OPTIONS },
+  { name: "sido", label: "sido", className: "half", recommended: true },
+  { name: "sigungu", label: "sigungu", className: "half", recommended: true },
+  { name: "address", label: "address", type: "textarea", className: "full", recommended: true },
+  { name: "road_address", label: "road_address", type: "textarea", className: "full", recommended: true },
+  { name: "latitude", label: "latitude", type: "number", className: "half", required: true },
+  { name: "longitude", label: "longitude", type: "number", className: "half", required: true },
+  {
+    name: "geocode_status",
+    label: "geocode_status",
+    className: "half",
+    options: toOptions(HIGHWAY_GEOCODE_STATUS_OPTIONS),
+  },
+  {
+    name: "geocode_source",
+    label: "geocode_source",
+    className: "half",
+    options: toOptions(HIGHWAY_GEOCODE_SOURCE_OPTIONS),
+  },
   { name: "geocode_query", label: "geocode_query" },
   { name: "coordinate_note", label: "coordinate_note", type: "textarea", className: "full" },
   { name: "manual_note", label: "manual_note", type: "textarea", className: "full" },
+  { name: "source", label: "source", options: toOptions(HIGHWAY_SOURCE_OPTIONS) },
 ];
 
 const DEFAULT_CENTER = { latitude: 36.5, longitude: 127.8 };
@@ -131,6 +223,50 @@ function slugify(value: string) {
     .replace(/[^0-9a-z가-힣]+/gi, "-")
     .replace(/^-+|-+$/g, "")
     .slice(0, 80);
+}
+
+function normalizeHighwayOfficeName(value: string) {
+  return value
+    .replace(/\bTG\b/gi, "")
+    .replace(/톨게이트|요금소|상행|하행|상|하/g, "")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function validateCoordinate(value: unknown, fieldName: "latitude" | "longitude") {
+  const label = fieldName === "latitude" ? "위도" : "경도";
+  const min = fieldName === "latitude" ? -90 : -180;
+  const max = fieldName === "latitude" ? 90 : 180;
+  const numberValue = toNumber(value);
+  if (asText(value).trim() === "") {
+    return `${label}는 필수입니다.`;
+  }
+  if (numberValue == null) {
+    return `${label} 값이 올바르지 않습니다.`;
+  }
+  if (numberValue < min || numberValue > max) {
+    return `${label}는 ${min}~${max} 범위여야 합니다.`;
+  }
+  return "";
+}
+
+function isValidItemForDownload(datasetType: DatasetType, item: EditableItem) {
+  const latitudeError = validateCoordinate(item.latitude, "latitude");
+  const longitudeError = validateCoordinate(item.longitude, "longitude");
+  if (latitudeError || longitudeError) {
+    return false;
+  }
+  if (datasetType === "scale" && "business_name" in item) {
+    const scale = item as ScaleOffice;
+    return Boolean(
+      scale.business_name.trim() && (scale.address.trim() || scale.road_address.trim()),
+    );
+  }
+  if (datasetType === "highway" && "office_name" in item) {
+    const highway = item as HighwayTollOffice;
+    return Boolean(highway.office_name.trim() && highway.route_name.trim());
+  }
+  return false;
 }
 
 function createManualId(datasetType: DatasetType, form: EditableRecord) {
@@ -274,6 +410,7 @@ export default function ManualMapEditor({
   const infoWindowRef = useRef<KakaoInfoWindow | null>(null);
   const editModeRef = useRef(false);
   const contextPointerRef = useRef<{ x: number; y: number } | null>(null);
+  const fieldRefs = useRef<Map<string, HTMLElement>>(new Map());
 
   const fields = datasetType === "scale" ? SCALE_FIELDS : HIGHWAY_FIELDS;
   const kakaoKey = import.meta.env.VITE_KAKAO_JAVASCRIPT_KEY as string | undefined;
@@ -292,6 +429,7 @@ export default function ManualMapEditor({
   const [message, setMessage] = useState("");
   const [copyState, setCopyState] = useState("");
   const [contextMenu, setContextMenu] = useState<ContextMenuState | null>(null);
+  const [formErrors, setFormErrors] = useState<FieldErrors>({});
 
   useEffect(() => {
     editModeRef.current = editMode;
@@ -346,9 +484,81 @@ export default function ManualMapEditor({
         next[field.name] = asText((item as EditableRecord)[field.name]);
       });
       setForm(next);
+      setFormErrors({});
     },
     [datasetType, fields],
   );
+
+  const updateFormField = useCallback(
+    (fieldName: string, value: string) => {
+      setForm((current) => {
+        const next = { ...current, [fieldName]: value };
+        if (datasetType === "scale" && fieldName === "business_name" && !asText(current.normalized_name)) {
+          next.normalized_name = value;
+        }
+        if (
+          datasetType === "highway" &&
+          fieldName === "office_name" &&
+          !asText(current.normalized_office_name)
+        ) {
+          next.normalized_office_name = normalizeHighwayOfficeName(value);
+        }
+        return next;
+      });
+      setFormErrors((current) => {
+        if (!current[fieldName]) {
+          if (fieldName !== "address" && fieldName !== "road_address") {
+            return current;
+          }
+        }
+        if (fieldName === "address" || fieldName === "road_address") {
+          const { address: _address, road_address: _roadAddress, ...rest } = current;
+          return rest;
+        }
+        const { [fieldName]: _removed, ...rest } = current;
+        return rest;
+      });
+    },
+    [datasetType],
+  );
+
+  const validateForm = useCallback(() => {
+    const errors: FieldErrors = {};
+    if (datasetType === "scale") {
+      if (!asText(form.business_name).trim()) {
+        errors.business_name = "사업장명은 필수입니다.";
+      }
+      if (!asText(form.address).trim() && !asText(form.road_address).trim()) {
+        errors.address = "주소 또는 도로명주소 중 하나는 필수입니다.";
+        errors.road_address = "주소 또는 도로명주소 중 하나는 필수입니다.";
+      }
+    } else {
+      if (!asText(form.office_name).trim()) {
+        errors.office_name = "영업소명은 필수입니다.";
+      }
+      if (!asText(form.route_name).trim()) {
+        errors.route_name = "노선명은 필수입니다.";
+      }
+    }
+
+    const latitudeError = validateCoordinate(form.latitude, "latitude");
+    const longitudeError = validateCoordinate(form.longitude, "longitude");
+    if (latitudeError) {
+      errors.latitude = latitudeError;
+    }
+    if (longitudeError) {
+      errors.longitude = longitudeError;
+    }
+
+    setFormErrors(errors);
+    if (Object.keys(errors).length > 0) {
+      setMessage("필수 항목을 확인해 주세요.");
+      const firstField = Object.keys(errors)[0];
+      fieldRefs.current.get(firstField)?.scrollIntoView({ behavior: "smooth", block: "center" });
+      return false;
+    }
+    return true;
+  }, [datasetType, form]);
 
   const selectOffice = useCallback(
     (office: MapOffice, panMap = true) => {
@@ -437,7 +647,12 @@ export default function ManualMapEditor({
         longitude: longitude.toFixed(7),
         geocode_status: "manual_added",
         geocode_source: "manual_map_right_click",
+        source: asText(form.source) || "manual",
       }));
+      setFormErrors((current) => {
+        const { latitude: _lat, longitude: _lng, geocode_status: _status, geocode_source: _source, ...rest } = current;
+        return rest;
+      });
       fillAddressFromCoordinate(latitude, longitude);
       setMessage("우클릭 위치를 새 항목 좌표로 입력했습니다.");
     },
@@ -458,6 +673,10 @@ export default function ManualMapEditor({
         geocode_status: "manual_corrected",
         geocode_source: "manual_map_right_click",
       }));
+      setFormErrors((current) => {
+        const { latitude: _lat, longitude: _lng, geocode_status: _status, geocode_source: _source, ...rest } = current;
+        return rest;
+      });
       fillAddressFromCoordinate(latitude, longitude);
       setMessage("선택 항목 좌표를 우클릭 위치로 옮겼습니다. 저장하려면 선택 항목 좌표 수정을 누르세요.");
     },
@@ -669,7 +888,7 @@ export default function ManualMapEditor({
       entrance_exit_type: "",
       install_type: "",
       phone: "",
-      source: "manual",
+      source: asText(form.source) || "manual",
       geocode_status: asText(form.geocode_status) || "manual_added",
       geocode_source: asText(form.geocode_source) || "manual_map_right_click",
       geocode_query: asText(form.geocode_query),
@@ -693,7 +912,10 @@ export default function ManualMapEditor({
           return (
             !scaleItem.management_id &&
             scaleItem.business_name.trim() === scaleCandidate.business_name.trim() &&
-            scaleItem.address.trim() === scaleCandidate.address.trim()
+            ((Boolean(scaleItem.address.trim()) &&
+              scaleItem.address.trim() === scaleCandidate.address.trim()) ||
+              (Boolean(scaleItem.road_address.trim()) &&
+                scaleItem.road_address.trim() === scaleCandidate.road_address.trim()))
           );
         }
         if (datasetType === "highway" && "office_name" in item && "office_name" in candidate) {
@@ -716,6 +938,9 @@ export default function ManualMapEditor({
   );
 
   const addItem = useCallback(() => {
+    if (!validateForm()) {
+      return;
+    }
     const item = createItemFromForm();
     if (!item) {
       return;
@@ -758,6 +983,7 @@ export default function ManualMapEditor({
 
     setEdits((current) => [...current, ...nextEdits]);
     setSelectedId(getItemId(item, mergedItems.length));
+    setFormErrors({});
     setMessage(selectedFailedKey ? "좌표 미확인 항목을 추가하고 해결 처리했습니다." : "새 항목을 추가했습니다.");
   }, [
     createItemFromForm,
@@ -766,11 +992,15 @@ export default function ManualMapEditor({
     mergedFailedItems,
     mergedItems.length,
     selectedFailedKey,
+    validateForm,
   ]);
 
   const updateItem = useCallback(() => {
     if (!selectedId) {
       setMessage("수정할 기존 항목을 먼저 선택하세요.");
+      return;
+    }
+    if (!validateForm()) {
       return;
     }
     const item = createItemFromForm();
@@ -795,8 +1025,9 @@ export default function ManualMapEditor({
         createdAt: now,
       },
     ]);
+    setFormErrors({});
     setMessage("선택 항목 좌표 수정을 변경사항에 추가했습니다.");
-  }, [createItemFromForm, mergedItems, selectedId]);
+  }, [createItemFromForm, mergedItems, selectedId, validateForm]);
 
   const selectFailed = useCallback(
     (failed: HighwayFailedOffice, index: number) => {
@@ -818,7 +1049,9 @@ export default function ManualMapEditor({
         geocode_query: asText(failed.tried_queries),
         geocode_status: "manual_added",
         geocode_source: "manual_map_right_click",
+        source: "manual",
       });
+      setFormErrors({});
       setMessage("좌표 미확인 항목을 불러왔습니다. 편집 모드에서 지도를 우클릭해 좌표를 선택하세요.");
     },
     [datasetType],
@@ -840,13 +1073,17 @@ export default function ManualMapEditor({
     () => mergedFailedItems.filter((item) => !item.resolved),
     [mergedFailedItems],
   );
+  const validMergedItems = useMemo(
+    () => mergedItems.filter((item) => isValidItemForDownload(datasetType, item)),
+    [datasetType, mergedItems],
+  );
 
   const copyJson = useCallback(() => {
     navigator.clipboard
-      .writeText(`${JSON.stringify(mergedItems, null, 2)}\n`)
+      .writeText(`${JSON.stringify(validMergedItems, null, 2)}\n`)
       .then(() => setCopyState("클립보드에 복사했습니다."))
       .catch(() => setCopyState("클립보드 복사에 실패했습니다."));
-  }, [mergedItems]);
+  }, [validMergedItems]);
 
   const additions = edits.filter((edit) => edit.kind === "add");
   const updates = edits.filter((edit) => edit.kind === "update");
@@ -1000,6 +1237,7 @@ export default function ManualMapEditor({
                   setSelectedId(null);
                   setSelectedFailedKey(null);
                   setForm(emptyForm(datasetType));
+                  setFormErrors({});
                 }}
               >
                 폼 비우기
@@ -1010,25 +1248,61 @@ export default function ManualMapEditor({
               {fields.map((field) => (
                 <label
                   key={field.name}
-                  className={["form-field", field.className || ""].filter(Boolean).join(" ")}
+                  ref={(node) => {
+                    if (node) {
+                      fieldRefs.current.set(field.name, node);
+                    } else {
+                      fieldRefs.current.delete(field.name);
+                    }
+                  }}
+                  className={[
+                    "form-field",
+                    field.className || "",
+                    formErrors[field.name] ? "invalid" : "",
+                    field.readOnly ? "readonly" : "",
+                  ]
+                    .filter(Boolean)
+                    .join(" ")}
                 >
-                  {field.label}
-                  {field.type === "textarea" ? (
-                    <textarea
+                  <span className="field-label">
+                    {field.label}
+                    {field.required && <span className="required-mark">*</span>}
+                    {field.recommended && <span className="recommended-badge">권장</span>}
+                  </span>
+                  {field.options ? (
+                    <select
                       value={asText(form[field.name])}
-                      onChange={(event) =>
-                        setForm((current) => ({ ...current, [field.name]: event.target.value }))
-                      }
+                      onChange={(event) => updateFormField(field.name, event.target.value)}
+                      disabled={field.readOnly}
+                    >
+                      {!field.required && field.name !== "direction" && <option value="">선택</option>}
+                      {field.options.map((option) => (
+                        <option key={`${field.name}-${option.value}`} value={option.value}>
+                          {option.label}
+                        </option>
+                      ))}
+                    </select>
+                  ) : field.type === "textarea" ? (
+                    <textarea
+                      readOnly={field.readOnly}
+                      value={asText(form[field.name])}
+                      onChange={(event) => updateFormField(field.name, event.target.value)}
                     />
                   ) : (
                     <input
+                      readOnly={field.readOnly}
                       type={field.type === "number" ? "number" : "text"}
                       step={field.type === "number" ? "0.0000001" : undefined}
                       value={asText(form[field.name])}
-                      onChange={(event) =>
-                        setForm((current) => ({ ...current, [field.name]: event.target.value }))
-                      }
+                      placeholder={field.helpText}
+                      onChange={(event) => updateFormField(field.name, event.target.value)}
                     />
+                  )}
+                  {field.helpText && !formErrors[field.name] && (
+                    <span className="field-help">{field.helpText}</span>
+                  )}
+                  {formErrors[field.name] && (
+                    <span className="field-error">{formErrors[field.name]}</span>
                   )}
                 </label>
               ))}
@@ -1046,7 +1320,7 @@ export default function ManualMapEditor({
                 <RotateCcw size={16} aria-hidden="true" />
                 임시 변경사항 초기화
               </button>
-              <button type="button" onClick={() => downloadJson(downloadFileName, mergedItems)}>
+              <button type="button" onClick={() => downloadJson(downloadFileName, validMergedItems)}>
                 <Download size={16} aria-hidden="true" />
                 최종 JSON 다운로드
               </button>
