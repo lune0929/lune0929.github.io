@@ -113,7 +113,7 @@ export interface KakaoNamespace {
     event: {
       addListener: (
         target: KakaoMarker | KakaoMap,
-        type: "click" | "rightclick",
+        type: string,
         handler: (event: KakaoMouseEvent) => void,
       ) => void;
     };

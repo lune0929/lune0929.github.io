@@ -14,6 +14,7 @@ import type {
   KakaoInfoWindow,
   KakaoMap,
   KakaoMarker,
+  KakaoMarkerClusterer,
   MapOffice,
   ScaleOffice,
 } from "../types";
@@ -38,14 +39,27 @@ interface EditorConfig {
 
 interface ManualEdit {
   id: string;
+  type?: ChangeKind;
   kind: ChangeKind;
+  datasetType?: DatasetType;
+  itemKey?: string;
+  displayName?: string;
+  timestamp?: string;
   itemId?: string;
   failedKey?: string;
   before?: EditableItem;
   after?: EditableItem;
   failedBefore?: HighwayFailedOffice;
   failedAfter?: HighwayFailedOffice;
+  changedFields?: ChangedField[];
   createdAt: string;
+}
+
+interface ChangedField {
+  key: string;
+  label: string;
+  before: unknown;
+  after: unknown;
 }
 
 interface FormField {
@@ -195,6 +209,36 @@ const HIGHWAY_FIELDS: FormField[] = [
 ];
 
 const DEFAULT_CENTER = { latitude: 36.5, longitude: 127.8 };
+const FIELD_LABELS: Record<string, string> = {
+  id: "ID",
+  management_id: "관리번호",
+  business_name: "사업장명",
+  normalized_name: "정규화명",
+  status: "상태",
+  detail_status: "상세 상태",
+  phone: "전화번호",
+  office_phone: "사무실 전화",
+  office_code: "영업소 코드",
+  office_name: "영업소명",
+  normalized_office_name: "정규화 영업소명",
+  route_name: "노선명",
+  direction: "방향",
+  sido: "시도",
+  sigungu: "시군구",
+  address: "주소",
+  road_address: "도로명주소",
+  latitude: "위도",
+  longitude: "경도",
+  geocode_status: "좌표 상태",
+  geocode_source: "좌표 출처",
+  geocode_query: "좌표 검색어",
+  coordinate_note: "좌표 메모",
+  manual_note: "수동 메모",
+  source: "데이터 출처",
+  tried_queries: "시도한 검색어",
+  fail_reason: "실패 사유",
+  resolved: "해결 여부",
+};
 
 function emptyForm(datasetType: DatasetType): EditableRecord {
   const fields = datasetType === "scale" ? SCALE_FIELDS : HIGHWAY_FIELDS;
@@ -206,6 +250,25 @@ function asText(value: unknown) {
     return value.join("\n");
   }
   return value == null ? "" : String(value);
+}
+
+function formatDiffValue(value: unknown) {
+  if (value == null || value === "") {
+    return "(없음)";
+  }
+  if (typeof value === "number") {
+    return Number.isInteger(value) ? String(value) : value.toFixed(7).replace(/0+$/, "").replace(/\.$/, "");
+  }
+  if (Array.isArray(value)) {
+    return value.join("\n");
+  }
+  if (typeof value === "boolean") {
+    return value ? "true" : "false";
+  }
+  if (typeof value === "object") {
+    return JSON.stringify(value);
+  }
+  return String(value);
 }
 
 function toNumber(value: unknown) {
@@ -269,6 +332,70 @@ function isValidItemForDownload(datasetType: DatasetType, item: EditableItem) {
   return false;
 }
 
+function normalizeForCompare(value: unknown) {
+  if (typeof value === "number") {
+    return Number(value.toFixed(7));
+  }
+  if (Array.isArray(value)) {
+    return value.join("\n");
+  }
+  return value == null ? "" : value;
+}
+
+function buildChangedFields(kind: ChangeKind, before?: EditableItem, after?: EditableItem) {
+  const keys = Array.from(
+    new Set([
+      ...Object.keys((before || {}) as Record<string, unknown>),
+      ...Object.keys((after || {}) as Record<string, unknown>),
+    ]),
+  ).filter((key) => !["raw_item", "chosen_candidate", "kakao_candidates", "naver_candidates", "rejected_candidates", "top_candidate_but_rejected"].includes(key));
+
+  return keys
+    .map((key) => {
+      const beforeValue = before ? (before as Record<string, unknown>)[key] : undefined;
+      const afterValue = after ? (after as Record<string, unknown>)[key] : undefined;
+      return {
+        key,
+        label: FIELD_LABELS[key] || key,
+        before: kind === "add" ? undefined : beforeValue,
+        after: afterValue,
+      };
+    })
+    .filter((field) => {
+      if (kind === "add") {
+        return field.after !== undefined && field.after !== "";
+      }
+      return JSON.stringify(normalizeForCompare(field.before)) !== JSON.stringify(normalizeForCompare(field.after));
+    });
+}
+
+function buildResolveFields(before?: HighwayFailedOffice, after?: HighwayFailedOffice) {
+  const fields: ChangedField[] = [];
+  ["office_name", "route_name", "direction", "tried_queries", "fail_reason"].forEach((key) => {
+    const value = before?.[key];
+    if (value != null && value !== "") {
+      fields.push({ key, label: FIELD_LABELS[key] || key, before: value, after: value });
+    }
+  });
+  fields.push({
+    key: "resolved",
+    label: FIELD_LABELS.resolved,
+    before: before?.resolved || false,
+    after: after?.resolved || true,
+  });
+  return fields;
+}
+
+function getEditFields(edit: ManualEdit) {
+  if (edit.changedFields?.length) {
+    return edit.changedFields;
+  }
+  if (edit.kind === "resolve") {
+    return buildResolveFields(edit.failedBefore, edit.failedAfter);
+  }
+  return buildChangedFields(edit.kind, edit.before, edit.after);
+}
+
 function createManualId(datasetType: DatasetType, form: EditableRecord) {
   if (datasetType === "scale") {
     return `manual-scale-${slugify(`${asText(form.business_name)}-${asText(form.address)}`) || Date.now()}`;
@@ -291,6 +418,51 @@ function getItemName(item: EditableItem) {
   return "office_name" in item
     ? asText((item as HighwayTollOffice).office_name)
     : asText((item as ScaleOffice).business_name);
+}
+
+function getItemKey(datasetType: DatasetType, item?: EditableItem) {
+  if (!item) {
+    return "";
+  }
+  if (datasetType === "scale" && "business_name" in item) {
+    const scale = item as ScaleOffice;
+    return asText(scale.management_id || scale.id);
+  }
+  if (datasetType === "highway" && "office_name" in item) {
+    const highway = item as HighwayTollOffice;
+    return asText(highway.office_code || highway.id);
+  }
+  return "";
+}
+
+function getSupportText(item?: EditableItem, failed?: HighwayFailedOffice) {
+  if (item && "business_name" in item) {
+    return item.address || item.road_address || "";
+  }
+  if (item && "office_name" in item) {
+    return [item.route_name, item.direction, item.address || item.road_address]
+      .filter(Boolean)
+      .join(" / ");
+  }
+  if (failed) {
+    return [failed.route_name, failed.direction, failed.address || failed.road_address]
+      .filter(Boolean)
+      .join(" / ");
+  }
+  return "";
+}
+
+function getEditName(edit: ManualEdit) {
+  if (edit.displayName) {
+    return edit.displayName;
+  }
+  if (edit.after) {
+    return getItemName(edit.after);
+  }
+  if (edit.before) {
+    return getItemName(edit.before);
+  }
+  return edit.failedAfter?.office_name || edit.failedAfter?.search_name || "해결 항목";
 }
 
 function getItemStatus(item: EditableItem) {
@@ -406,6 +578,8 @@ export default function ManualMapEditor({
   const mapRef = useRef<KakaoMap | null>(null);
   const markersRef = useRef<KakaoMarker[]>([]);
   const markerByIdRef = useRef<Map<string, KakaoMarker>>(new Map());
+  const clustererRef = useRef<KakaoMarkerClusterer | null>(null);
+  const selectedMarkerRef = useRef<KakaoMarker | null>(null);
   const tempMarkerRef = useRef<KakaoMarker | null>(null);
   const infoWindowRef = useRef<KakaoInfoWindow | null>(null);
   const editModeRef = useRef(false);
@@ -430,6 +604,7 @@ export default function ManualMapEditor({
   const [copyState, setCopyState] = useState("");
   const [contextMenu, setContextMenu] = useState<ContextMenuState | null>(null);
   const [formErrors, setFormErrors] = useState<FieldErrors>({});
+  const [selectedEdit, setSelectedEdit] = useState<ManualEdit | null>(null);
 
   useEffect(() => {
     editModeRef.current = editMode;
@@ -576,11 +751,21 @@ export default function ManualMapEditor({
       if (map && marker && window.kakao) {
         const position = new window.kakao.maps.LatLng(office.latitude, office.longitude);
         if (panMap) {
-          if (map.getLevel() > 5) {
-            map.setLevel(5);
+          if (map.getLevel() > 4) {
+            map.setLevel(4);
           }
           map.panTo(position);
         }
+        selectedMarkerRef.current?.setMap(null);
+        selectedMarkerRef.current = new window.kakao.maps.Marker({
+          map,
+          position,
+          title: office.business_name,
+          image: new window.kakao.maps.MarkerImage(
+            `data:image/svg+xml;charset=UTF-8,${markerSvg("#dc2626")}`,
+            new window.kakao.maps.Size(42, 52),
+          ),
+        });
         infoWindowRef.current?.close();
         const infoWindow = new window.kakao.maps.InfoWindow({
           content: `<div class="map-info-window"><div class="info-title">${office.business_name}</div><div class="info-row"><span class="info-label">주소</span><span class="info-value address">${office.road_address || office.address || "주소 정보 없음"}</span></div></div>`,
@@ -661,7 +846,7 @@ export default function ManualMapEditor({
 
   const moveSelectedToCoordinate = useCallback(
     (latitude: number, longitude: number) => {
-      if (!selectedId) {
+      if (!selectedId && !selectedFailedKey) {
         return;
       }
       setContextMenu(null);
@@ -670,17 +855,18 @@ export default function ManualMapEditor({
         ...current,
         latitude: latitude.toFixed(7),
         longitude: longitude.toFixed(7),
-        geocode_status: "manual_corrected",
+        geocode_status: selectedFailedKey ? "manual_added" : "manual_corrected",
         geocode_source: "manual_map_right_click",
+        source: "manual",
       }));
       setFormErrors((current) => {
         const { latitude: _lat, longitude: _lng, geocode_status: _status, geocode_source: _source, ...rest } = current;
         return rest;
       });
       fillAddressFromCoordinate(latitude, longitude);
-      setMessage("선택 항목 좌표를 우클릭 위치로 옮겼습니다. 저장하려면 선택 항목 좌표 수정을 누르세요.");
+      setMessage("선택 항목 좌표를 우클릭 위치로 입력했습니다. 저장하려면 선택 항목 좌표 수정을 누르세요.");
     },
-    [fillAddressFromCoordinate, selectedId, showTempMarker],
+    [fillAddressFromCoordinate, selectedFailedKey, selectedId, showTempMarker],
   );
 
   useEffect(() => {
@@ -761,6 +947,12 @@ export default function ManualMapEditor({
     window.kakao.maps.event.addListener(map, "click", () => {
       setContextMenu(null);
     });
+    window.kakao.maps.event.addListener(map, "dragstart", () => {
+      setContextMenu(null);
+    });
+    window.kakao.maps.event.addListener(map, "zoom_changed", () => {
+      setContextMenu(null);
+    });
 
     window.kakao.maps.event.addListener(map, "rightclick", (event) => {
       if (!editModeRef.current) {
@@ -769,6 +961,7 @@ export default function ManualMapEditor({
       }
       const latitude = event.latLng.getLat();
       const longitude = event.latLng.getLng();
+      showTempMarker(latitude, longitude);
       const pointer = contextPointerRef.current;
       const mapRect = mapNodeRef.current?.getBoundingClientRect();
       setContextMenu({
@@ -778,7 +971,7 @@ export default function ManualMapEditor({
         y: pointer && mapRect ? pointer.y - mapRect.top + 8 : 20,
       });
     });
-  }, [mapReady]);
+  }, [mapReady, showTempMarker]);
 
   useEffect(() => {
     const node = mapNodeRef.current;
@@ -794,9 +987,34 @@ export default function ManualMapEditor({
       contextPointerRef.current = { x: event.clientX, y: event.clientY };
     };
 
-    node.addEventListener("contextmenu", handleContextMenu);
-    return () => node.removeEventListener("contextmenu", handleContextMenu);
+    node.addEventListener("contextmenu", handleContextMenu, { capture: true });
+    return () => node.removeEventListener("contextmenu", handleContextMenu, { capture: true });
   }, [mapReady]);
+
+  useEffect(() => {
+    if (!contextMenu) {
+      return;
+    }
+
+    const handlePointerDown = (event: MouseEvent) => {
+      if ((event.target as HTMLElement).closest(".map-context-menu")) {
+        return;
+      }
+      setContextMenu(null);
+    };
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === "Escape") {
+        setContextMenu(null);
+      }
+    };
+
+    document.addEventListener("mousedown", handlePointerDown);
+    document.addEventListener("keydown", handleKeyDown);
+    return () => {
+      document.removeEventListener("mousedown", handlePointerDown);
+      document.removeEventListener("keydown", handleKeyDown);
+    };
+  }, [contextMenu]);
 
   useEffect(() => {
     const map = mapRef.current;
@@ -804,6 +1022,7 @@ export default function ManualMapEditor({
       return;
     }
     markersRef.current.forEach((marker) => marker.setMap(null));
+    clustererRef.current?.clear();
     markerByIdRef.current.clear();
 
     if (filteredOffices.length === 0) {
@@ -812,11 +1031,16 @@ export default function ManualMapEditor({
     }
 
     const bounds = new window.kakao.maps.LatLngBounds();
+    const clusterer = new window.kakao.maps.MarkerClusterer({
+      map,
+      averageCenter: true,
+      minLevel: 6,
+      disableClickZoom: false,
+    });
     const markers = filteredOffices.map((office) => {
       const position = new window.kakao!.maps.LatLng(office.latitude, office.longitude);
       bounds.extend(position);
       const marker = new window.kakao!.maps.Marker({
-        map,
         position,
         title: office.business_name,
         image: new window.kakao!.maps.MarkerImage(
@@ -829,6 +1053,8 @@ export default function ManualMapEditor({
       return marker;
     });
 
+    clusterer.addMarkers(markers);
+    clustererRef.current = clusterer;
     markersRef.current = markers;
     if (filteredOffices.length === 1) {
       map.setCenter(
@@ -957,9 +1183,15 @@ export default function ManualMapEditor({
     const nextEdits: ManualEdit[] = [
       {
         id: `edit-${now}-${Math.random().toString(36).slice(2)}`,
+        type: "add",
         kind: "add",
+        datasetType,
+        itemKey: getItemKey(datasetType, item),
+        displayName: getItemName(item),
+        timestamp: now,
         itemId: getItemId(item, mergedItems.length),
         after: item,
+        changedFields: buildChangedFields("add", undefined, item),
         createdAt: now,
       },
     ];
@@ -972,10 +1204,16 @@ export default function ManualMapEditor({
       if (failed) {
         nextEdits.push({
           id: `resolve-${now}-${Math.random().toString(36).slice(2)}`,
+          type: "resolve",
           kind: "resolve",
+          datasetType,
+          itemKey: selectedFailedKey,
+          displayName: failed.office_name || failed.search_name || "좌표 미확인 항목",
+          timestamp: now,
           failedKey: selectedFailedKey,
           failedBefore: failed,
           failedAfter: { ...failed, resolved: true },
+          changedFields: buildResolveFields(failed, { ...failed, resolved: true }),
           createdAt: now,
         });
       }
@@ -983,6 +1221,9 @@ export default function ManualMapEditor({
 
     setEdits((current) => [...current, ...nextEdits]);
     setSelectedId(getItemId(item, mergedItems.length));
+    if (selectedFailedKey) {
+      setSelectedFailedKey(null);
+    }
     setFormErrors({});
     setMessage(selectedFailedKey ? "좌표 미확인 항목을 추가하고 해결 처리했습니다." : "새 항목을 추가했습니다.");
   }, [
@@ -996,6 +1237,65 @@ export default function ManualMapEditor({
   ]);
 
   const updateItem = useCallback(() => {
+    if (selectedFailedKey && !selectedId) {
+      if (!validateForm()) {
+        return;
+      }
+      const item = createItemFromForm();
+      if (!item) {
+        return;
+      }
+      const duplicate = findDuplicate(item);
+      if (duplicate) {
+        setMessage(
+          `중복 가능 항목이 있습니다: ${getItemName(duplicate)}. 기존 항목을 선택한 뒤 선택 항목 좌표 수정을 사용하세요.`,
+        );
+        return;
+      }
+      const failedIndex = mergedFailedItems.findIndex(
+        (failed, index) => getFailedKey(failed, index) === selectedFailedKey,
+      );
+      const failed = mergedFailedItems[failedIndex];
+      const now = new Date().toISOString();
+      const nextEdits: ManualEdit[] = [
+        {
+          id: `edit-${now}-${Math.random().toString(36).slice(2)}`,
+          type: "add",
+          kind: "add",
+          datasetType,
+          itemKey: getItemKey(datasetType, item),
+          displayName: getItemName(item),
+          timestamp: now,
+          itemId: getItemId(item, mergedItems.length),
+          after: item,
+          changedFields: buildChangedFields("add", undefined, item),
+          createdAt: now,
+        },
+      ];
+      if (failed) {
+        nextEdits.push({
+          id: `resolve-${now}-${Math.random().toString(36).slice(2)}`,
+          type: "resolve",
+          kind: "resolve",
+          datasetType,
+          itemKey: selectedFailedKey,
+          displayName: failed.office_name || failed.search_name || "좌표 미확인 항목",
+          timestamp: now,
+          failedKey: selectedFailedKey,
+          failedBefore: failed,
+          failedAfter: { ...failed, resolved: true },
+          changedFields: buildResolveFields(failed, { ...failed, resolved: true }),
+          createdAt: now,
+        });
+      }
+      setEdits((current) => [...current, ...nextEdits]);
+      setSelectedId(getItemId(item, mergedItems.length));
+      setSelectedFailedKey(null);
+      setFormErrors({});
+      setMessage("좌표 미확인 항목 좌표를 반영하고 해결 처리했습니다.");
+      return;
+    }
+
     if (!selectedId) {
       setMessage("수정할 기존 항목을 먼저 선택하세요.");
       return;
@@ -1018,16 +1318,31 @@ export default function ManualMapEditor({
       ...current,
       {
         id: `edit-${now}-${Math.random().toString(36).slice(2)}`,
+        type: "update",
         kind: "update",
+        datasetType,
+        itemKey: getItemKey(datasetType, after),
+        displayName: getItemName(after),
+        timestamp: now,
         itemId: selectedId,
         before,
         after,
+        changedFields: buildChangedFields("update", before, after),
         createdAt: now,
       },
     ]);
     setFormErrors({});
     setMessage("선택 항목 좌표 수정을 변경사항에 추가했습니다.");
-  }, [createItemFromForm, mergedItems, selectedId, validateForm]);
+  }, [
+    createItemFromForm,
+    datasetType,
+    findDuplicate,
+    mergedFailedItems,
+    mergedItems.length,
+    selectedFailedKey,
+    selectedId,
+    validateForm,
+  ]);
 
   const selectFailed = useCallback(
     (failed: HighwayFailedOffice, index: number) => {
@@ -1059,6 +1374,7 @@ export default function ManualMapEditor({
 
   const revertEdit = useCallback((editId: string) => {
     setEdits((current) => current.filter((edit) => edit.id !== editId));
+    setSelectedEdit(null);
   }, []);
 
   const resetEdits = useCallback(() => {
@@ -1088,6 +1404,8 @@ export default function ManualMapEditor({
   const additions = edits.filter((edit) => edit.kind === "add");
   const updates = edits.filter((edit) => edit.kind === "update");
   const resolutions = edits.filter((edit) => edit.kind === "resolve");
+  const selectedEditFields = selectedEdit ? getEditFields(selectedEdit) : [];
+  const hasSelectedTarget = Boolean(selectedId || selectedFailedKey);
 
   return (
     <main className="editor-shell">
@@ -1202,25 +1520,27 @@ export default function ManualMapEditor({
               style={{ left: contextMenu.x, top: contextMenu.y }}
               role="menu"
             >
-              <button
-                type="button"
-                role="menuitem"
-                onClick={() => startAddAtCoordinate(contextMenu.latitude, contextMenu.longitude)}
-              >
-                여기에 새 항목 추가
-              </button>
-              <button
-                type="button"
-                role="menuitem"
-                disabled={!selectedId}
-                onClick={() =>
-                  moveSelectedToCoordinate(contextMenu.latitude, contextMenu.longitude)
-                }
-              >
-                선택 항목 좌표를 여기로 이동
-              </button>
+              {hasSelectedTarget ? (
+                <button
+                  type="button"
+                  role="menuitem"
+                  onClick={() =>
+                    moveSelectedToCoordinate(contextMenu.latitude, contextMenu.longitude)
+                  }
+                >
+                  이 위치를 선택 항목 좌표로 사용
+                </button>
+              ) : (
+                <button
+                  type="button"
+                  role="menuitem"
+                  onClick={() => startAddAtCoordinate(contextMenu.latitude, contextMenu.longitude)}
+                >
+                  여기에 새 항목 추가
+                </button>
+              )}
               <button type="button" role="menuitem" onClick={() => setContextMenu(null)}>
-                메뉴 닫기
+                닫기
               </button>
             </div>
           )}
@@ -1243,6 +1563,9 @@ export default function ManualMapEditor({
                 폼 비우기
               </button>
             </div>
+            {selectedFailedKey && (
+              <p className="form-hint">지도에서 우클릭하여 이 항목의 좌표를 선택할 수 있습니다.</p>
+            )}
 
             <div className="field-grid">
               {fields.map((field) => (
@@ -1357,19 +1680,119 @@ export default function ManualMapEditor({
                 {(items as ManualEdit[]).length === 0 && <p>변경 없음</p>}
                 {(items as ManualEdit[]).map((edit) => (
                   <div className="change-item" key={edit.id}>
-                    <span>
-                      {edit.after
-                        ? getItemName(edit.after)
-                        : edit.failedAfter?.office_name || edit.failedAfter?.search_name || "해결 항목"}
+                    <div className="change-summary">
+                      <strong>{getEditName(edit)}</strong>
+                      <span>
+                        {getSupportText(edit.after || edit.before, edit.failedAfter || edit.failedBefore)}
+                      </span>
+                    </div>
+                    <span className={`change-badge ${edit.kind}`}>
+                      {edit.kind === "add" ? "추가" : edit.kind === "update" ? "수정" : "해결"}
                     </span>
-                    <button type="button" onClick={() => revertEdit(edit.id)}>
-                      되돌리기
+                    <button type="button" onClick={() => setSelectedEdit(edit)}>
+                      확인
                     </button>
                   </div>
                 ))}
               </div>
             ))}
           </section>
+
+          {selectedEdit && (
+            <div className="modal-backdrop" role="presentation" onClick={() => setSelectedEdit(null)}>
+              <section
+                className="change-modal"
+                role="dialog"
+                aria-modal="true"
+                aria-label="변경사항 확인"
+                onClick={(event) => event.stopPropagation()}
+              >
+                <div className="modal-header">
+                  <div>
+                    <h2>변경사항 확인</h2>
+                    <p>{getEditName(selectedEdit)}</p>
+                  </div>
+                  <button type="button" onClick={() => setSelectedEdit(null)}>
+                    닫기
+                  </button>
+                </div>
+                <dl className="modal-meta">
+                  <div>
+                    <dt>변경 유형</dt>
+                    <dd>
+                      {selectedEdit.kind === "add"
+                        ? "추가"
+                        : selectedEdit.kind === "update"
+                          ? "수정"
+                          : "해결"}
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>기준 키</dt>
+                    <dd>
+                      {selectedEdit.itemKey ||
+                        getItemKey(datasetType, selectedEdit.after || selectedEdit.before) ||
+                        selectedEdit.failedKey ||
+                        "(없음)"}
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>임시 변경 시각</dt>
+                    <dd>{selectedEdit.timestamp || selectedEdit.createdAt}</dd>
+                  </div>
+                </dl>
+
+                {selectedEdit.kind === "resolve" && (
+                  <p className="resolve-note">
+                    이 항목은 좌표 미확인 목록에서 해결 처리되며, 다운로드용 failed JSON에서는 제거됩니다.
+                  </p>
+                )}
+
+                <div className="diff-table-wrap">
+                  <table className="diff-table">
+                    <thead>
+                      <tr>
+                        <th>field</th>
+                        <th>before</th>
+                        <th>after</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {selectedEditFields.length === 0 && (
+                        <tr>
+                          <td colSpan={3}>변경된 필드가 없습니다.</td>
+                        </tr>
+                      )}
+                      {selectedEditFields.map((field) => (
+                        <tr key={`${selectedEdit.id}-${field.key}`}>
+                          <th>{field.label}</th>
+                          <td>{formatDiffValue(field.before)}</td>
+                          <td>{formatDiffValue(field.after)}</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+
+                <div className="modal-actions">
+                  <button type="button" onClick={() => setSelectedEdit(null)}>
+                    닫기
+                  </button>
+                  <button
+                    className="danger"
+                    type="button"
+                    onClick={() => {
+                      if (window.confirm("이 변경사항을 되돌리시겠습니까?")) {
+                        revertEdit(selectedEdit.id);
+                      }
+                    }}
+                  >
+                    되돌리기
+                  </button>
+                </div>
+              </section>
+            </div>
+          )}
 
           <p className="static-save-note">
             정적 GitHub Pages 환경에서는 JSON 파일을 직접 저장할 수 없습니다. 다운로드한 JSON
