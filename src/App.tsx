@@ -1,13 +1,25 @@
 import { useEffect, useState } from "react";
 import HomePage from "./pages/HomePage";
+import HighwayTollOfficeEditPage from "./pages/HighwayTollOfficeEditPage";
 import HighwayTollOfficeMapPage from "./pages/HighwayTollOfficeMapPage";
+import ScaleOfficeEditPage from "./pages/ScaleOfficeEditPage";
 import ScaleOfficeMapPage from "./pages/ScaleOfficeMapPage";
 
-type Route = "/" | "/scale-offices" | "/highway-toll-offices";
+type Route =
+  | "/"
+  | "/scale-offices"
+  | "/scale-offices/edit"
+  | "/highway-toll-offices"
+  | "/highway-toll-offices/edit";
 
 function getRouteFromHash(): Route {
   const hash = window.location.hash.replace(/^#/, "") || "/";
-  if (hash === "/scale-offices" || hash === "/highway-toll-offices") {
+  if (
+    hash === "/scale-offices" ||
+    hash === "/scale-offices/edit" ||
+    hash === "/highway-toll-offices" ||
+    hash === "/highway-toll-offices/edit"
+  ) {
     return hash;
   }
   return "/";
@@ -26,8 +38,16 @@ export default function App() {
     return <ScaleOfficeMapPage />;
   }
 
+  if (route === "/scale-offices/edit") {
+    return <ScaleOfficeEditPage />;
+  }
+
   if (route === "/highway-toll-offices") {
     return <HighwayTollOfficeMapPage />;
+  }
+
+  if (route === "/highway-toll-offices/edit") {
+    return <HighwayTollOfficeEditPage />;
   }
 
   return <HomePage />;

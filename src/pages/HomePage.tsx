@@ -19,6 +19,9 @@ export default function HomePage() {
               <small>민간계량소 위치와 영업상태를 확인합니다.</small>
             </span>
           </a>
+          <a className="home-edit-link" href="#/scale-offices/edit">
+            전국 민간계량소 편집
+          </a>
 
           <a className="home-card-button" href="#/highway-toll-offices">
             <span className="home-card-icon" aria-hidden="true">
@@ -28,6 +31,9 @@ export default function HomePage() {
               <strong>전국 영업소 지도</strong>
               <small>전국 고속도로 영업소 위치를 확인합니다.</small>
             </span>
+          </a>
+          <a className="home-edit-link" href="#/highway-toll-offices/edit">
+            전국 영업소 편집
           </a>
         </nav>
       </section>

@@ -1,6 +1,7 @@
 import { useCallback } from "react";
 import MapView from "../components/MapView";
 import type { HighwayTollOffice, MapOffice } from "../types";
+import { getDataUrl } from "../utils/kakaoMap";
 
 export default function HighwayTollOfficeMapPage() {
   const normalizeItem = useCallback((office: HighwayTollOffice, index: number): MapOffice | null => {
@@ -31,7 +32,7 @@ export default function HighwayTollOfficeMapPage() {
     <MapView
       title="전국 영업소 지도"
       description="한국도로공사 영업소 위치정보를 정적 JSON 데이터로 표시합니다."
-      dataUrl="/data/highway-toll-offices.json"
+      dataUrl={getDataUrl("highway-toll-offices.json")}
       emptyMessage="전국 영업소 지도 데이터 준비 중입니다."
       searchPlaceholder="영업소명, 주소, 노선명 검색"
       normalizeItem={normalizeItem}
