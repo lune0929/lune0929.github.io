@@ -42,7 +42,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T05:47:04.103450+00:00"
+    "address_updated_at": "2026-04-29T04:27:12.917896+00:00"
   },
   {
     "id": "069",
@@ -222,7 +222,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T05:47:04.103450+00:00"
+    "address_updated_at": "2026-04-29T04:27:12.917896+00:00"
   },
   {
     "id": "106",
@@ -312,7 +312,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T05:47:04.103450+00:00"
+    "address_updated_at": "2026-04-29T04:27:12.917896+00:00"
   },
   {
     "id": "108",
@@ -402,7 +402,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T05:47:04.103450+00:00"
+    "address_updated_at": "2026-04-29T04:27:12.917896+00:00"
   },
   {
     "id": "111",
@@ -672,7 +672,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T05:47:04.103450+00:00"
+    "address_updated_at": "2026-04-29T04:27:12.917896+00:00"
   },
   {
     "id": "282",
@@ -817,10 +817,10 @@
     "normalized_office_name": "송악",
     "direction": "",
     "route_name": "서해안선",
-    "sido": "충청남도",
-    "sigungu": "당진시",
-    "address": "충남 당진시 송악읍 복운리 29",
-    "road_address": "충청남도 당진시 송악읍 구래길 245",
+    "sido": "",
+    "sigungu": "",
+    "address": "",
+    "road_address": "",
     "latitude": 36.934057,
     "longitude": 126.785895,
     "operation_type": "",
@@ -849,10 +849,9 @@
       "yValue": "36.934057"
     },
     "fail_reason": "",
-    "address_geocode_status": "success",
+    "address_geocode_status": "failed",
     "address_geocode_source": "kakao_coord2address",
-    "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T05:47:04.103450+00:00"
+    "address_geocode_note": "HTTP 502: {\"errorType\":\"BadGateway\",\"message\":\"Unexpected endpoint error\"}"
   },
   {
     "id": "288",
@@ -942,7 +941,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T05:47:04.103450+00:00"
+    "address_updated_at": "2026-04-29T04:27:12.917896+00:00"
   },
   {
     "id": "299",
@@ -1392,7 +1391,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T05:47:04.103450+00:00"
+    "address_updated_at": "2026-04-29T04:27:12.917896+00:00"
   },
   {
     "id": "511",
@@ -1437,7 +1436,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T05:47:04.103450+00:00"
+    "address_updated_at": "2026-04-29T04:27:12.917896+00:00"
   },
   {
     "id": "711",
@@ -1544,10 +1543,9 @@
       "yValue": null
     },
     "fail_reason": "",
-    "address_geocode_status": "success",
+    "address_geocode_status": "failed",
     "address_geocode_source": "kakao_coord2address",
-    "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T05:47:04.103450+00:00"
+    "address_geocode_note": "no_field_updated"
   },
   {
     "id": "717",

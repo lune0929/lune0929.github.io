@@ -17,15 +17,14 @@
     "status": "폐업",
     "phone": "02-431-8331",
     "address": "서울특별시 용산구 한남동 167번지 1 호",
-    "road_address": "서울특별시 용산구 한남대로 31",
+    "road_address": "",
     "longitude": 127.008487,
     "latitude": 37.5318115,
     "sido": "서울특별시",
     "sigungu": "용산구",
-    "address_geocode_status": "success",
+    "address_geocode_status": "failed",
     "address_geocode_source": "kakao_coord2address",
-    "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_geocode_note": "HTTP 502: {\"errorType\":\"BadGateway\",\"message\":\"Unexpected endpoint error\"}"
   },
   {
     "id": "7",
@@ -113,7 +112,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "16",
@@ -165,7 +164,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "20",
@@ -205,7 +204,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "23",
@@ -220,7 +219,7 @@
     "sigungu": "성북구",
     "address_geocode_status": "failed",
     "address_geocode_source": "kakao_coord2address",
-    "address_geocode_note": "no_field_updated"
+    "address_geocode_note": "HTTP 502: {\"errorType\":\"BadGateway\",\"message\":\"Unexpected endpoint error\"}"
   },
   {
     "id": "24",
@@ -240,15 +239,14 @@
     "status": "취소/말소/만료/정지/중지",
     "phone": "",
     "address": "서울특별시 도봉구 창동 299번지",
-    "road_address": "서울특별시 도봉구 해등로 118",
+    "road_address": "",
     "longitude": 127.0423664,
     "latitude": 37.6540057,
     "sido": "서울특별시",
     "sigungu": "도봉구",
-    "address_geocode_status": "success",
+    "address_geocode_status": "failed",
     "address_geocode_source": "kakao_coord2address",
-    "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_geocode_note": "HTTP 502: {\"errorType\":\"BadGateway\",\"message\":\"Unexpected endpoint error\"}"
   },
   {
     "id": "27",
@@ -408,7 +406,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "44",
@@ -439,16 +437,15 @@
     "business_name": "오류계량증명업소",
     "status": "영업/정상",
     "phone": "26827454",
-    "address": "서울 구로구 오류동 90-21",
+    "address": "",
     "road_address": "서울특별시 구로구 경인로 103 (오류동)",
     "longitude": 126.8336006,
     "latitude": 37.4922599,
     "sido": "서울특별시",
     "sigungu": "구로구",
-    "address_geocode_status": "success",
+    "address_geocode_status": "failed",
     "address_geocode_source": "kakao_coord2address",
-    "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_geocode_note": "HTTP 502: {\"errorType\":\"BadGateway\",\"message\":\"Unexpected endpoint error\"}"
   },
   {
     "id": "48",
@@ -701,7 +698,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "70",
@@ -717,7 +714,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "71",
@@ -1042,7 +1039,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "101",
@@ -1082,7 +1079,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "104",
@@ -1110,7 +1107,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "106",
@@ -1270,7 +1267,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "119",
@@ -1493,7 +1490,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "138",
@@ -1629,7 +1626,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "151",
@@ -1789,7 +1786,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "164",
@@ -1817,7 +1814,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "166",
@@ -2265,7 +2262,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "208",
@@ -2401,7 +2398,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "219",
@@ -2417,7 +2414,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "220",
@@ -2433,7 +2430,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "221",
@@ -2449,7 +2446,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "222",
@@ -2801,7 +2798,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "252",
@@ -2817,7 +2814,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "253",
@@ -3115,7 +3112,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "285",
@@ -3191,7 +3188,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "292",
@@ -3207,7 +3204,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "293",
@@ -3394,7 +3391,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "308",
@@ -3422,7 +3419,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "310",
@@ -3498,7 +3495,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "317",
@@ -3550,7 +3547,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "321",
@@ -3566,7 +3563,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "322",
@@ -3702,7 +3699,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "336",
@@ -3826,7 +3823,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "346",
@@ -3842,7 +3839,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "347",
@@ -4014,7 +4011,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "364",
@@ -4069,7 +4066,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "370",
@@ -4109,7 +4106,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "374",
@@ -4164,7 +4161,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "378",
@@ -4252,7 +4249,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "385",
@@ -4280,7 +4277,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "388",
@@ -4296,7 +4293,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "389",
@@ -4348,7 +4345,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "394",
@@ -4712,7 +4709,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "425",
@@ -4740,7 +4737,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "427",
@@ -4780,7 +4777,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "430",
@@ -4808,7 +4805,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "432",
@@ -4824,7 +4821,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "433",
@@ -4840,7 +4837,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "434",
@@ -4856,7 +4853,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "436",
@@ -5040,7 +5037,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "452",
@@ -5056,7 +5053,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "453",
@@ -5072,7 +5069,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "454",
@@ -5088,7 +5085,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "455",
@@ -5104,7 +5101,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "456",
@@ -5120,7 +5117,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "457",
@@ -5136,7 +5133,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "458",
@@ -5176,7 +5173,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "461",
@@ -5192,7 +5189,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "463",
@@ -5463,7 +5460,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "489",
@@ -5842,7 +5839,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "521",
@@ -6029,7 +6026,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "537",
@@ -6045,7 +6042,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "538",
@@ -6373,7 +6370,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "578",
@@ -6644,7 +6641,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "603",
@@ -6660,7 +6657,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "604",
@@ -6676,7 +6673,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "605",
@@ -6731,7 +6728,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "609",
@@ -6795,7 +6792,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "617",
@@ -6811,7 +6808,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "618",
@@ -6827,7 +6824,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "619",
@@ -6843,7 +6840,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "620",
@@ -6910,7 +6907,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "626",
@@ -6938,7 +6935,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "628",
@@ -7002,7 +6999,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "633",
@@ -7018,7 +7015,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "635",
@@ -7130,7 +7127,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "646",
@@ -7146,7 +7143,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "647",
@@ -7318,7 +7315,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "662",
@@ -7502,7 +7499,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "680",
@@ -7554,7 +7551,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "684",
@@ -7678,7 +7675,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "695",
@@ -7778,7 +7775,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "705",
@@ -7830,7 +7827,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "709",
@@ -7870,7 +7867,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "713",
@@ -7886,7 +7883,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "716",
@@ -7902,7 +7899,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "717",
@@ -7918,7 +7915,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "718",
@@ -8045,7 +8042,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "729",
@@ -8085,7 +8082,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "732",
@@ -8101,7 +8098,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "733",
@@ -8129,7 +8126,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "735",
@@ -8145,7 +8142,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "736",
@@ -8185,7 +8182,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "740",
@@ -8516,7 +8513,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "769",
@@ -8556,7 +8553,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "774",
@@ -8611,7 +8608,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "778",
@@ -8627,7 +8624,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "779",
@@ -8685,7 +8682,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "783",
@@ -8740,7 +8737,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "794",
@@ -8795,7 +8792,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "798",
@@ -8835,7 +8832,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "802",
@@ -8923,7 +8920,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "810",
@@ -8939,7 +8936,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "811",
@@ -8967,7 +8964,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "813",
@@ -9103,7 +9100,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "825",
@@ -9119,7 +9116,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "826",
@@ -9135,7 +9132,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "827",
@@ -9151,7 +9148,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "828",
@@ -9179,7 +9176,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "830",
@@ -9207,7 +9204,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "832",
@@ -9283,7 +9280,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "838",
@@ -9593,7 +9590,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "870",
@@ -9888,7 +9885,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "897",
@@ -9916,7 +9913,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "899",
@@ -9932,7 +9929,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "900",
@@ -10068,7 +10065,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "911",
@@ -10108,7 +10105,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "914",
@@ -10136,7 +10133,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "918",
@@ -10236,7 +10233,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "927",
@@ -10264,7 +10261,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "932",
@@ -10340,7 +10337,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "941",
@@ -10356,7 +10353,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "942",
@@ -10372,7 +10369,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "943",
@@ -10400,7 +10397,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "945",
@@ -10416,7 +10413,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "946",
@@ -10432,7 +10429,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "947",
@@ -10460,7 +10457,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "949",
@@ -10476,7 +10473,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "950",
@@ -10516,7 +10513,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "953",
@@ -10556,7 +10553,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "956",
@@ -10671,7 +10668,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "967",
@@ -10933,7 +10930,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "989",
@@ -10949,7 +10946,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "990",
@@ -11154,7 +11151,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1008",
@@ -11245,7 +11242,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1016",
@@ -11285,7 +11282,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1019",
@@ -11325,7 +11322,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1023",
@@ -11377,7 +11374,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1028",
@@ -11573,7 +11570,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1044",
@@ -11661,7 +11658,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1053",
@@ -11851,7 +11848,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1069",
@@ -12047,7 +12044,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1085",
@@ -12159,7 +12156,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1094",
@@ -12187,7 +12184,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1096",
@@ -12203,7 +12200,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1097",
@@ -12219,7 +12216,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1098",
@@ -12235,7 +12232,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1099",
@@ -12287,7 +12284,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1103",
@@ -12303,7 +12300,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1104",
@@ -12343,7 +12340,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1107",
@@ -12494,7 +12491,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1119",
@@ -12510,7 +12507,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1120",
@@ -12526,7 +12523,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1121",
@@ -12569,7 +12566,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1124",
@@ -12597,7 +12594,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1126",
@@ -12613,7 +12610,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1127",
@@ -12629,7 +12626,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1128",
@@ -12645,7 +12642,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1129",
@@ -12943,7 +12940,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1156",
@@ -13031,7 +13028,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1163",
@@ -13047,7 +13044,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1164",
@@ -13063,7 +13060,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1165",
@@ -13079,7 +13076,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1166",
@@ -13095,7 +13092,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1167",
@@ -13150,7 +13147,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1171",
@@ -13166,7 +13163,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1172",
@@ -13182,7 +13179,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1173",
@@ -13198,23 +13195,22 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1174",
     "business_name": "우리자원",
     "status": "영업/정상",
     "phone": "",
-    "address": "충북 음성군 음성읍 감우리 341-2",
+    "address": "",
     "road_address": "충청북도 음성군 음성읍 음성로 693",
     "longitude": 127.6350434,
     "latitude": 36.9635529,
     "sido": "충청북도",
     "sigungu": "음성군",
-    "address_geocode_status": "success",
+    "address_geocode_status": "failed",
     "address_geocode_source": "kakao_coord2address",
-    "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_geocode_note": "HTTP 504: {\"errorType\":\"GatewayTimeout\",\"message\":\"Request Timeout(timeout=3000)\"}"
   },
   {
     "id": "1175",
@@ -13230,7 +13226,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1176",
@@ -13366,7 +13362,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1190",
@@ -13634,7 +13630,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1212",
@@ -13722,7 +13718,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1222",
@@ -13786,7 +13782,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1230",
@@ -13814,7 +13810,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1232",
@@ -13830,7 +13826,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1233",
@@ -13870,7 +13866,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1237",
@@ -13982,7 +13978,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1247",
@@ -14196,7 +14192,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1264",
@@ -14371,7 +14367,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1279",
@@ -14555,7 +14551,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1295",
@@ -14766,7 +14762,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1312",
@@ -14794,7 +14790,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1314",
@@ -14810,7 +14806,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1315",
@@ -14970,7 +14966,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1331",
@@ -14998,7 +14994,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1334",
@@ -15065,7 +15061,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1339",
@@ -15117,7 +15113,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1344",
@@ -15205,7 +15201,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1351",
@@ -15233,7 +15229,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1354",
@@ -15669,7 +15665,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1392",
@@ -16012,7 +16008,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1421",
@@ -16172,7 +16168,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1434",
@@ -16188,7 +16184,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1435",
@@ -16372,7 +16368,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1452",
@@ -16532,7 +16528,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1466",
@@ -16560,7 +16556,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1468",
@@ -16600,7 +16596,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1472",
@@ -16733,7 +16729,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1484",
@@ -16785,7 +16781,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1488",
@@ -16897,7 +16893,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1497",
@@ -16961,7 +16957,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1502",
@@ -16977,7 +16973,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1503",
@@ -17029,7 +17025,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1507",
@@ -17069,7 +17065,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1510",
@@ -17145,7 +17141,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1517",
@@ -17209,7 +17205,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1522",
@@ -17249,7 +17245,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1525",
@@ -17325,7 +17321,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1532",
@@ -17341,7 +17337,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1533",
@@ -17549,7 +17545,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1551",
@@ -17589,7 +17585,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1554",
@@ -17680,7 +17676,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1561",
@@ -17795,7 +17791,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1576",
@@ -17859,7 +17855,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1581",
@@ -17959,7 +17955,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1590",
@@ -17975,7 +17971,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1591",
@@ -18015,7 +18011,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1594",
@@ -18079,7 +18075,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1599",
@@ -18095,7 +18091,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1600",
@@ -18111,7 +18107,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1601",
@@ -18127,7 +18123,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1602",
@@ -18143,7 +18139,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1603",
@@ -18159,7 +18155,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1604",
@@ -18199,7 +18195,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1607",
@@ -18659,7 +18655,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1646",
@@ -18735,7 +18731,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1652",
@@ -18775,7 +18771,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1655",
@@ -18791,7 +18787,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1656",
@@ -18819,7 +18815,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1659",
@@ -18835,7 +18831,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1660",
@@ -18851,7 +18847,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1661",
@@ -18954,7 +18950,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1670",
@@ -19093,7 +19089,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1686",
@@ -19121,7 +19117,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1689",
@@ -19137,7 +19133,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1690",
@@ -19468,7 +19464,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1723",
@@ -19511,7 +19507,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1726",
@@ -19563,7 +19559,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1731",
@@ -19834,7 +19830,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1753",
@@ -19910,7 +19906,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1759",
@@ -19926,7 +19922,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1760",
@@ -20002,7 +19998,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1766",
@@ -20078,7 +20074,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1773",
@@ -20142,7 +20138,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1778",
@@ -20158,7 +20154,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1779",
@@ -20198,7 +20194,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1782",
@@ -20214,7 +20210,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1783",
@@ -20230,7 +20226,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1785",
@@ -20510,7 +20506,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1809",
@@ -20586,7 +20582,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1816",
@@ -20602,7 +20598,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1817",
@@ -20618,7 +20614,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1818",
@@ -20634,7 +20630,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1820",
@@ -20689,7 +20685,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1825",
@@ -20717,7 +20713,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1827",
@@ -20808,7 +20804,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1837",
@@ -20824,7 +20820,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1838",
@@ -20852,7 +20848,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1840",
@@ -20868,7 +20864,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1841",
@@ -20884,7 +20880,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1842",
@@ -20900,7 +20896,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1843",
@@ -20916,7 +20912,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1844",
@@ -20932,7 +20928,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1845",
@@ -21047,7 +21043,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1856",
@@ -21195,7 +21191,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1868",
@@ -21415,7 +21411,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1889",
@@ -21467,7 +21463,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1894",
@@ -21534,7 +21530,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1900",
@@ -21562,7 +21558,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1902",
@@ -21614,7 +21610,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1906",
@@ -21630,7 +21626,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1907",
@@ -21646,7 +21642,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1908",
@@ -21953,7 +21949,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1934",
@@ -22005,7 +22001,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1939",
@@ -22021,7 +22017,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1940",
@@ -22037,7 +22033,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1941",
@@ -22161,7 +22157,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1952",
@@ -22189,7 +22185,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1954",
@@ -22205,7 +22201,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1955",
@@ -22221,7 +22217,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1956",
@@ -22237,7 +22233,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1957",
@@ -22313,7 +22309,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1963",
@@ -22341,7 +22337,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1965",
@@ -22357,7 +22353,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1966",
@@ -22373,7 +22369,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1968",
@@ -22488,7 +22484,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1980",
@@ -22504,7 +22500,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1981",
@@ -22691,7 +22687,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1997",
@@ -22707,7 +22703,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "1998",
@@ -22906,7 +22902,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "2016",
@@ -22922,7 +22918,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "2018",
@@ -23058,7 +23054,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "2029",
@@ -23110,7 +23106,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "2033",
@@ -23198,7 +23194,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "2040",
@@ -23214,7 +23210,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "2042",
@@ -23230,7 +23226,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "2043",
@@ -23246,7 +23242,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "2044",
@@ -23289,7 +23285,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "2047",
@@ -23353,7 +23349,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "2057",
@@ -23369,7 +23365,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "2058",
@@ -23397,7 +23393,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "2063",
@@ -23428,7 +23424,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "2066",
@@ -23444,7 +23440,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "2067",
@@ -23556,7 +23552,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "2078",
@@ -23572,7 +23568,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "2079",
@@ -23711,7 +23707,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "2092",
@@ -23742,7 +23738,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "2094",
@@ -23758,7 +23754,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "2095",
@@ -23774,7 +23770,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "2096",
@@ -24225,7 +24221,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "2137",
@@ -24301,7 +24297,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "2145",
@@ -24329,7 +24325,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "2148",
@@ -24381,7 +24377,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "2154",
@@ -24421,7 +24417,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "2157",
@@ -24548,15 +24544,16 @@
     "business_name": "성하농장",
     "status": "영업/정상",
     "phone": "061-452-1931",
-    "address": "",
+    "address": "전남 무안군 현경면 수양리 578-10",
     "road_address": "전라남도 무안군 현경면 팔방길 110",
     "longitude": 126.3927646,
     "latitude": 35.0632597,
     "sido": "전라남도",
     "sigungu": "무안군",
-    "address_geocode_status": "failed",
+    "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
-    "address_geocode_note": "HTTP 502: {\"errorType\":\"BadGateway\",\"message\":\"Unexpected endpoint error\"}"
+    "address_geocode_note": "좌표 기반 주소 자동 보강",
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "2172",
@@ -24587,7 +24584,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "2174",
@@ -24603,7 +24600,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "2175",
@@ -24619,7 +24616,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "2176",
@@ -24869,7 +24866,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "2200",
@@ -24885,7 +24882,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "2201",
@@ -24913,7 +24910,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "2203",
@@ -24929,7 +24926,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "2204",
@@ -24945,7 +24942,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "2205",
@@ -25144,7 +25141,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "2223",
@@ -25196,7 +25193,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "2227",
@@ -25296,7 +25293,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "2236",
@@ -25336,7 +25333,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "2240",
@@ -25364,7 +25361,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "2242",
@@ -25452,7 +25449,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "2250",
@@ -25468,7 +25465,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "2251",
@@ -25484,7 +25481,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "2252",
@@ -25695,7 +25692,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "2269",
@@ -25822,7 +25819,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "2280",
@@ -26018,7 +26015,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "2296",
@@ -26133,7 +26130,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "2305",
@@ -26149,7 +26146,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "2306",
@@ -26165,7 +26162,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "2307",
@@ -26181,7 +26178,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "2308",
@@ -26221,7 +26218,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "2311",
@@ -26558,7 +26555,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "2339",
@@ -26622,7 +26619,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "2345",
@@ -26713,7 +26710,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "2353",
@@ -26741,7 +26738,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "2355",
@@ -26757,7 +26754,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "2356",
@@ -26797,7 +26794,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "2363",
@@ -26849,7 +26846,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "2367",
@@ -26964,7 +26961,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "2380",
@@ -27040,7 +27037,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "2386",
@@ -27188,7 +27185,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "2398",
@@ -27204,7 +27201,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "2399",
@@ -27244,7 +27241,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "2402",
@@ -27368,7 +27365,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "2412",
@@ -27396,7 +27393,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "2414",
@@ -27508,7 +27505,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "2424",
@@ -27548,7 +27545,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "2427",
@@ -27588,7 +27585,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "2430",
@@ -27664,7 +27661,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "2436",
@@ -27932,7 +27929,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "2471",
@@ -28116,7 +28113,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "2487",
@@ -28144,7 +28141,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "2489",
@@ -28379,7 +28376,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "2508",
@@ -28494,15 +28491,16 @@
     "business_name": "(주)신영금속",
     "status": "영업/정상",
     "phone": "054-954-1871",
-    "address": "",
+    "address": "경북 고령군 대가야읍 장기리 284-3",
     "road_address": "경상북도 고령군 대가야읍 장기공단1길 38-23",
     "longitude": 128.2734422,
     "latitude": 35.7235627,
     "sido": "경상북도",
     "sigungu": "고령군",
-    "address_geocode_status": "failed",
+    "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
-    "address_geocode_note": "HTTP 502: {\"errorType\":\"BadGateway\",\"message\":\"Unexpected endpoint error\"}"
+    "address_geocode_note": "좌표 기반 주소 자동 보강",
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "2519",
@@ -28530,7 +28528,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "2521",
@@ -28546,7 +28544,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "2522",
@@ -28610,22 +28608,23 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "2527",
     "business_name": "창조공인계량증명업소",
     "status": "폐업",
     "phone": "054-933-8203",
-    "address": "",
+    "address": "경북 성주군 성주읍 예산리 653-4",
     "road_address": "경상북도 성주군 성주읍 성주순환로 117",
     "longitude": 128.2818325,
     "latitude": 35.9268105,
     "sido": "경상북도",
     "sigungu": "성주군",
-    "address_geocode_status": "failed",
+    "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
-    "address_geocode_note": "HTTP 502: {\"errorType\":\"BadGateway\",\"message\":\"Unexpected endpoint error\"}"
+    "address_geocode_note": "좌표 기반 주소 자동 보강",
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "2528",
@@ -28641,7 +28640,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "2529",
@@ -28792,7 +28791,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "2542",
@@ -28808,7 +28807,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "2543",
@@ -29022,15 +29021,16 @@
     "business_name": "북삼공인계량소",
     "status": "영업/정상",
     "phone": "054-973-1241",
-    "address": "",
+    "address": "경북 칠곡군 북삼읍 보손리 608",
     "road_address": "경상북도 칠곡군 북삼읍 칠곡대로 176",
     "longitude": 128.3177433,
     "latitude": 36.0536354,
     "sido": "경상북도",
     "sigungu": "칠곡군",
-    "address_geocode_status": "failed",
+    "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
-    "address_geocode_note": "HTTP 502: {\"errorType\":\"BadGateway\",\"message\":\"Unexpected endpoint error\"}"
+    "address_geocode_note": "좌표 기반 주소 자동 보강",
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "2561",
@@ -29118,7 +29118,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "2568",
@@ -29182,7 +29182,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "2573",
@@ -29273,7 +29273,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "2580",
@@ -29301,7 +29301,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "2583",
@@ -29341,7 +29341,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "2588",
@@ -29357,7 +29357,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "2589",
@@ -29385,7 +29385,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "2591",
@@ -29746,7 +29746,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "2625",
@@ -29774,7 +29774,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "2627",
@@ -29802,7 +29802,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "2629",
@@ -29914,7 +29914,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "2640",
@@ -29978,7 +29978,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "2645",
@@ -30081,7 +30081,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "2655",
@@ -30097,7 +30097,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "2656",
@@ -30245,7 +30245,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "2670",
@@ -30501,7 +30501,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "2692",
@@ -30541,7 +30541,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "2695",
@@ -30569,7 +30569,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "2697",
@@ -30597,7 +30597,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "2699",
@@ -30664,7 +30664,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "2704",
@@ -30680,7 +30680,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "2705",
@@ -30711,7 +30711,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "2707",
@@ -30727,7 +30727,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "2708",
@@ -30743,7 +30743,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "2709",
@@ -30783,7 +30783,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "2712",
@@ -30847,7 +30847,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "2717",
@@ -31019,7 +31019,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "2739",
@@ -31227,7 +31227,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "2756",
@@ -31255,22 +31255,23 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "2758",
     "business_name": "현포공인계량사",
     "status": "영업/정상",
     "phone": "055-982-9815",
-    "address": "",
+    "address": "경남 함안군 군북면 유현리 806-41",
     "road_address": "경상남도 함안군 군북면 현포로 152",
     "longitude": 128.3532947,
     "latitude": 35.2898367,
     "sido": "경상남도",
     "sigungu": "함안군",
-    "address_geocode_status": "failed",
+    "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
-    "address_geocode_note": "HTTP 502: {\"errorType\":\"BadGateway\",\"message\":\"Unexpected endpoint error\"}"
+    "address_geocode_note": "좌표 기반 주소 자동 보강",
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "2759",
@@ -31286,7 +31287,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "2760",
@@ -31302,7 +31303,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "2761",
@@ -31534,7 +31535,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "2780",
@@ -31769,7 +31770,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "2801",
@@ -31821,7 +31822,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "2805",
@@ -31909,7 +31910,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "2815",
@@ -31917,14 +31918,15 @@
     "status": "폐업",
     "phone": "",
     "address": "경상남도 함양군 함양읍 교산리 155번지 라비두스아파트 404 13",
-    "road_address": "",
+    "road_address": "경상남도 함양군 함양읍 교산중앙길 23",
     "longitude": 127.7307138,
     "latitude": 35.5228853,
     "sido": "경상남도",
     "sigungu": "함양군",
-    "address_geocode_status": "failed",
+    "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
-    "address_geocode_note": "HTTP 502: {\"errorType\":\"BadGateway\",\"message\":\"Unexpected endpoint error\"}"
+    "address_geocode_note": "좌표 기반 주소 자동 보강",
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "2816",
@@ -32888,7 +32890,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "2930",
@@ -33012,7 +33014,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "2953",
@@ -33094,30 +33096,32 @@
     "business_name": "(주)한국자원",
     "status": "영업/정상",
     "phone": "031-837-0602",
-    "address": "",
+    "address": "경기 양주시 광적면 덕도리 844-6",
     "road_address": "경기도 양주시 광적면 화합로 168",
     "longitude": 126.9563383,
     "latitude": 37.8570388,
     "sido": "경기도",
     "sigungu": "양주시",
-    "address_geocode_status": "failed",
+    "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
-    "address_geocode_note": "HTTP 502: {\"errorType\":\"BadGateway\",\"message\":\"Unexpected endpoint error\"}"
+    "address_geocode_note": "좌표 기반 주소 자동 보강",
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "2960",
     "business_name": "대영계량",
     "status": "영업/정상",
     "phone": "031-864-8301",
-    "address": "",
+    "address": "경기 양주시 은현면 운암리 346",
     "road_address": "경기도 양주시 은현면 운하로99번길 132-36",
     "longitude": 127.0065199,
     "latitude": 37.8839369,
     "sido": "경기도",
     "sigungu": "양주시",
-    "address_geocode_status": "failed",
+    "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
-    "address_geocode_note": "HTTP 502: {\"errorType\":\"BadGateway\",\"message\":\"Unexpected endpoint error\"}"
+    "address_geocode_note": "좌표 기반 주소 자동 보강",
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "2961",
@@ -33133,7 +33137,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "2962",
@@ -33257,7 +33261,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "2973",
@@ -33609,7 +33613,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "3003",
@@ -33709,7 +33713,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "3012",
@@ -33725,7 +33729,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "3013",
@@ -33753,7 +33757,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "3015",
@@ -33793,7 +33797,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "3022",
@@ -33872,7 +33876,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "3029",
@@ -33912,7 +33916,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "3033",
@@ -34144,7 +34148,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "3054",
@@ -34172,7 +34176,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "3056",
@@ -34200,7 +34204,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "3058",
@@ -34288,7 +34292,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "3070",
@@ -34334,15 +34338,16 @@
     "business_name": "원창철강(주)",
     "status": "영업/정상",
     "phone": "041-356-0339",
-    "address": "",
+    "address": "충남 당진시 사기소동 697-3",
     "road_address": "충청남도 당진시 역천로 270-4 (사기소동)",
     "longitude": 126.6038252,
     "latitude": 36.8394597,
     "sido": "충청남도",
     "sigungu": "당진시",
-    "address_geocode_status": "failed",
+    "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
-    "address_geocode_note": "HTTP 502: {\"errorType\":\"BadGateway\",\"message\":\"Unexpected endpoint error\"}"
+    "address_geocode_note": "좌표 기반 주소 자동 보강",
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "3074",
@@ -34358,7 +34363,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "3075",
@@ -34374,7 +34379,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "3076",
@@ -34510,7 +34515,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "3088",
@@ -34538,7 +34543,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "3090",
@@ -34554,7 +34559,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "3091",
@@ -34570,7 +34575,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "3092",
@@ -34586,7 +34591,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "3093",
@@ -34614,7 +34619,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "3095",
@@ -34693,7 +34698,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "3103",
@@ -34853,7 +34858,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "3116",
@@ -34869,22 +34874,23 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "3117",
     "business_name": "(주)에스피씨삼립",
     "status": "영업/정상",
     "phone": "050-5073-0904",
-    "address": "",
+    "address": "경기 시흥시 정왕동 1253-5",
     "road_address": "경기도 시흥시 공단1대로 101, (주)삼립식품 (정왕동)",
     "longitude": 126.7155393,
     "latitude": 37.3452287,
     "sido": "경기도",
     "sigungu": "시흥시",
-    "address_geocode_status": "failed",
+    "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
-    "address_geocode_note": "HTTP 502: {\"errorType\":\"BadGateway\",\"message\":\"Unexpected endpoint error\"}"
+    "address_geocode_note": "좌표 기반 주소 자동 보강",
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "3118",
@@ -34948,7 +34954,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "3123",
@@ -35072,7 +35078,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "3135",
@@ -35370,7 +35376,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "3164",
@@ -35386,7 +35392,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "3165",
@@ -35405,15 +35411,16 @@
     "business_name": "영보화학(주)",
     "status": "영업/정상",
     "phone": "043-249-2028",
-    "address": "",
+    "address": "충북 청주시 흥덕구 강내면 태성리 233",
     "road_address": "충청북도 청주시 흥덕구 강내면 서부로 230-23",
     "longitude": 127.3456305,
     "latitude": 36.5827728,
     "sido": "충청북도",
     "sigungu": "청주시 흥덕구",
-    "address_geocode_status": "failed",
+    "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
-    "address_geocode_note": "HTTP 502: {\"errorType\":\"BadGateway\",\"message\":\"Unexpected endpoint error\"}"
+    "address_geocode_note": "좌표 기반 주소 자동 보강",
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "3167",
@@ -35552,16 +35559,15 @@
     "business_name": "어진공인계량소",
     "status": "영업/정상",
     "phone": "043-231-3637",
-    "address": "충북 청주시 흥덕구 강내면 황탄리 74",
+    "address": "",
     "road_address": "충청북도 청주시 흥덕구 강내면 황탄리길 130",
     "longitude": 127.3516606,
     "latitude": 36.5968819,
     "sido": "충청북도",
     "sigungu": "청주시 흥덕구",
-    "address_geocode_status": "success",
+    "address_geocode_status": "failed",
     "address_geocode_source": "kakao_coord2address",
-    "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_geocode_note": "HTTP 504: {\"errorType\":\"GatewayTimeout\",\"message\":\"Request Timeout(timeout=3000)\"}"
   },
   {
     "id": "3179",
@@ -35760,16 +35766,15 @@
     "business_name": "(주)필야",
     "status": "폐업",
     "phone": "",
-    "address": "경기 평택시 포승읍 만호리 473",
+    "address": "",
     "road_address": "경기도 평택시 포승읍 서동대로 707",
     "longitude": 126.8603288,
     "latitude": 36.9542932,
     "sido": "경기도",
     "sigungu": "평택시",
-    "address_geocode_status": "success",
+    "address_geocode_status": "failed",
     "address_geocode_source": "kakao_coord2address",
-    "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_geocode_note": "HTTP 502: {\"errorType\":\"BadGateway\",\"message\":\"Unexpected endpoint error\"}"
   },
   {
     "id": "3199",
@@ -35869,7 +35874,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "3209",
@@ -35885,7 +35890,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "3210",
@@ -35997,7 +36002,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "3219",
@@ -36025,7 +36030,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "3221",
@@ -36041,7 +36046,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "3222",
@@ -36057,7 +36062,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "3223",
@@ -36073,7 +36078,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "3224",
@@ -36089,7 +36094,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "3225",
@@ -36105,7 +36110,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "3226",
@@ -36121,7 +36126,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "3227",
@@ -36137,22 +36142,23 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "3228",
     "business_name": "(주)미래환경자원",
     "status": "영업/정상",
     "phone": "064-724-3301",
-    "address": "",
+    "address": "제주특별자치도 제주시 노형동 3600",
     "road_address": "제주특별자치도 제주시 우평로 35 (노형동)",
     "longitude": 126.4625145,
     "latitude": 33.4785924,
     "sido": "제주특별자치도",
     "sigungu": "제주시",
-    "address_geocode_status": "failed",
+    "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
-    "address_geocode_note": "HTTP 502: {\"errorType\":\"BadGateway\",\"message\":\"Unexpected endpoint error\"}"
+    "address_geocode_note": "좌표 기반 주소 자동 보강",
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "3229",
@@ -36168,7 +36174,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "3230",
@@ -36184,7 +36190,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "3231",
@@ -36200,7 +36206,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "3232",
@@ -36216,7 +36222,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "3233",
@@ -36232,7 +36238,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "3234",
@@ -36251,15 +36257,16 @@
     "business_name": "제주고산농업협동조합",
     "status": "영업/정상",
     "phone": "064-773-2112",
-    "address": "",
+    "address": "제주특별자치도 제주시 한경면 고산리 2821-4",
     "road_address": "제주특별자치도 제주시 한경면 용고로 81",
     "longitude": 126.1792712,
     "latitude": 33.3006446,
     "sido": "제주특별자치도",
     "sigungu": "제주시",
-    "address_geocode_status": "failed",
+    "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
-    "address_geocode_note": "HTTP 502: {\"errorType\":\"BadGateway\",\"message\":\"Unexpected endpoint error\"}"
+    "address_geocode_note": "좌표 기반 주소 자동 보강",
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "3236",
@@ -36275,22 +36282,23 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "3237",
     "business_name": "기유엔텍 주식회사",
     "status": "영업/정상",
     "phone": "064-799-5889",
-    "address": "",
+    "address": "제주특별자치도 제주시 애월읍 상귀리 944",
     "road_address": "제주특별자치도 제주시 애월읍 광상로 174-7",
     "longitude": 126.4119546,
     "latitude": 33.4465769,
     "sido": "제주특별자치도",
     "sigungu": "제주시",
-    "address_geocode_status": "failed",
+    "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
-    "address_geocode_note": "HTTP 502: {\"errorType\":\"BadGateway\",\"message\":\"Unexpected endpoint error\"}"
+    "address_geocode_note": "좌표 기반 주소 자동 보강",
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "3238",
@@ -36318,7 +36326,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "3240",
@@ -36334,7 +36342,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "3241",
@@ -36350,7 +36358,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "3242",
@@ -36366,7 +36374,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "3243",
@@ -36598,7 +36606,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "3262",
@@ -36653,15 +36661,16 @@
     "business_name": "주식회사 지우산업",
     "status": "영업/정상",
     "phone": "064-727-3301",
-    "address": "",
+    "address": "제주특별자치도 제주시 애월읍 고성리 1064",
     "road_address": "제주특별자치도 제주시 애월읍 세비데미길 38",
     "longitude": 126.4146312,
     "latitude": 33.4417649,
     "sido": "제주특별자치도",
     "sigungu": "제주시",
-    "address_geocode_status": "failed",
+    "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
-    "address_geocode_note": "HTTP 502: {\"errorType\":\"BadGateway\",\"message\":\"Unexpected endpoint error\"}"
+    "address_geocode_note": "좌표 기반 주소 자동 보강",
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "3267",
@@ -36677,7 +36686,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "3268",
@@ -36777,7 +36786,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "3277",
@@ -36793,7 +36802,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "3278",
@@ -36833,7 +36842,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "3281",
@@ -36864,15 +36873,16 @@
     "business_name": "(주)제주환경이노베이션",
     "status": "영업/정상",
     "phone": "064-794-5599",
-    "address": "",
+    "address": "제주특별자치도 서귀포시 대정읍 일과리 584",
     "road_address": "제주특별자치도 서귀포시 대정읍 서림중앙로 195",
     "longitude": 126.2333143,
     "latitude": 33.2559861,
     "sido": "제주특별자치도",
     "sigungu": "서귀포시",
-    "address_geocode_status": "failed",
+    "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
-    "address_geocode_note": "HTTP 502: {\"errorType\":\"BadGateway\",\"message\":\"Unexpected endpoint error\"}"
+    "address_geocode_note": "좌표 기반 주소 자동 보강",
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "3284",
@@ -36888,7 +36898,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "3285",
@@ -37024,7 +37034,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "3296",
@@ -37124,7 +37134,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "3305",
@@ -37164,7 +37174,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "3308",
@@ -37180,7 +37190,7 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   },
   {
     "id": "3309",
@@ -37208,6 +37218,6 @@
     "address_geocode_status": "success",
     "address_geocode_source": "kakao_coord2address",
     "address_geocode_note": "좌표 기반 주소 자동 보강",
-    "address_updated_at": "2026-04-29T04:43:02.227113+00:00"
+    "address_updated_at": "2026-04-29T04:33:45.961342+00:00"
   }
 ]
