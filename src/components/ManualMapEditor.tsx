@@ -132,6 +132,7 @@ const HIGHWAY_GEOCODE_SOURCE_OPTIONS = [
   "naver_local",
   "manual_map_click",
   "manual_map_right_click",
+  "manual_marker_drag",
   "manual_required",
   "unknown",
 ];
@@ -182,7 +183,12 @@ const HIGHWAY_FIELDS: FormField[] = [
   { name: "id", label: "id", readOnly: true, helpText: "비어 있으면 자동 생성" },
   { name: "office_code", label: "office_code", recommended: true },
   { name: "office_name", label: "office_name", required: true },
-  { name: "normalized_office_name", label: "normalized_office_name", recommended: true, readOnly: true },
+  {
+    name: "normalized_office_name",
+    label: "normalized_office_name",
+    recommended: true,
+    helpText: "검색·중복검사용 표준 이름입니다. 필요하면 직접 수정하세요.",
+  },
   { name: "route_name", label: "route_name", required: true },
   { name: "direction", label: "direction", recommended: true, options: HIGHWAY_DIRECTION_OPTIONS },
   { name: "sido", label: "sido", className: "half", recommended: true },
@@ -307,8 +313,14 @@ function slugify(value: string) {
 
 function normalizeHighwayOfficeName(value: string) {
   return value
+    .replace(/T\/G/gi, "")
     .replace(/\bTG\b/gi, "")
-    .replace(/톨게이트|요금소|상행|하행|상|하/g, "")
+    .replace(/TG/gi, "")
+    .replace(/\bJCT\b/gi, "")
+    .replace(/\bJC\b/gi, "")
+    .replace(/\bIC\b/gi, "")
+    .replace(/톨게이트|요금소|하이패스|상행|하행|진입|진출|입구|출구|방면/g, "")
+    .replace(/[상하]$/g, "")
     .replace(/\s+/g, " ")
     .trim();
 }
@@ -643,8 +655,12 @@ export default function ManualMapEditor({
       selectedMarkerRef.current?.setDraggable(false);
       tempMarkerRef.current?.setDraggable(false);
       tempMarkerRef.current?.setMap(null);
+    } else if (selectedId) {
+      setActiveOperation("update");
+    } else if (selectedFailedKey) {
+      setActiveOperation("resolveFailed");
     }
-  }, [editMode]);
+  }, [editMode, selectedFailedKey, selectedId]);
 
   useEffect(() => {
     activeOperationRef.current = activeOperation;
@@ -1245,17 +1261,33 @@ export default function ManualMapEditor({
 
   const upsertUpdateEdit = useCallback(
     (edit: ManualEdit) => {
-      setEdits((current) => [
-        ...current.filter(
+      setEdits((current) => {
+        const existingUpdate = current.find(
           (existing) =>
-            !(
-              existing.kind === "update" &&
-              ((edit.itemId && existing.itemId === edit.itemId) ||
-                (edit.itemKey && existing.itemKey === edit.itemKey))
-            ),
-        ),
-        edit,
-      ]);
+            existing.kind === "update" &&
+            ((edit.itemId && existing.itemId === edit.itemId) ||
+              (edit.itemKey && existing.itemKey === edit.itemKey)),
+        );
+        const nextEdit =
+          existingUpdate?.before && edit.after
+            ? {
+                ...edit,
+                before: existingUpdate.before,
+                changedFields: buildChangedFields("update", existingUpdate.before, edit.after),
+              }
+            : edit;
+        return [
+          ...current.filter(
+            (existing) =>
+              !(
+                existing.kind === "update" &&
+                ((edit.itemId && existing.itemId === edit.itemId) ||
+                  (edit.itemKey && existing.itemKey === edit.itemKey))
+              ),
+          ),
+          nextEdit,
+        ];
+      });
     },
     [],
   );
@@ -1489,7 +1521,11 @@ export default function ManualMapEditor({
     }
     setActiveOperation("none");
     setFormErrors({});
-    setMessage(selectedFailedKey ? "좌표 미확인 항목을 추가하고 해결 처리했습니다." : "새 항목을 추가했습니다.");
+    setMessage(
+      selectedFailedKey
+        ? "좌표 미확인 항목을 추가하고 해결 처리했습니다."
+        : "새 항목이 변경사항에 추가되었습니다.",
+    );
   }, [
     createItemFromForm,
     datasetType,
@@ -1501,6 +1537,14 @@ export default function ManualMapEditor({
   ]);
 
   const updateItem = useCallback(() => {
+    if (!editModeRef.current) {
+      setMessage("편집 모드를 먼저 켜 주세요.");
+      return;
+    }
+    if (activeOperationRef.current === "add" || activeOperationRef.current === "resolveFailed") {
+      setMessage("기존 항목 선택 상태에서만 내용 수정을 반영할 수 있습니다.");
+      return;
+    }
     if (selectedFailedKey && !selectedId) {
       if (!validateForm()) {
         return;
@@ -1578,25 +1622,27 @@ export default function ManualMapEditor({
     }
     const after = { ...before, ...item, source: before.source } as EditableItem;
     const now = new Date().toISOString();
-    setEdits((current) => [
-      ...current,
-      {
-        id: `edit-${now}-${Math.random().toString(36).slice(2)}`,
-        type: "update",
-        kind: "update",
-        datasetType,
-        itemKey: getItemKey(datasetType, after),
-        displayName: getItemName(after),
-        timestamp: now,
-        itemId: selectedId,
-        before,
-        after,
-        changedFields: buildChangedFields("update", before, after),
-        createdAt: now,
-      },
-    ]);
+    const changedFields = buildChangedFields("update", before, after);
+    if (changedFields.length === 0) {
+      setMessage("변경된 내용이 없습니다.");
+      return;
+    }
+    upsertUpdateEdit({
+      id: `edit-${now}-${Math.random().toString(36).slice(2)}`,
+      type: "update",
+      kind: "update",
+      datasetType,
+      itemKey: getItemKey(datasetType, after),
+      displayName: getItemName(after),
+      timestamp: now,
+      itemId: selectedId,
+      before,
+      after,
+      changedFields,
+      createdAt: now,
+    });
     setFormErrors({});
-    setMessage("선택 항목 좌표 수정을 변경사항에 추가했습니다.");
+    setMessage("선택 항목의 내용 수정이 변경사항에 추가되었습니다.");
   }, [
     createItemFromForm,
     datasetType,
@@ -1605,6 +1651,7 @@ export default function ManualMapEditor({
     mergedItems.length,
     selectedFailedKey,
     selectedId,
+    upsertUpdateEdit,
     validateForm,
   ]);
 
@@ -1624,7 +1671,7 @@ export default function ManualMapEditor({
         id: asText(failed.id || failed.office_code),
         office_code: asText(failed.office_code),
         office_name: asText(failed.office_name || failed.search_name),
-        normalized_office_name: asText(failed.normalized_office_name || failed.search_name),
+        normalized_office_name: normalizeHighwayOfficeName(asText(failed.office_name || failed.search_name)),
         route_name: asText(failed.route_name),
         direction: asText(failed.direction),
         sido: asText(failed.sido),
@@ -1687,6 +1734,12 @@ export default function ManualMapEditor({
     editMode &&
     Boolean(selectedId) &&
     (activeOperation === "update" || activeOperation === "dragUpdate");
+  const canUpdateContent =
+    editMode &&
+    Boolean(selectedId) &&
+    activeOperation !== "add" &&
+    activeOperation !== "resolveFailed";
+  const addMenuLabel = datasetType === "highway" ? "여기에 새 영업소 추가" : "여기에 새 항목 추가";
 
   return (
     <main className="editor-shell">
@@ -1756,7 +1809,7 @@ export default function ManualMapEditor({
 
         {datasetType === "highway" && (
           <section className="editor-list failed-list" aria-label="좌표 미확인 목록">
-            <div className="editor-section-heading">
+            <div className="editor-section-heading failed-list-header">
               <strong>좌표 미확인 목록</strong>
               <span>{unresolvedFailedItems.length.toLocaleString("ko-KR")}개</span>
             </div>
@@ -1832,7 +1885,7 @@ export default function ManualMapEditor({
                     role="menuitem"
                     onClick={() => startAddAtCoordinate(contextMenu.latitude, contextMenu.longitude)}
                   >
-                    여기에 새 항목 추가
+                    {addMenuLabel}
                   </button>
                 </>
               ) : (
@@ -1841,7 +1894,7 @@ export default function ManualMapEditor({
                   role="menuitem"
                   onClick={() => startAddAtCoordinate(contextMenu.latitude, contextMenu.longitude)}
                 >
-                  여기에 새 항목 추가
+                  {addMenuLabel}
                 </button>
               )}
               <button type="button" role="menuitem" onClick={() => setContextMenu(null)}>
@@ -1901,6 +1954,9 @@ export default function ManualMapEditor({
                     {field.label}
                     {field.required && <span className="required-mark">*</span>}
                     {field.recommended && <span className="recommended-badge">권장</span>}
+                    {field.name === "normalized_office_name" && field.helpText && (
+                      <span className="field-help-inline">{field.helpText}</span>
+                    )}
                   </span>
                   {field.options ? (
                     <select
@@ -1931,7 +1987,7 @@ export default function ManualMapEditor({
                       onChange={(event) => updateFormField(field.name, event.target.value)}
                     />
                   )}
-                  {field.helpText && !formErrors[field.name] && (
+                  {field.helpText && field.name !== "normalized_office_name" && !formErrors[field.name] && (
                     <span className="field-help">{field.helpText}</span>
                   )}
                   {formErrors[field.name] && (
@@ -1954,6 +2010,9 @@ export default function ManualMapEditor({
               >
                 선택 마커 이동으로 좌표 수정
               </button>
+              <button type="button" onClick={updateItem} disabled={!canUpdateContent}>
+                선택 항목 내용 수정
+              </button>
               <button type="button" onClick={resetEdits}>
                 <RotateCcw size={16} aria-hidden="true" />
                 임시 변경사항 초기화
@@ -1966,15 +2025,6 @@ export default function ManualMapEditor({
                 <Clipboard size={16} aria-hidden="true" />
                 최종 JSON 복사
               </button>
-              {datasetType === "highway" && failedDownloadFileName && (
-                <button
-                  type="button"
-                  onClick={() => downloadJson(failedDownloadFileName, finalFailedForDownload)}
-                >
-                  <Download size={16} aria-hidden="true" />
-                  실패 목록 JSON 다운로드
-                </button>
-              )}
             </div>
           </form>
 

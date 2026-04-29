@@ -665,6 +665,14 @@ button.primary.active {
   flex: 0 0 30%;
 }
 
+.failed-list-header {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  padding: 8px 0;
+  background: #f7fafb;
+}
+
 .editor-section-heading {
   display: flex;
   align-items: center;
@@ -849,6 +857,12 @@ button.primary.active {
 
 .field-help {
   color: #7a8793;
+}
+
+.field-help-inline {
+  color: #7a8793;
+  font-size: 11px;
+  font-weight: 700;
 }
 
 .field-error {
