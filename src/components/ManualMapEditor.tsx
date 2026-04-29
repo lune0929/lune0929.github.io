@@ -279,6 +279,22 @@ function toNumber(value: unknown) {
   return Number.isFinite(numberValue) ? numberValue : null;
 }
 
+function formatCoordinate(value: number) {
+  return value.toFixed(6);
+}
+
+function readKakaoLatLng(event: { latLng?: { getLat?: () => number; getLng?: () => number } }) {
+  const lat = event.latLng?.getLat?.();
+  const lng = event.latLng?.getLng?.();
+  if (typeof lat !== "number" || typeof lng !== "number") {
+    return null;
+  }
+  if (!Number.isFinite(lat) || !Number.isFinite(lng)) {
+    return null;
+  }
+  return { lat, lng };
+}
+
 function slugify(value: string) {
   return value
     .trim()
@@ -300,6 +316,8 @@ function validateCoordinate(value: unknown, fieldName: "latitude" | "longitude")
   const label = fieldName === "latitude" ? "위도" : "경도";
   const min = fieldName === "latitude" ? -90 : -180;
   const max = fieldName === "latitude" ? 90 : 180;
+  const koreaMin = fieldName === "latitude" ? 30 : 120;
+  const koreaMax = fieldName === "latitude" ? 45 : 135;
   const numberValue = toNumber(value);
   if (asText(value).trim() === "") {
     return `${label}는 필수입니다.`;
@@ -309,6 +327,9 @@ function validateCoordinate(value: unknown, fieldName: "latitude" | "longitude")
   }
   if (numberValue < min || numberValue > max) {
     return `${label}는 ${min}~${max} 범위여야 합니다.`;
+  }
+  if (numberValue < koreaMin || numberValue > koreaMax) {
+    return `${label}가 대한민국 지도 범위(${koreaMin}~${koreaMax})를 벗어났습니다.`;
   }
   return "";
 }
@@ -828,8 +849,8 @@ export default function ManualMapEditor({
       showTempMarker(latitude, longitude);
       setForm((current) => ({
         ...(selectedFailedKey ? current : emptyForm(datasetType)),
-        latitude: latitude.toFixed(7),
-        longitude: longitude.toFixed(7),
+        latitude: formatCoordinate(latitude),
+        longitude: formatCoordinate(longitude),
         geocode_status: "manual_added",
         geocode_source: "manual_map_right_click",
         source: asText(form.source) || "manual",
@@ -853,8 +874,8 @@ export default function ManualMapEditor({
       showTempMarker(latitude, longitude);
       setForm((current) => ({
         ...current,
-        latitude: latitude.toFixed(7),
-        longitude: longitude.toFixed(7),
+        latitude: formatCoordinate(latitude),
+        longitude: formatCoordinate(longitude),
         geocode_status: selectedFailedKey ? "manual_added" : "manual_corrected",
         geocode_source: "manual_map_right_click",
         source: "manual",
@@ -959,8 +980,15 @@ export default function ManualMapEditor({
         setContextMenu(null);
         return;
       }
-      const latitude = event.latLng.getLat();
-      const longitude = event.latLng.getLng();
+      const coordinate = readKakaoLatLng(event);
+      if (!coordinate) {
+        setMessage("우클릭 좌표를 읽지 못했습니다. 다시 시도해 주세요.");
+        setContextMenu(null);
+        return;
+      }
+      const latitude = coordinate.lat;
+      const longitude = coordinate.lng;
+      console.log("rightclick lat/lng", latitude, longitude);
       showTempMarker(latitude, longitude);
       const pointer = contextPointerRef.current;
       const mapRect = mapNodeRef.current?.getBoundingClientRect();
@@ -1500,7 +1528,15 @@ export default function ManualMapEditor({
       </section>
 
       <section className="editor-main">
-        <section className="editor-map-panel" aria-label="편집 지도">
+        <section
+          className="editor-map-panel"
+          aria-label="편집 지도"
+          onContextMenu={(event) => {
+            if (editModeRef.current) {
+              event.preventDefault();
+            }
+          }}
+        >
           {editMode && <div className="map-edit-badge">편집 모드 ON · 우클릭으로 좌표 선택</div>}
           {!kakaoKey && (
             <div className="map-overlay">
@@ -1614,8 +1650,8 @@ export default function ManualMapEditor({
                   ) : (
                     <input
                       readOnly={field.readOnly}
-                      type={field.type === "number" ? "number" : "text"}
-                      step={field.type === "number" ? "0.0000001" : undefined}
+                      type="text"
+                      inputMode={field.type === "number" ? "decimal" : undefined}
                       value={asText(form[field.name])}
                       placeholder={field.helpText}
                       onChange={(event) => updateFormField(field.name, event.target.value)}
