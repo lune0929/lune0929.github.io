@@ -627,6 +627,22 @@ button.primary.active {
   box-shadow: 0 12px 30px rgba(15, 23, 42, 0.14);
 }
 
+.marker-drag-badge {
+  position: absolute;
+  z-index: 9;
+  top: 56px;
+  left: 18px;
+  max-width: 360px;
+  padding: 8px 10px;
+  color: #7c2d12;
+  font-size: 12px;
+  font-weight: 900;
+  background: #ffedd5;
+  border: 1px solid #fdba74;
+  border-radius: 8px;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.14);
+}
+
 .editor-search {
   margin-bottom: 12px;
 }

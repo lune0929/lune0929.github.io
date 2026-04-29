@@ -626,6 +626,8 @@ export default function ManualMapEditor({
   const [contextMenu, setContextMenu] = useState<ContextMenuState | null>(null);
   const [formErrors, setFormErrors] = useState<FieldErrors>({});
   const [selectedEdit, setSelectedEdit] = useState<ManualEdit | null>(null);
+  const [isMarkerDragEditMode, setIsMarkerDragEditMode] = useState(false);
+  const [activeDragItemKey, setActiveDragItemKey] = useState<string | null>(null);
 
   useEffect(() => {
     editModeRef.current = editMode;
@@ -718,34 +720,38 @@ export default function ManualMapEditor({
     [datasetType],
   );
 
-  const validateForm = useCallback(() => {
+  const getValidationErrors = useCallback((record: EditableRecord) => {
     const errors: FieldErrors = {};
     if (datasetType === "scale") {
-      if (!asText(form.business_name).trim()) {
+      if (!asText(record.business_name).trim()) {
         errors.business_name = "사업장명은 필수입니다.";
       }
-      if (!asText(form.address).trim() && !asText(form.road_address).trim()) {
+      if (!asText(record.address).trim() && !asText(record.road_address).trim()) {
         errors.address = "주소 또는 도로명주소 중 하나는 필수입니다.";
         errors.road_address = "주소 또는 도로명주소 중 하나는 필수입니다.";
       }
     } else {
-      if (!asText(form.office_name).trim()) {
+      if (!asText(record.office_name).trim()) {
         errors.office_name = "영업소명은 필수입니다.";
       }
-      if (!asText(form.route_name).trim()) {
+      if (!asText(record.route_name).trim()) {
         errors.route_name = "노선명은 필수입니다.";
       }
     }
 
-    const latitudeError = validateCoordinate(form.latitude, "latitude");
-    const longitudeError = validateCoordinate(form.longitude, "longitude");
+    const latitudeError = validateCoordinate(record.latitude, "latitude");
+    const longitudeError = validateCoordinate(record.longitude, "longitude");
     if (latitudeError) {
       errors.latitude = latitudeError;
     }
     if (longitudeError) {
       errors.longitude = longitudeError;
     }
+    return errors;
+  }, [datasetType]);
 
+  const validateForm = useCallback(() => {
+    const errors = getValidationErrors(form);
     setFormErrors(errors);
     if (Object.keys(errors).length > 0) {
       setMessage("필수 항목을 확인해 주세요.");
@@ -754,7 +760,7 @@ export default function ManualMapEditor({
       return false;
     }
     return true;
-  }, [datasetType, form]);
+  }, [form, getValidationErrors]);
 
   const selectOffice = useCallback(
     (office: MapOffice, panMap = true) => {
@@ -765,6 +771,8 @@ export default function ManualMapEditor({
       setSelectedId(office.id);
       setSelectedFailedKey(null);
       setContextMenu(null);
+      setIsMarkerDragEditMode(false);
+      setActiveDragItemKey(null);
       setFormFromItem(item);
 
       const map = mapRef.current;
@@ -1093,9 +1101,9 @@ export default function ManualMapEditor({
     }
   }, [filteredOffices, mapReady, selectOffice]);
 
-  const createItemFromForm = useCallback((): EditableItem | null => {
-    const latitude = toNumber(form.latitude);
-    const longitude = toNumber(form.longitude);
+  const createItemFromRecord = useCallback((record: EditableRecord): EditableItem | null => {
+    const latitude = toNumber(record.latitude);
+    const longitude = toNumber(record.longitude);
     if (latitude == null || longitude == null) {
       setMessage("latitude와 longitude를 입력해야 합니다.");
       return null;
@@ -1103,53 +1111,57 @@ export default function ManualMapEditor({
 
     if (datasetType === "scale") {
       return {
-        id: asText(form.id) || createManualId(datasetType, form),
-        management_id: asText(form.management_id),
-        business_name: asText(form.business_name),
-        normalized_name: asText(form.normalized_name),
-        status: asText(form.status),
-        detail_status: asText(form.detail_status),
-        phone: asText(form.phone),
-        office_phone: asText(form.office_phone),
-        sido: asText(form.sido),
-        sigungu: asText(form.sigungu),
-        address: asText(form.address),
-        road_address: asText(form.road_address),
+        id: asText(record.id) || createManualId(datasetType, record),
+        management_id: asText(record.management_id),
+        business_name: asText(record.business_name),
+        normalized_name: asText(record.normalized_name),
+        status: asText(record.status),
+        detail_status: asText(record.detail_status),
+        phone: asText(record.phone),
+        office_phone: asText(record.office_phone),
+        sido: asText(record.sido),
+        sigungu: asText(record.sigungu),
+        address: asText(record.address),
+        road_address: asText(record.road_address),
         latitude,
         longitude,
-        coordinate_note: asText(form.coordinate_note),
-        manual_note: asText(form.manual_note),
-        geocode_status: asText(form.geocode_status) || "manual_added",
-        geocode_source: asText(form.geocode_source) || "manual_map_right_click",
-        source: "manual",
+        coordinate_note: asText(record.coordinate_note),
+        manual_note: asText(record.manual_note),
+        geocode_status: asText(record.geocode_status) || "manual_added",
+        geocode_source: asText(record.geocode_source) || "manual_map_right_click",
+        source: asText(record.source) || "manual",
       };
     }
 
     return {
-      id: asText(form.id) || createManualId(datasetType, form),
-      office_code: asText(form.office_code),
-      office_name: asText(form.office_name),
-      normalized_office_name: asText(form.normalized_office_name),
-      route_name: asText(form.route_name),
-      direction: asText(form.direction),
-      sido: asText(form.sido),
-      sigungu: asText(form.sigungu),
-      address: asText(form.address),
-      road_address: asText(form.road_address),
+      id: asText(record.id) || createManualId(datasetType, record),
+      office_code: asText(record.office_code),
+      office_name: asText(record.office_name),
+      normalized_office_name: asText(record.normalized_office_name),
+      route_name: asText(record.route_name),
+      direction: asText(record.direction),
+      sido: asText(record.sido),
+      sigungu: asText(record.sigungu),
+      address: asText(record.address),
+      road_address: asText(record.road_address),
       latitude,
       longitude,
       operation_type: "",
       entrance_exit_type: "",
       install_type: "",
       phone: "",
-      source: asText(form.source) || "manual",
-      geocode_status: asText(form.geocode_status) || "manual_added",
-      geocode_source: asText(form.geocode_source) || "manual_map_right_click",
-      geocode_query: asText(form.geocode_query),
-      coordinate_note: asText(form.coordinate_note),
-      manual_note: asText(form.manual_note),
+      source: asText(record.source) || "manual",
+      geocode_status: asText(record.geocode_status) || "manual_added",
+      geocode_source: asText(record.geocode_source) || "manual_map_right_click",
+      geocode_query: asText(record.geocode_query),
+      coordinate_note: asText(record.coordinate_note),
+      manual_note: asText(record.manual_note),
     };
-  }, [datasetType, form]);
+  }, [datasetType]);
+
+  const createItemFromForm = useCallback((): EditableItem | null => {
+    return createItemFromRecord(form);
+  }, [createItemFromRecord, form]);
 
   const findDuplicate = useCallback(
     (item: EditableItem) => {
@@ -1190,6 +1202,216 @@ export default function ManualMapEditor({
     },
     [datasetType, mergedItems, selectedId],
   );
+
+  const upsertUpdateEdit = useCallback(
+    (edit: ManualEdit) => {
+      setEdits((current) => [
+        ...current.filter(
+          (existing) =>
+            !(
+              existing.kind === "update" &&
+              ((edit.itemId && existing.itemId === edit.itemId) ||
+                (edit.itemKey && existing.itemKey === edit.itemKey))
+            ),
+        ),
+        edit,
+      ]);
+    },
+    [],
+  );
+
+  const commitDraggedCoordinate = useCallback(
+    (latitude: number, longitude: number) => {
+      const nextForm = {
+        ...form,
+        latitude: formatCoordinate(latitude),
+        longitude: formatCoordinate(longitude),
+        geocode_status: "manual_corrected",
+        geocode_source: "manual_marker_drag",
+        coordinate_note: asText(form.coordinate_note) || "마커 드래그로 좌표 수정",
+        source: "manual",
+      };
+      setForm(nextForm);
+
+      const errors = getValidationErrors(nextForm);
+      setFormErrors(errors);
+      if (Object.keys(errors).length > 0) {
+        setMessage("좌표 범위와 필수 항목을 확인해 주세요.");
+        return;
+      }
+
+      const item = createItemFromRecord(nextForm);
+      if (!item) {
+        return;
+      }
+      const now = new Date().toISOString();
+
+      if (selectedFailedKey && !selectedId) {
+        const duplicate = findDuplicate(item);
+        if (duplicate) {
+          setMessage(
+            `중복 가능 항목이 있습니다: ${getItemName(duplicate)}. 기존 항목을 선택한 뒤 다시 수정하세요.`,
+          );
+          return;
+        }
+        const failedIndex = mergedFailedItems.findIndex(
+          (failed, index) => getFailedKey(failed, index) === selectedFailedKey,
+        );
+        const failed = mergedFailedItems[failedIndex];
+        const addEdit: ManualEdit = {
+          id: `edit-${now}-${Math.random().toString(36).slice(2)}`,
+          type: "add",
+          kind: "add",
+          datasetType,
+          itemKey: getItemKey(datasetType, item),
+          displayName: getItemName(item),
+          timestamp: now,
+          itemId: getItemId(item, mergedItems.length),
+          after: item,
+          changedFields: buildChangedFields("add", undefined, item),
+          createdAt: now,
+        };
+        const resolveEdit: ManualEdit | null = failed
+          ? {
+              id: `resolve-${now}-${Math.random().toString(36).slice(2)}`,
+              type: "resolve",
+              kind: "resolve",
+              datasetType,
+              itemKey: selectedFailedKey,
+              displayName: failed.office_name || failed.search_name || "좌표 미확인 항목",
+              timestamp: now,
+              failedKey: selectedFailedKey,
+              failedBefore: failed,
+              failedAfter: { ...failed, resolved: true },
+              changedFields: buildResolveFields(failed, { ...failed, resolved: true }),
+              createdAt: now,
+            }
+          : null;
+        setEdits((current) => [
+          ...current.filter(
+            (existing) =>
+              existing.failedKey !== selectedFailedKey &&
+              existing.itemKey !== getItemKey(datasetType, item),
+          ),
+          addEdit,
+          ...(resolveEdit ? [resolveEdit] : []),
+        ]);
+        setSelectedId(getItemId(item, mergedItems.length));
+        setSelectedFailedKey(null);
+      } else if (selectedId) {
+        const before = mergedItems.find(
+          (candidate, index) => getItemId(candidate, index) === selectedId,
+        );
+        if (!before) {
+          setMessage("선택한 항목을 찾지 못했습니다.");
+          return;
+        }
+        const after = { ...before, ...item, source: before.source } as EditableItem;
+        upsertUpdateEdit({
+          id: `edit-${now}-${Math.random().toString(36).slice(2)}`,
+          type: "update",
+          kind: "update",
+          datasetType,
+          itemKey: getItemKey(datasetType, after),
+          displayName: getItemName(after),
+          timestamp: now,
+          itemId: selectedId,
+          before,
+          after,
+          changedFields: buildChangedFields("update", before, after),
+          createdAt: now,
+        });
+      }
+
+      setIsMarkerDragEditMode(false);
+      setActiveDragItemKey(null);
+      selectedMarkerRef.current?.setDraggable(false);
+      tempMarkerRef.current?.setDraggable(false);
+      setMessage("좌표가 수정되었습니다. 최종 JSON 다운로드로 저장하세요.");
+    },
+    [
+      createItemFromRecord,
+      datasetType,
+      findDuplicate,
+      form,
+      getValidationErrors,
+      mergedFailedItems,
+      mergedItems,
+      selectedFailedKey,
+      selectedId,
+      upsertUpdateEdit,
+    ],
+  );
+
+  const startMarkerDragEdit = useCallback(() => {
+    if (!selectedId && !selectedFailedKey) {
+      setMessage("좌표를 수정할 항목을 먼저 선택하세요.");
+      return;
+    }
+    const map = mapRef.current;
+    if (!map || !window.kakao) {
+      setMessage("지도가 준비된 뒤 다시 시도하세요.");
+      return;
+    }
+
+    let marker = selectedMarkerRef.current;
+    const latitude = toNumber(form.latitude);
+    const longitude = toNumber(form.longitude);
+
+    if (!marker && latitude != null && longitude != null) {
+      const position = new window.kakao.maps.LatLng(latitude, longitude);
+      marker = new window.kakao.maps.Marker({
+        map,
+        position,
+        title: "좌표 수정 대상",
+        image: new window.kakao.maps.MarkerImage(
+          `data:image/svg+xml;charset=UTF-8,${markerSvg("#dc2626")}`,
+          new window.kakao.maps.Size(42, 52),
+        ),
+      });
+      selectedMarkerRef.current = marker;
+      map.panTo(position);
+    }
+
+    if (!marker) {
+      const center = map.getCenter();
+      const latitudeFromCenter = center.getLat();
+      const longitudeFromCenter = center.getLng();
+      marker = new window.kakao.maps.Marker({
+        map,
+        position: center,
+        title: "좌표 미확인 항목 임시 마커",
+        image: new window.kakao.maps.MarkerImage(
+          `data:image/svg+xml;charset=UTF-8,${markerSvg("#dc2626")}`,
+          new window.kakao.maps.Size(42, 52),
+        ),
+      });
+      tempMarkerRef.current = marker;
+      setForm((current) => ({
+        ...current,
+        latitude: formatCoordinate(latitudeFromCenter),
+        longitude: formatCoordinate(longitudeFromCenter),
+        geocode_status: "manual_corrected",
+        geocode_source: "manual_marker_drag",
+        source: "manual",
+      }));
+      setMessage("좌표가 없는 항목입니다. 현재 지도 중심의 임시 마커를 원하는 위치로 끌어 주세요.");
+    }
+
+    if (map.getLevel() > 4) {
+      map.setLevel(4);
+    }
+    map.panTo(marker.getPosition());
+    marker.setMap(map);
+    marker.setDraggable(true);
+    setIsMarkerDragEditMode(true);
+    setActiveDragItemKey(selectedId || selectedFailedKey);
+    setContextMenu(null);
+    window.kakao.maps.event.addListener(marker, "dragend", () => {
+      const position = marker!.getPosition();
+      commitDraggedCoordinate(position.getLat(), position.getLng());
+    });
+  }, [commitDraggedCoordinate, form.latitude, form.longitude, selectedFailedKey, selectedId]);
 
   const addItem = useCallback(() => {
     if (!validateForm()) {
@@ -1377,6 +1599,10 @@ export default function ManualMapEditor({
       const key = getFailedKey(failed, index);
       setSelectedFailedKey(key);
       setSelectedId(null);
+      setIsMarkerDragEditMode(false);
+      setActiveDragItemKey(null);
+      selectedMarkerRef.current?.setMap(null);
+      selectedMarkerRef.current = null;
       setForm({
         ...emptyForm(datasetType),
         id: asText(failed.id || failed.office_code),
@@ -1538,6 +1764,11 @@ export default function ManualMapEditor({
           }}
         >
           {editMode && <div className="map-edit-badge">편집 모드 ON · 우클릭으로 좌표 선택</div>}
+          {isMarkerDragEditMode && (
+            <div className="marker-drag-badge">
+              좌표 이동 모드 ON - 마커를 끌어서 위치를 수정하세요
+            </div>
+          )}
           {!kakaoKey && (
             <div className="map-overlay">
               <strong>카카오 지도 키가 필요합니다.</strong>
@@ -1592,6 +1823,10 @@ export default function ManualMapEditor({
                 onClick={() => {
                   setSelectedId(null);
                   setSelectedFailedKey(null);
+                  setIsMarkerDragEditMode(false);
+                  setActiveDragItemKey(null);
+                  selectedMarkerRef.current?.setDraggable(false);
+                  tempMarkerRef.current?.setDraggable(false);
                   setForm(emptyForm(datasetType));
                   setFormErrors({});
                 }}
@@ -1672,8 +1907,12 @@ export default function ManualMapEditor({
                 <Save size={16} aria-hidden="true" />
                 새 항목 추가
               </button>
-              <button type="button" onClick={updateItem}>
-                선택 항목 좌표 수정
+              <button
+                className={isMarkerDragEditMode ? "primary active" : ""}
+                type="button"
+                onClick={startMarkerDragEdit}
+              >
+                선택 마커 이동으로 좌표 수정
               </button>
               <button type="button" onClick={resetEdits}>
                 <RotateCcw size={16} aria-hidden="true" />

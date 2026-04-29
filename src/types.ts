@@ -140,6 +140,7 @@ export interface KakaoMap {
   setBounds: (bounds: KakaoLatLngBounds) => void;
   setLevel: (level: number) => void;
   getLevel: () => number;
+  getCenter: () => KakaoLatLng;
   setMapTypeId: (mapTypeId: KakaoMapTypeId) => void;
 }
 
@@ -153,6 +154,8 @@ export interface KakaoMarkerOptions {
 export interface KakaoMarker {
   setMap: (map: KakaoMap | null) => void;
   setPosition?: (latLng: KakaoLatLng) => void;
+  getPosition: () => KakaoLatLng;
+  setDraggable: (draggable: boolean) => void;
 }
 
 export interface KakaoSize {}
