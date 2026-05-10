@@ -1,4 +1,4 @@
-import { Map, Route } from "lucide-react";
+import { Map, Route, ShieldAlert } from "lucide-react";
 
 export default function HomePage() {
   return (
@@ -34,6 +34,16 @@ export default function HomePage() {
           </a>
           <a className="home-edit-link" href="#/highway-toll-offices/edit">
             전국 영업소 편집
+          </a>
+
+          <a className="home-card-button" href="#/overload-checkpoints">
+            <span className="home-card-icon checkpoint" aria-hidden="true">
+              <ShieldAlert size={30} />
+            </span>
+            <span>
+              <strong>전국 과적검문소 지도</strong>
+              <small>CSV 주소를 좌표화한 과적검문소 위치를 확인합니다.</small>
+            </span>
           </a>
         </nav>
       </section>

@@ -1,0 +1,22 @@
+[
+  {
+    "id": "checkpoint-32",
+    "fail_reason": "검색결과 없음",
+    "original_address": "경북 경주시 안강읍 옥산리 464-7",
+    "normalized_address": "경상북도 경주시 안강읍 옥산리 464-7",
+    "address": "경북 경주시 안강읍 옥산리 464-7",
+    "query": "경상북도 경주시 안강읍 옥산리 464-7",
+    "source": "manual-address-csv-kakao",
+    "geocode_status": "failed"
+  },
+  {
+    "id": "checkpoint-62",
+    "fail_reason": "검색결과 없음",
+    "original_address": "전남 진도군 군내면 녹진리 2-9",
+    "normalized_address": "전라남도 진도군 군내면 녹진리 2-9",
+    "address": "전남 진도군 군내면 녹진리 2-9",
+    "query": "전라남도 진도군 군내면 녹진리 2-9",
+    "source": "manual-address-csv-kakao",
+    "geocode_status": "failed"
+  }
+]

@@ -69,6 +69,21 @@ export interface HighwayFailedOffice {
   [key: string]: unknown;
 }
 
+export interface OverloadCheckpoint {
+  id: string;
+  business_name: string;
+  status: string;
+  phone?: string;
+  address: string;
+  road_address: string;
+  longitude: number | null;
+  latitude: number | null;
+  sido: string;
+  sigungu: string;
+  source?: string;
+  geocode_status?: string;
+}
+
 export interface MapOffice {
   id: string;
   business_name: string;

@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import HomePage from "./pages/HomePage";
 import HighwayTollOfficeEditPage from "./pages/HighwayTollOfficeEditPage";
 import HighwayTollOfficeMapPage from "./pages/HighwayTollOfficeMapPage";
+import OverloadCheckpointMapPage from "./pages/OverloadCheckpointMapPage";
 import ScaleOfficeEditPage from "./pages/ScaleOfficeEditPage";
 import ScaleOfficeMapPage from "./pages/ScaleOfficeMapPage";
 
@@ -10,7 +11,8 @@ type Route =
   | "/scale-offices"
   | "/scale-offices/edit"
   | "/highway-toll-offices"
-  | "/highway-toll-offices/edit";
+  | "/highway-toll-offices/edit"
+  | "/overload-checkpoints";
 
 function getRouteFromHash(): Route {
   const hash = window.location.hash.replace(/^#/, "") || "/";
@@ -18,7 +20,8 @@ function getRouteFromHash(): Route {
     hash === "/scale-offices" ||
     hash === "/scale-offices/edit" ||
     hash === "/highway-toll-offices" ||
-    hash === "/highway-toll-offices/edit"
+    hash === "/highway-toll-offices/edit" ||
+    hash === "/overload-checkpoints"
   ) {
     return hash;
   }
@@ -48,6 +51,10 @@ export default function App() {
 
   if (route === "/highway-toll-offices/edit") {
     return <HighwayTollOfficeEditPage />;
+  }
+
+  if (route === "/overload-checkpoints") {
+    return <OverloadCheckpointMapPage />;
   }
 
   return <HomePage />;

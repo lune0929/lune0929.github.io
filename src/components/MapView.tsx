@@ -3,11 +3,13 @@ import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import type {
   KakaoInfoWindow,
   KakaoMap,
+  KakaoMarkerImage,
   KakaoMarker,
   KakaoMarkerClusterer,
   MapOffice,
+  OverloadCheckpoint,
 } from "../types";
-import { loadKakaoMapScript } from "../utils/kakaoMap";
+import { getDataUrl, loadKakaoMapScript } from "../utils/kakaoMap";
 
 const DEFAULT_CENTER = { latitude: 36.5, longitude: 127.8 };
 const ALL = "전체";
@@ -27,6 +29,8 @@ interface MapViewProps<T> {
   emptyMessage: string;
   searchPlaceholder: string;
   normalizeItem: (item: T, index: number) => MapOffice | null;
+  markerVariant?: "default" | "checkpoint";
+  showCheckpointToggle?: boolean;
 }
 
 function escapeHtml(value: string) {
@@ -90,6 +94,17 @@ function getMarkerSvg(color: string) {
   `);
 }
 
+function getCheckpointMarkerSvg() {
+  return encodeURIComponent(`
+    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="44" viewBox="0 0 36 44">
+      <path fill="#b42318" d="M18 0C8.1 0 0 8 0 17.8 0 31.1 18 44 18 44s18-12.9 18-26.2C36 8 27.9 0 18 0Z"/>
+      <path fill="white" d="M10 14.2h10.7v8.7H10zM21.9 17.1h3.3l2.8 3.2v2.6h-6.1z"/>
+      <circle cx="14" cy="25.1" r="2" fill="white"/>
+      <circle cx="25" cy="25.1" r="2" fill="white"/>
+    </svg>
+  `);
+}
+
 function getMarkerColor(category: StatusCategory) {
   if (category === "open") {
     return "#16875f";
@@ -107,6 +122,8 @@ export default function MapView<T>({
   emptyMessage,
   searchPlaceholder,
   normalizeItem,
+  markerVariant = "default",
+  showCheckpointToggle = true,
 }: MapViewProps<T>) {
   const mapNodeRef = useRef<HTMLDivElement | null>(null);
   const mapRef = useRef<KakaoMap | null>(null);
@@ -114,6 +131,8 @@ export default function MapView<T>({
   const markerByIdRef = useRef<Map<string, KakaoMarker>>(new Map());
   const clustererRef = useRef<KakaoMarkerClusterer | null>(null);
   const infoWindowRef = useRef<KakaoInfoWindow | null>(null);
+  const checkpointMarkersRef = useRef<KakaoMarker[]>([]);
+  const checkpointMarkerImageRef = useRef<KakaoMarkerImage | null>(null);
   const officeRefs = useRef<Map<string, HTMLElement>>(new Map());
   const suppressNextMapClickRef = useRef(false);
   const markerImagesRef = useRef<Partial<Record<StatusCategory, unknown>>>({});
@@ -128,6 +147,9 @@ export default function MapView<T>({
   const [mapError, setMapError] = useState("");
   const [selectedOfficeId, setSelectedOfficeId] = useState<string | null>(null);
   const [mapViewType, setMapViewType] = useState<MapViewType>("roadmap");
+  const [checkpointsVisible, setCheckpointsVisible] = useState(false);
+  const [checkpointsLoading, setCheckpointsLoading] = useState(false);
+  const [checkpointsError, setCheckpointsError] = useState("");
   const kakaoKey = import.meta.env.VITE_KAKAO_JAVASCRIPT_KEY as string | undefined;
 
   const closeInfoWindow = useCallback(() => {
@@ -136,6 +158,31 @@ export default function MapView<T>({
   }, []);
 
   const createInfoWindowContent = useCallback((office: MapOffice) => {
+    if (markerVariant === "checkpoint") {
+      const coordinates = `${office.latitude.toFixed(6)}, ${office.longitude.toFixed(6)}`;
+      return `
+        <div class="map-info-window checkpoint">
+          <div class="info-title">${escapeHtml(office.business_name || "과적검문소")}</div>
+          <div class="info-row">
+            <span class="info-label">주소</span>
+            <span class="info-value address">${escapeHtml(office.address || "주소 정보 없음")}</span>
+          </div>
+          <div class="info-row">
+            <span class="info-label">도로명</span>
+            <span class="info-value address">${escapeHtml(office.road_address || "도로명주소 정보 없음")}</span>
+          </div>
+          <div class="info-row">
+            <span class="info-label">좌표</span>
+            <span class="info-value">${escapeHtml(coordinates)}</span>
+          </div>
+          <div class="info-row">
+            <span class="info-label">상태</span>
+            <span class="info-badge checkpoint">${escapeHtml(office.status || "상태 미상")}</span>
+          </div>
+        </div>
+      `;
+    }
+
     const category = getStatusCategory(office.status);
     return `
       <div class="map-info-window">
@@ -151,6 +198,35 @@ export default function MapView<T>({
         <div class="info-row">
           <span class="info-label">상태</span>
           <span class="info-badge ${category}">${escapeHtml(office.status || "상태 미상")}</span>
+        </div>
+      </div>
+    `;
+  }, [markerVariant]);
+
+  const createCheckpointInfoWindowContent = useCallback((checkpoint: OverloadCheckpoint) => {
+    const coordinates =
+      checkpoint.latitude !== null && checkpoint.longitude !== null
+        ? `${checkpoint.latitude.toFixed(6)}, ${checkpoint.longitude.toFixed(6)}`
+        : "좌표 정보 없음";
+
+    return `
+      <div class="map-info-window checkpoint">
+        <div class="info-title">${escapeHtml(checkpoint.business_name || "과적검문소")}</div>
+        <div class="info-row">
+          <span class="info-label">주소</span>
+          <span class="info-value address">${escapeHtml(checkpoint.address || "주소 정보 없음")}</span>
+        </div>
+        <div class="info-row">
+          <span class="info-label">도로명</span>
+          <span class="info-value address">${escapeHtml(checkpoint.road_address || "도로명주소 정보 없음")}</span>
+        </div>
+        <div class="info-row">
+          <span class="info-label">좌표</span>
+          <span class="info-value">${escapeHtml(coordinates)}</span>
+        </div>
+        <div class="info-row">
+          <span class="info-label">상태</span>
+          <span class="info-badge checkpoint">${escapeHtml(checkpoint.status || "상태 미상")}</span>
         </div>
       </div>
     `;
@@ -171,6 +247,26 @@ export default function MapView<T>({
     return markerImagesRef.current[category] as ConstructorParameters<
       typeof window.kakao.maps.Marker
     >[0]["image"];
+  }, []);
+
+  const getCheckpointMarkerImage = useCallback(() => {
+    if (!window.kakao) {
+      return undefined;
+    }
+
+    if (!checkpointMarkerImageRef.current) {
+      checkpointMarkerImageRef.current = new window.kakao.maps.MarkerImage(
+        `data:image/svg+xml;charset=UTF-8,${getCheckpointMarkerSvg()}`,
+        new window.kakao.maps.Size(36, 44),
+      );
+    }
+
+    return checkpointMarkerImageRef.current;
+  }, []);
+
+  const clearCheckpointMarkers = useCallback(() => {
+    checkpointMarkersRef.current.forEach((marker) => marker.setMap(null));
+    checkpointMarkersRef.current = [];
   }, []);
 
   const selectOffice = useCallback(
@@ -297,6 +393,82 @@ export default function MapView<T>({
     };
   }, [closeInfoWindow, kakaoKey]);
 
+  const toggleCheckpoints = useCallback(() => {
+    const map = mapRef.current;
+    if (!mapReady || !map || !window.kakao) {
+      return;
+    }
+
+    if (checkpointsVisible) {
+      clearCheckpointMarkers();
+      closeInfoWindow();
+      setCheckpointsVisible(false);
+      return;
+    }
+
+    setCheckpointsLoading(true);
+    setCheckpointsError("");
+    fetch(getDataUrl("overload-checkpoints.json"))
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error("과적검문소 데이터를 불러오지 못했습니다.");
+        }
+        return response.json() as Promise<OverloadCheckpoint[]>;
+      })
+      .then((data) => {
+        const items = Array.isArray(data) ? data : [];
+        const validCheckpoints = items.filter(
+          (item) => typeof item.latitude === "number" && typeof item.longitude === "number",
+        );
+
+        clearCheckpointMarkers();
+        const nextMarkers = validCheckpoints.map((checkpoint) => {
+          const position = new window.kakao!.maps.LatLng(
+            checkpoint.latitude as number,
+            checkpoint.longitude as number,
+          );
+          const marker = new window.kakao!.maps.Marker({
+            map,
+            position,
+            title: checkpoint.business_name || "과적검문소",
+            image: getCheckpointMarkerImage(),
+          });
+
+          window.kakao!.maps.event.addListener(marker, "click", () => {
+            suppressNextMapClickRef.current = true;
+            window.setTimeout(() => {
+              suppressNextMapClickRef.current = false;
+            }, 0);
+            closeInfoWindow();
+            const infoWindow = new window.kakao!.maps.InfoWindow({
+              content: createCheckpointInfoWindowContent(checkpoint),
+              removable: true,
+            });
+            infoWindow.open(map, marker);
+            infoWindowRef.current = infoWindow;
+          });
+
+          return marker;
+        });
+
+        checkpointMarkersRef.current = nextMarkers;
+        setCheckpointsVisible(true);
+      })
+      .catch((exc: Error) => {
+        clearCheckpointMarkers();
+        setCheckpointsVisible(false);
+        setCheckpointsError(exc.message);
+      })
+      .finally(() => setCheckpointsLoading(false));
+  }, [
+    checkpointsVisible,
+    clearCheckpointMarkers,
+    closeInfoWindow,
+    createCheckpointInfoWindowContent,
+    getCheckpointMarkerImage,
+    mapReady,
+  ]);
+
   const sidoOptions = useMemo(() => {
     const values = offices.map((office) => office.sido).filter(Boolean);
     return [ALL, ...Array.from(new Set(values)).sort((a, b) => a.localeCompare(b, "ko"))];
@@ -364,7 +536,10 @@ export default function MapView<T>({
       const marker = new window.kakao!.maps.Marker({
         position,
         title: office.business_name,
-        image: getMarkerImage(getStatusCategory(office.status)),
+        image:
+          markerVariant === "checkpoint"
+            ? getCheckpointMarkerImage()
+            : getMarkerImage(getStatusCategory(office.status)),
       });
       markerByIdRef.current.set(office.id, marker);
 
@@ -385,7 +560,7 @@ export default function MapView<T>({
       map.setBounds(bounds);
     }
     markersRef.current = nextMarkers;
-  }, [filteredOffices, getMarkerImage, mapReady, selectOffice]);
+  }, [filteredOffices, getCheckpointMarkerImage, getMarkerImage, mapReady, markerVariant, selectOffice]);
 
   useEffect(() => {
     if (
@@ -464,6 +639,24 @@ export default function MapView<T>({
               ))}
             </select>
           </label>
+
+          {showCheckpointToggle && (
+          <div className="checkpoint-control">
+            <button
+              className={checkpointsVisible ? "checkpoint-toggle active" : "checkpoint-toggle"}
+              type="button"
+              disabled={!mapReady || checkpointsLoading}
+              onClick={toggleCheckpoints}
+            >
+              {checkpointsLoading
+                ? "과적검문소 로딩"
+                : checkpointsVisible
+                  ? "과적검문소 숨김"
+                  : "과적검문소 표시"}
+            </button>
+            {checkpointsError && <span>{checkpointsError}</span>}
+          </div>
+          )}
         </section>
 
         <div className="result-summary">

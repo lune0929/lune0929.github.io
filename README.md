@@ -60,6 +60,61 @@ npm run fetch:highway
 
 성공 데이터는 `public/data/highway-toll-offices.json`, 좌표 확인 실패 데이터는 `public/data/highway-toll-offices-failed.json`에 저장됩니다.
 
+## 과적검문소 네이버 지오코딩
+
+`data/naver_geocode_input_addresses.csv`의 주소 목록을 네이버 클라우드 플랫폼 지도 Geocoding API로 좌표화합니다. 주소는 `정규화주소`, `주소`, `원문` 순서로 사용합니다. API 키는 코드에 넣지 말고 환경변수로만 설정합니다.
+
+Windows PowerShell:
+
+```powershell
+$env:NCP_MAPS_KEY_ID="your_naver_cloud_maps_key_id_here"
+$env:NCP_MAPS_KEY="your_naver_cloud_maps_key_here"
+```
+
+macOS/Linux:
+
+```bash
+export NCP_MAPS_KEY_ID="your_naver_cloud_maps_key_id_here"
+export NCP_MAPS_KEY="your_naver_cloud_maps_key_here"
+```
+
+실행:
+
+```bash
+npm run geocode:checkpoints
+```
+
+변환 결과 CSV는 `data/naver_geocoded_output.csv`에 저장됩니다. 지도에서 바로 사용하는 성공 JSON은 `public/data/overload-checkpoints.json`, 실패 목록은 `public/data/overload-checkpoints-failed.json`에 저장됩니다.
+
+지도 화면의 검색/필터 영역에서 `과적검문소 표시` 버튼을 누르면 좌표가 있는 과적검문소가 기존 민간계량소 또는 고속도로 영업소 마커와 함께 표시됩니다. 다시 누르면 과적검문소 마커만 숨겨집니다.
+
+## 전화번호 자동 보강
+
+전화번호가 비어 있는 항목은 Kakao Local 키워드 검색과 Naver Local Search fallback으로 보강할 수 있습니다. API 키는 `.env` 또는 PowerShell 환경변수로 설정합니다. 실행 로그에는 키 값을 출력하지 않습니다.
+
+```bash
+KAKAO_REST_API_KEY=your_kakao_rest_api_key_here
+NAVER_CLIENT_ID=your_naver_client_id_here
+NAVER_CLIENT_SECRET=your_naver_client_secret_here
+```
+
+먼저 dry-run으로 대상 건수를 확인합니다.
+
+```bash
+python scripts/enrich-phones-from-place-search.py --target scale --dry-run
+python scripts/enrich-phones-from-place-search.py --target highway --dry-run
+```
+
+소량 테스트 후 전체 실행합니다.
+
+```bash
+python scripts/enrich-phones-from-place-search.py --target scale --limit 10
+python scripts/enrich-phones-from-place-search.py --target all --limit 20
+python scripts/enrich-phones-from-place-search.py --target all
+```
+
+실패 목록은 `public/data/phone-enrich-failed.json`에 저장됩니다. 실제 저장 시 원본은 `public/data/*.phone.backup.json`으로 백업되며, 최종 반영은 사용자가 직접 확인한 뒤 `git add`, `git commit`, `git push`로 진행합니다.
+
 ## 편집 JSON 반영 절차
 
 정적 GitHub Pages 환경에서는 브라우저가 `public/data/*.json` 파일을 직접 저장할 수 없습니다. 편집 화면에서 다운로드한 JSON 파일을 직접 교체한 뒤 커밋합니다.

@@ -8,7 +8,9 @@
     "build": "tsc -b && vite build",
     "preview": "vite preview",
     "convert": "python scripts/convert-scale-csv.py",
-    "fetch:highway": "python scripts/fetch-highway-toll-offices.py"
+    "fetch:highway": "python scripts/fetch-highway-toll-offices.py",
+    "geocode:checkpoints": "python data/naver_geocode_batch.py data/naver_geocode_input_addresses.csv data/naver_geocoded_output.csv",
+    "geocode:checkpoints:kakao": "python scripts/geocode-checkpoints-kakao.py data/naver_geocode_input_addresses.csv data/kakao_geocoded_output.csv"
   },
   "dependencies": {
     "@vitejs/plugin-react": "^4.3.4",
