@@ -1,4 +1,15 @@
-import { Map, Route, ShieldAlert } from "lucide-react";
+import {
+  AlertTriangle,
+  Anchor,
+  Coffee,
+  Factory,
+  Layers,
+  Map,
+  Route,
+  ShieldAlert,
+  Truck,
+  Warehouse,
+} from "lucide-react";
 
 export default function HomePage() {
   return (
@@ -19,10 +30,6 @@ export default function HomePage() {
               <small>민간계량소 위치와 영업상태를 확인합니다.</small>
             </span>
           </a>
-          <a className="home-edit-link" href="#/scale-offices/edit">
-            전국 민간계량소 편집
-          </a>
-
           <a className="home-card-button" href="#/highway-toll-offices">
             <span className="home-card-icon" aria-hidden="true">
               <Route size={30} />
@@ -32,9 +39,6 @@ export default function HomePage() {
               <small>전국 고속도로 영업소 위치를 확인합니다.</small>
             </span>
           </a>
-          <a className="home-edit-link" href="#/highway-toll-offices/edit">
-            전국 영업소 편집
-          </a>
 
           <a className="home-card-button" href="#/overload-checkpoints">
             <span className="home-card-icon checkpoint" aria-hidden="true">
@@ -43,6 +47,76 @@ export default function HomePage() {
             <span>
               <strong>전국 과적검문소 지도</strong>
               <small>CSV 주소를 좌표화한 과적검문소 위치를 확인합니다.</small>
+            </span>
+          </a>
+
+          <a className="home-card-button" href="#/heavy-factories">
+            <span className="home-card-icon heavy-factory" aria-hidden="true">
+              <Factory size={30} />
+            </span>
+            <span>
+              <strong>전국 고중량 공장 지도</strong>
+              <small>생산품 기준 고중량 화물 발생 가능성이 높은 공장 후보 위치를 확인합니다.</small>
+            </span>
+          </a>
+
+          <a className="home-card-button" href="#/logistics-warehouses">
+            <span className="home-card-icon warehouse" aria-hidden="true">
+              <Warehouse size={30} />
+            </span>
+            <span>
+              <strong>전국 물류창고 지도</strong>
+              <small>창고면적 기준 대형·중형·소형 물류창고 위치를 확인합니다.</small>
+            </span>
+          </a>
+
+          <a className="home-card-button" href="#/port-areas">
+            <span className="home-card-icon port-area" aria-hidden="true">
+              <Anchor size={30} />
+            </span>
+            <span>
+              <strong>전국 항만구역 지도</strong>
+              <small>항만구역 SHP를 변환한 폴리곤 위치를 확인합니다.</small>
+            </span>
+          </a>
+
+          <a className="home-card-button" href="#/industrial-complex-boundaries">
+            <span className="home-card-icon industrial-complex" aria-hidden="true">
+              <Layers size={30} />
+            </span>
+            <span>
+              <strong>전국 산업단지 경계 지도</strong>
+              <small>국가·일반·도시첨단·농공 산업단지 경계를 확인합니다.</small>
+            </span>
+          </a>
+
+          <a className="home-card-button" href="#/rest-areas">
+            <span className="home-card-icon rest-area" aria-hidden="true">
+              <Coffee size={30} />
+            </span>
+            <span>
+              <strong>전국 휴게소 지도</strong>
+              <small>전국 휴게소 위치와 노선 정보를 확인합니다.</small>
+            </span>
+          </a>
+
+          <a className="home-card-button" href="#/accident-hotspots">
+            <span className="home-card-icon accident" aria-hidden="true">
+              <AlertTriangle size={30} />
+            </span>
+            <span>
+              <strong>전국 사고다발지역 지도</strong>
+              <small>사고유형별 교통사고다발지역을 확인합니다.</small>
+            </span>
+          </a>
+
+          <a className="home-card-button" href="#/truck-accident-hotspots">
+            <span className="home-card-icon truck-accident" aria-hidden="true">
+              <Truck size={30} />
+            </span>
+            <span>
+              <strong>전국 화물차 사고다발지역 지도</strong>
+              <small>화물차 사망·중상 교통사고 다발지역을 확인합니다.</small>
             </span>
           </a>
         </nav>

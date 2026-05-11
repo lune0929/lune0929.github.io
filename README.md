@@ -88,6 +88,176 @@ npm run geocode:checkpoints
 
 지도 화면의 검색/필터 영역에서 `과적검문소 표시` 버튼을 누르면 좌표가 있는 과적검문소가 기존 민간계량소 또는 고속도로 영업소 마커와 함께 표시됩니다. 다시 누르면 과적검문소 마커만 숨겨집니다.
 
+## 고중량 화물 발생 가능 공장 분류
+
+`data/한국산업단지공단_전국등록공장현황_등록공장현황자료_20241231.csv`의 `생산품`을 기준으로 공장을 `고중량 후보 강`, `고중량 후보 중`, `일반/저중량`, `확인 필요`로 분류합니다. `고중량 후보 강`과 `고중량 후보 중` 항목만 카카오 로컬 주소 검색 API로 좌표 변환합니다.
+
+카카오 REST API 키를 환경변수로 설정합니다. 실제 키는 코드나 커밋 대상 파일에 넣지 않습니다.
+
+Windows PowerShell:
+
+```powershell
+$env:KAKAO_REST_API_KEY="발급받은_REST_API_KEY"
+```
+
+macOS/Linux:
+
+```bash
+export KAKAO_REST_API_KEY="발급받은_REST_API_KEY"
+```
+
+분류만 실행:
+
+```bash
+npm run classify:factories
+```
+
+카카오 지오코딩 샘플 실행:
+
+```bash
+npm run geocode:heavy-factories -- --limit 100
+```
+
+지역 또는 분류를 좁혀 실행할 수 있습니다. 캐시에 이미 있는 주소는 API를 호출하지 않고 재사용합니다.
+
+```bash
+npm run geocode:heavy-factories -- --sido 부산 --limit 100
+npm run geocode:heavy-factories -- --sido 경남 --heavy-class "고중량 후보 강" --limit 100
+```
+
+전체 지오코딩 실행:
+
+```bash
+npm run geocode:heavy-factories -- --all
+npm run geocode:heavy-factories -- --sido 충남 --all
+```
+
+결과 파일:
+
+```text
+data/geocode-cache-kakao.json
+data/factory_heavy_classified.csv
+public/data/heavy-factories.json
+public/data/heavy-factories-failed.json
+```
+
+카카오 좌표 결과는 `data/geocode-cache-kakao.json`에 저장되며, 같은 `공장주소`를 가진 여러 공장은 캐시 좌표를 재사용합니다. 지오코딩 중간에는 `.partial` 파일이 생성되어 중단 시점까지의 캐시와 결과를 확인할 수 있습니다.
+
+지도 화면에서 `고중량 공장 표시` 버튼을 누르면 좌표 변환에 성공한 고중량 공장 마커가 기존 마커와 함께 표시됩니다. 다시 누르면 고중량 공장 마커만 숨겨집니다.
+
+## 물류창고 지도 데이터 변환
+
+`data/기타_물류창고업체.csv`에서 `영업상태명`이 `영업/정상`인 물류창고만 지도용 JSON으로 변환합니다. 총 창고면적은 `일반창고면적 + 냉동냉장창고면적 + 보관장소면적`으로 계산합니다.
+
+규모 기준:
+
+```text
+대형: total_warehouse_area >= 20000
+중형: 5000 <= total_warehouse_area < 20000
+소형: total_warehouse_area < 5000
+초대형: total_warehouse_area >= 50000
+```
+
+변환 명령:
+
+```bash
+npm run convert:warehouses
+```
+
+출력 파일:
+
+```text
+public/data/logistics-warehouses.json
+```
+
+CSV의 `좌표정보(X)`, `좌표정보(Y)`는 WGS84 위경도가 아니라 한국 TM 좌표입니다. 샘플 주소와 좌표 범위를 기준으로 EPSG:2097에서 EPSG:4326으로 변환합니다. 다른 좌표계로 확인되면 아래처럼 원본 EPSG를 지정할 수 있습니다.
+
+```bash
+python scripts/convert-logistics-warehouses.py --source-epsg 5174
+```
+
+메인 화면의 `전국 물류창고 지도` 카드에서 진입할 수 있으며, 지도 화면에서는 `전체`, `대형`, `중형`, `소형`, `초대형` 필터를 사용할 수 있습니다. 기본 필터는 `대형`입니다.
+
+## 항만구역 SHP 변환
+
+항만구역 원본 SHP 세트는 `data/항만구역_20250811/`에 둡니다. 원본 SHP는 `public` 폴더에 직접 노출하지 않고, 변환된 GeoJSON만 지도에서 읽습니다.
+
+필수 SHP 세트:
+
+```text
+*.shp
+*.shx
+*.dbf
+*.prj
+```
+
+변환 명령:
+
+```bash
+npm run convert:ports
+```
+
+출력 파일:
+
+```text
+public/data/port-areas.geojson
+```
+
+변환 스크립트는 `data` 폴더에서 항만구역 `.shp` 또는 `.zip` 후보를 탐색하고, `.prj` 좌표계를 읽어 WGS84, EPSG:4326 GeoJSON으로 변환합니다. GeoJSON 좌표는 `[longitude, latitude]` 순서이며, 카카오 지도에 표시할 때는 `new kakao.maps.LatLng(latitude, longitude)` 순서로 변환합니다.
+
+용량이 크거나 렌더링이 무거우면 단순화 옵션을 사용할 수 있습니다.
+
+```bash
+python scripts/convert-port-shp-to-geojson.py --simplify 0.00005
+```
+
+지도 화면의 검색/필터 영역에서 `항만구역 표시` 버튼을 누르면 항만구역 폴리곤이 카카오 지도 위에 표시됩니다. 다시 누르면 항만구역 폴리곤만 숨겨집니다.
+
+## 산업단지 경계 SHP 변환
+
+산업단지 경계 원본 SHP 세트는 `data/DAM_DAN/`에 둡니다. 이 데이터는 산업단지 대표점이 아니라 경계 폴리곤입니다. 원본 SHP는 `public` 폴더에 복사하지 않고, 변환된 GeoJSON만 지도에서 읽습니다.
+
+변환 명령:
+
+```bash
+npm run convert:industrial-complexes
+```
+
+출력 파일:
+
+```text
+public/data/industrial-complex-boundaries.geojson
+```
+
+변환 스크립트는 `data/DAM_DAN/*.shp`를 찾아 `.prj` 좌표계를 읽고, WGS84, EPSG:4326 GeoJSON으로 변환합니다. 현재 `DAM_DAN.prj`는 EPSG:5186으로 식별됩니다. GeoJSON 좌표는 `[longitude, latitude]` 순서이며, 카카오 지도에서는 `new kakao.maps.LatLng(latitude, longitude)` 순서로 변환해 표시합니다.
+
+용량이 크거나 렌더링이 무거우면 단순화 옵션을 사용할 수 있습니다.
+
+```bash
+python scripts/convert-industrial-complex-boundaries.py --simplify 0.0001
+```
+
+메인 화면의 `전국 산업단지 경계 지도` 카드에서 진입할 수 있습니다. 지도 화면에서는 `전체`, `국가산업단지`, `일반산업단지`, `도시첨단산업단지`, `농공단지` 필터를 선택한 뒤 `산업단지 경계 표시` 버튼으로 폴리곤을 표시하거나 숨길 수 있습니다.
+
+## 화물차 사고다발지역 데이터 변환
+
+`data/한국도로교통공단_화물차 교통사고 다발지역.csv`를 읽어 중심점 마커용 JSON과 다발지역 폴리곤 GeoJSON을 생성합니다. CSV의 `경도`, `위도`, `다발지역폴리곤` 값을 사용하며 카카오 API나 주소 지오코딩은 호출하지 않습니다.
+
+변환 명령:
+
+```bash
+npm run convert:truck-accidents
+```
+
+출력 파일:
+
+```text
+public/data/truck-accident-hotspots.json
+public/data/truck-accident-hotspots.geojson
+```
+
+메인 화면의 `전국 화물차 사고다발지역 지도` 카드에서 진입할 수 있습니다. 지도 화면에서는 중심점 마커와 다발지역 폴리곤이 함께 표시되며, 시도·사고건수·사망자수·중상자수 기준으로 필터링할 수 있습니다.
+
 ## 전화번호 자동 보강
 
 전화번호가 비어 있는 항목은 Kakao Local 키워드 검색과 Naver Local Search fallback으로 보강할 수 있습니다. API 키는 `.env` 또는 PowerShell 환경변수로 설정합니다. 실행 로그에는 키 값을 출력하지 않습니다.

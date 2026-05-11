@@ -1,0 +1,4618 @@
+[
+  {
+    "id": "heavy-factory-608",
+    "original_address": "서울특별시 중구 필동3가 18-10번지",
+    "company_name": "우형리도",
+    "product": "기계제조",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-867",
+    "original_address": "서울특별시 중구 을지로15길 30-30 (입정동)",
+    "company_name": "신아주물",
+    "product": "주물",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-1346",
+    "original_address": "서울특별시 용산구 백범로90길 84-19 (문배동)",
+    "company_name": "상신공작소",
+    "product": "포장(컵)기계",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-1498",
+    "original_address": "서울특별시 성동구 성수1가제2동 656-1058번지",
+    "company_name": "대영제과제빵기계공업(주)",
+    "product": "제빵기계 및 주방기구,발효기,믹서기",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-1590",
+    "original_address": "서울특별시 성동구 왕십리로16가길 26-4 (성수동1가)",
+    "company_name": "케이알프렌트",
+    "product": "산업탱크류",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-1838",
+    "original_address": "서울특별시 성동구 성수일로10길 24, 1층 (성수동2가)",
+    "company_name": "거성레이저",
+    "product": "조립금속제품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-1880",
+    "original_address": "서울특별시 성동구 아차산로17길 7 (성수동2가, 동진기계산업주)",
+    "company_name": "동진기계산업(주)",
+    "product": "식품가공기계",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-2213",
+    "original_address": "서울특별시 성동구 광나루로 223 (송정동, 우성공업사)",
+    "company_name": "대왕보일러ENG",
+    "product": "보일러",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-2606",
+    "original_address": "서울특별시 중랑구 면목제7동 578-29번지",
+    "company_name": "로고스",
+    "product": "섬유,기계자수",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-2770",
+    "original_address": "서울특별시 중랑구 동일로140길 19-8, 지층. 1층 (중화동)",
+    "company_name": "현대사무방종합문구",
+    "product": "바이더, 파일",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-2827",
+    "original_address": "서울특별시 중랑구 망우로 488 (망우동, 대한낚시마트)",
+    "company_name": "삼진전자",
+    "product": "전기계기,정밀측정기",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-3274",
+    "original_address": "서울특별시 노원구 공릉로 232, 제1창업보육센터 101A호, 101B호(공릉동, 서울과학기술대학교)",
+    "company_name": "주식회사 초이랩",
+    "product": "비료, 흡착제, 증산제(바이오차 가공 및 제조)",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-3697",
+    "original_address": "서울특별시 강서구 공항대로75길 58, 2층 (염창동)",
+    "company_name": "강서정비센터",
+    "product": "자동차 부품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-3791",
+    "original_address": "서울특별시 강서구 화곡로66길 155 (등촌동, 동부자동차공업사)",
+    "company_name": "(주)용창정밀",
+    "product": "금속조립구조재",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-3809",
+    "original_address": "서울특별시 강서구 등촌제1동 630-17번지",
+    "company_name": "(주)팬코스",
+    "product": "주유기, 콤프레샤, 펌프외",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-3815",
+    "original_address": "서울특별시 강서구 양천로60길 40 (등촌동, (주)우진코니티)",
+    "company_name": "(주)화승케미칼",
+    "product": "산업용고무제품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-3852",
+    "original_address": "서울특별시 강서구 등촌제1동 639-19번지",
+    "company_name": "삼원정공",
+    "product": "기계기구",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-3870",
+    "original_address": "서울특별시 강서구 공항대로41길 147 (등촌동, 한성자동차매매센터)",
+    "company_name": "장성기계",
+    "product": "기타일반목적용기계제조업",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-4152",
+    "original_address": "서울특별시 강서구 강서로74길 50 (가양동)",
+    "company_name": "신원카도크",
+    "product": "자동차부품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-4163",
+    "original_address": "서울특별시 강서구 양천로49길 56-13 (가양동)",
+    "company_name": "우진앤플래닛㈜",
+    "product": "종이상자, 종이 용기",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-4372",
+    "original_address": "서울특별시 구로구 경인로 611-21 (신도림동)",
+    "company_name": "성신기계",
+    "product": "금속 조립구조재",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-4415",
+    "original_address": "서울특별시 구로구 경인로51길 124, 외2필지 (구로동)",
+    "company_name": "(주)서림메탈",
+    "product": "철판제품",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-4428",
+    "original_address": "서울특별시 구로구 구로중앙로 229, 지하 B06 (구로동) 외 5필지",
+    "company_name": "(주)에치케이콘트로매틱",
+    "product": "밸브, 액츄에이터 등",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-4579",
+    "original_address": "서울특별시 구로구 디지털로31길 38-9 B1층 B105-1호 (구로동, 에이스테크노타워1차) 외 1필지",
+    "company_name": "(주)그린이앤에이",
+    "product": "전기계장판넬",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-5379",
+    "original_address": "서울특별시 구로구 고척제1동 103-4번지 고척공구상가 가동B325-2,5",
+    "company_name": "대용엔지니어링",
+    "product": "식품기계",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-5463",
+    "original_address": "서울특별시 구로구 부일로1나길 22-13 (온수동) 외 1필지",
+    "company_name": "대양기공",
+    "product": "산업기계칼날",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-6184",
+    "original_address": "서울특별시 금천구 가산디지털2로 17, 신관2층 전체 (가산동)",
+    "company_name": "(주)비비씨엔텍",
+    "product": "세척기, 배관스케일링장비",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-6829",
+    "original_address": "서울특별시 금천구 가산디지털1로 39, 1층 일부 (가산동)",
+    "company_name": "(주)이엔드디",
+    "product": "자동차부품, 매연저감장치",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-7667",
+    "original_address": "서울특별시 금천구 가산디지털2로 18 B1층 B03호 (가산동, 대륭테크노타운1차) B1층 B03호",
+    "company_name": "디알비유니온벨티노(주)",
+    "product": "수지벨트, 고무제품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-8155",
+    "original_address": "서울특별시 금천구 가산디지털2로 123 B1층 B103호 (가산동, 월드메르디앙2차) 외 1필지",
+    "company_name": "알파테크산업",
+    "product": "펌프,시스템",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-8269",
+    "original_address": "서울특별시 금천구 벚꽃로 244 B1층 B119호 (가산동) 외 1필지",
+    "company_name": "엘지펌프공업(주)",
+    "product": "원심펌프",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-8871",
+    "original_address": "서울특별시 금천구 가산디지털1로 39 (가산동)",
+    "company_name": "한국화장품제조판매기술연구소",
+    "product": "포장용판지상자 및 기타종이용기",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-9186",
+    "original_address": "서울특별시 금천구 벚꽃로 122, 1F (독산동)",
+    "company_name": "대성산업",
+    "product": "산업용기계",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-9235",
+    "original_address": "서울특별시 금천구 두산로 70, 비동 B2층 B213호, B204호 (독산동) 외 1필지",
+    "company_name": "미래밸브콘트롤(주)",
+    "product": "밸브",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-9239",
+    "original_address": "서울특별시 금천구 가산로3길 47 (독산동)",
+    "company_name": "미창유리(주)",
+    "product": "복층유리",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-9261",
+    "original_address": "서울특별시 금천구 범안로9길 48, 1,2층 (독산동)",
+    "company_name": "상우정밀",
+    "product": "자동차부품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-9667",
+    "original_address": "서울특별시 영등포구 선유동1로 46 (당산동3가) (총 3 필지) 외 2필지",
+    "company_name": "(주)동광복층",
+    "product": "복층유리, 강화유리, 거울 등",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-9872",
+    "original_address": "서울특별시 영등포구 경인로77가길 14 (문래동2가) 34-1",
+    "company_name": "국제금속상사",
+    "product": "밸브, 펌프,필터",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-9950",
+    "original_address": "서울특별시 영등포구 문래동3가 85번지",
+    "company_name": "삼본기계제작소",
+    "product": "기계제작",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-184341",
+    "original_address": "경상남도 창원시 의창구 무역로503번길 5-26 (팔용동, 현대,기아자동차 지원정비) 외 3필지",
+    "company_name": "지원정비공업사",
+    "product": "건설기계, 자동차정비",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-184619",
+    "original_address": "경상남도 창원시 의창구 북면 천주로769번길 185 외 1필지",
+    "company_name": "(주)영성",
+    "product": "GCB탱크",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-184713",
+    "original_address": "경상남도 창원시 의창구 대산면 가술리 658번지 외 3필지",
+    "company_name": "(주)창원레미콘",
+    "product": "레미콘",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-184814",
+    "original_address": "경상남도 창원시 의창구 대산면 주남로400번길 37 (총 2 필지) 외 1필지",
+    "company_name": "(주)대성파인텍",
+    "product": "태양열온수기,심야전기보일러, 태양광발전장치(접속반, 구조물)",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-184834",
+    "original_address": "경상남도 창원시 의창구 대산면 진남로114번길 73 외 2필지",
+    "company_name": "성산기계",
+    "product": "철판재류 절단가공품",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-184977",
+    "original_address": "경상남도 창원시 성산구 삼동로 100-29, 7 (내동)",
+    "company_name": "손오공기술",
+    "product": "선박엔진부품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-184980",
+    "original_address": "경상남도 창원시 성산구 남면로 381(내동, HD현대마린엔진(주)) 외 1필지",
+    "company_name": "에이치디현대마린엔진 주식회사 내동공장",
+    "product": "디젤엔진,주조생산",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-184982",
+    "original_address": "경상남도 창원시 성산구 삼동로 100-29, 11 (내동)",
+    "company_name": "예흥정밀",
+    "product": "선박엔진부품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-185008",
+    "original_address": "경상남도 창원시 성산구 공단로 52 (양곡동, 대림요업) 외 29필지",
+    "company_name": "대림비앤코(주)",
+    "product": "위생도기, 내장타일",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-185108",
+    "original_address": "경상남도 창원시 성산구 적현로 147 (신촌동) 외 20필지",
+    "company_name": "(주)세아창원특수강",
+    "product": "선재,강봉,무계목 강관",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-185111",
+    "original_address": "경상남도 창원시 성산구 공단로21번길 35 (신촌동, (주)승은테크) 외 1필지",
+    "company_name": "(주)승은테크",
+    "product": "각종 탱크류",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-185259",
+    "original_address": "경상남도 창원시 성산구 적현로 144(신촌동, 동림공업(주), (주)건화기업) 외 4필지",
+    "company_name": "삼성중공업(주) 창원1공장",
+    "product": "철판 절단품",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-185381",
+    "original_address": "경상남도 창원시 성산구 공단로21번길 18 (신촌동) 외 1필지",
+    "company_name": "지이파워시스템즈코리아(주)",
+    "product": "배열회수보일러",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-185412",
+    "original_address": "경상남도 창원시 성산구 공단로103번길 12 (신촌동, 한국철강(주)) 외 1필지",
+    "company_name": "한국철강(주)",
+    "product": "철강, 제강, 제철 등",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-185424",
+    "original_address": "경상남도 창원시 성산구 공단로 67 (신촌동) 외 2필지",
+    "company_name": "한화엔진㈜",
+    "product": "선박엔진외",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-185425",
+    "original_address": "경상남도 창원시 성산구 공단로 69 (신촌동)",
+    "company_name": "한화엔진㈜",
+    "product": "선박용 엔진 등",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-185428",
+    "original_address": "경상남도 창원시 성산구 적현로 124 (신촌동, 비앤지스틸(주)) 외 4필지",
+    "company_name": "현대비앤지스틸(주)",
+    "product": "스텐레스,강판,강대",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-185429",
+    "original_address": "경상남도 창원시 성산구 월림로 46 (신촌동, 메티아(주))",
+    "company_name": "현대위아(주) 창원5공장",
+    "product": "자동차용 주물제품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-185631",
+    "original_address": "경상남도 창원시 성산구 공단로 230-2 (웅남동, 창원중공업) 외 1필지",
+    "company_name": "(주)엠케이버팔로",
+    "product": "금속수공구,자동차부품,단조물외",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-185697",
+    "original_address": "경상남도 창원시 성산구 연덕로 76 (웅남동, 강림중공업(주)) (총 2 필지) 외 1필지",
+    "company_name": "강림중공업(주)",
+    "product": "선박용 및 산업용 보일러 등",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-186277",
+    "original_address": "경상남도 창원시 성산구 완암로 50, 메카동 6층 620호 (성산동, SK테크노파크) 외 1필지",
+    "company_name": "신양일렉콤",
+    "product": "조선해양 및 중공업용 특수형 리미트 스위치",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-186701",
+    "original_address": "경상남도 창원시 마산합포구 구산면 난포해안길 132 외 1필지",
+    "company_name": "(주)에이치엠티",
+    "product": "선박",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-186712",
+    "original_address": "경상남도 창원시 마산합포구 진동면 동촌길 129 외 4필지",
+    "company_name": "전일이엔지",
+    "product": "선박부품가공",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-186729",
+    "original_address": "경상남도 창원시 마산합포구 진동면 태봉1길 215-1 외 1필지",
+    "company_name": "(주)고구려",
+    "product": "선박부품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-186742",
+    "original_address": "경상남도 창원시 마산합포구 진북면 673-1번지 외 2필지 외 1필지",
+    "company_name": "대성석재",
+    "product": "석재품",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-186752",
+    "original_address": "경상남도 창원시 마산합포구 지산1길 98-176 (진북면) 외 2필지",
+    "company_name": "대영산업",
+    "product": "조선용 철구조물",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-186814",
+    "original_address": "경상남도 창원시 마산합포구 진북면 산단2길 46-6 (총 2 필지) 외 1필지",
+    "company_name": "(주)프리텍",
+    "product": "중장비부품,선박엔진부품,철도차량부품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-186834",
+    "original_address": "경상남도 창원시 마산합포구 진북면 신촌리 382번지 외 1필지",
+    "company_name": "통일보일러(주)",
+    "product": "산업용 보일러,산업용 보일러 설비",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-186840",
+    "original_address": "경상남도 창원시 마산합포구 진북면 연동로 119 (총 4 필지) 외 3필지",
+    "company_name": "(주)경신",
+    "product": "레미콘",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-186841",
+    "original_address": "경상남도 창원시 마산합포구 진북면 연동로 154 외 1필지",
+    "company_name": "(주)경신 2공장",
+    "product": "골재, 모래",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-186844",
+    "original_address": "경상남도 창원시 마산합포구 진북면 연동로 119 (총 10 필지) 외 9필지",
+    "company_name": "(주)대풍산업",
+    "product": "아스팔트물질, 아스콘 제조",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-186845",
+    "original_address": "경상남도 창원시 마산합포구 진북면 연동로 148 (총 3 필지) 외 2필지",
+    "company_name": "(주)대풍산업",
+    "product": "벽돌, 블럭, 외 토목자재",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-186849",
+    "original_address": "경상남도 창원시 마산합포구 진북면 망곡리 13-1번지 외 3필지",
+    "company_name": "(주)유강피씨 제3공장",
+    "product": "아스콘제조",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-186851",
+    "original_address": "경상남도 창원시 마산합포구 진북면 진북산업로 333-1 외 2필지",
+    "company_name": "(주)큐티엠 진북공장",
+    "product": "도장제품, 선박구성부분품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-186863",
+    "original_address": "경상남도 창원시 마산합포구 진북면 연동로 154, 외 4필지 외 4필지",
+    "company_name": "한국콘크리트산업(주)",
+    "product": "철근콘크리트 2차제품",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-186910",
+    "original_address": "경상남도 창원시 마산합포구 진북면 진북산업로 493-39 외 5필지",
+    "company_name": "(주)대림에스엔피 3공장",
+    "product": "선박용 강구조물",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-186971",
+    "original_address": "경상남도 창원시 마산합포구 진전면 미더덕로 102 외 6필지",
+    "company_name": "(주)동국알앤에스",
+    "product": "내화벽돌",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-187001",
+    "original_address": "경상남도 창원시 마산합포구 진전면 대실로 189 (효종) 외 2필지",
+    "company_name": "효종(주)",
+    "product": "선박용구조물, 절단기(프라즈마방식)",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-187617",
+    "original_address": "경상남도 창원시 마산회원구 내서읍 함마대로 2536-10 (공장) 외 2필지",
+    "company_name": "(주)대덕",
+    "product": "선박용부품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-187718",
+    "original_address": "경상남도 창원시 마산회원구 내서읍 광려천남로 59, 경남로봇산업진흥재단 502,503,504호 (내서읍, 경남개발공사 아파트형공장)",
+    "company_name": "(주)세나코",
+    "product": "선박엔진제어장치",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-187934",
+    "original_address": "경상남도 창원시 진해구 진해대로1114번길 169 (행암동) (총 10 필지) 외 9필지",
+    "company_name": "(주)동일",
+    "product": "철의장품, 건설기계정비",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-188013",
+    "original_address": "경상남도 창원시 진해구 남영로574번길 21 (남양동) 외 1필지",
+    "company_name": "(주)에코스틸2공장",
+    "product": "칼라강판,냉연강판",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-188019",
+    "original_address": "경상남도 창원시 진해구 남의로21번길 23 (남양동) 외 1필지",
+    "company_name": "(주)위테크",
+    "product": "철강재절단가공",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-188044",
+    "original_address": "경상남도 창원시 진해구 남영로564번길 19 (남양동) 외 1필지",
+    "company_name": "㈜광동에프알피산업",
+    "product": "합선수지선(FRP선박) 등",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-188051",
+    "original_address": "경상남도 창원시 진해구 남의로 7 (남양동, 남광주제산업(주)) 외 2필지",
+    "company_name": "남광주재산업(주)진해지점",
+    "product": "p.c.s, 규사, 주물부자재",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-188163",
+    "original_address": "경상남도 창원시 진해구 진해대로 2257 (용원동) 외 14필지",
+    "company_name": "주식회사 용원알앤에이",
+    "product": "레미콘",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-188165",
+    "original_address": "경상남도 창원시 진해구 용원북로 19, 외 53필지 (용원동)",
+    "company_name": "항도파일(주)",
+    "product": "파일, 전주",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-188262",
+    "original_address": "경상남도 진주시 남강로1367번길 13 (상대동) (총 4 필지) 외 3필지",
+    "company_name": "동이공업(주)",
+    "product": "유압감속기, 선박용 유압감속기",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-188463",
+    "original_address": "경상남도 진주시 솔밭로 55 (상평동) (총 2 필지) 외 1필지",
+    "company_name": "(주)우성기업",
+    "product": "아스콘, 레미콘",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-188535",
+    "original_address": "경상남도 진주시 남강로 1049 (상평동) 외 3필지",
+    "company_name": "대영건설기계종합정비공업사",
+    "product": "건설기계 장비수선",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-188536",
+    "original_address": "경상남도 진주시 큰들로 34(상평동) 외 2필지",
+    "company_name": "대영기공사",
+    "product": "원동기정비(건설기계, 자동차수선업)",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-188734",
+    "original_address": "경상남도 진주시 큰들로 95 (상평동) 외 1필지",
+    "company_name": "효창유리",
+    "product": "판유리 및 생활유리",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-188759",
+    "original_address": "경상남도 진주시 판문로 277 (판문동) 외 1필지",
+    "company_name": "한백중기상사",
+    "product": "건설기계 수리",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-188863",
+    "original_address": "경상남도 진주시 문산읍 동부로839번길 77 외 4필지",
+    "company_name": "(주)우경산업",
+    "product": "레미콘",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-189197",
+    "original_address": "경상남도 진주시 진성면 동부로1602번길 48 외 1필지",
+    "company_name": "(주)성광 진성공장",
+    "product": "선박파이프, 철구조물",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-189234",
+    "original_address": "경상남도 진주시 일반성면 떡보길 162 외 1필지",
+    "company_name": "주식회사 영빈테크(2공장)",
+    "product": "선박용 배관",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-189246",
+    "original_address": "경상남도 진주시 이반성면 진마대로2498번길 2-63 외 5필지",
+    "company_name": "주식회사 삼부티에스",
+    "product": "선박 구성 부분품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-189256",
+    "original_address": "경상남도 진주시 이반성면 진마대로2498번길 49 외 1필지",
+    "company_name": "한두철강(주)",
+    "product": "강관",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-189263",
+    "original_address": "경상남도 진주시 사봉면 무촌리 102번지",
+    "company_name": "사봉기계블럭",
+    "product": "블럭벽돌제조",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-189281",
+    "original_address": "경상남도 진주시 사봉면 산업단지로27번길 21 (사봉면 사곡리 1801-3 공장 ((주)신흥기업)) 외 2필지",
+    "company_name": "(주)신흥기업",
+    "product": "유압탱크 및 파이프",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-189293",
+    "original_address": "경상남도 진주시 사봉면 산업단지로 72 외 1필지",
+    "company_name": "(주)진흥콘",
+    "product": "콘크리트블록",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-189328",
+    "original_address": "경상남도 진주시 사봉면 산업단지로 85 외 1필지",
+    "company_name": "주식회사 동방물산",
+    "product": "선박구성품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-189334",
+    "original_address": "경상남도 진주시 사봉면 산업단지로44번길 42 외 2필지",
+    "company_name": "한두철강(주)진주공장",
+    "product": "인발강관, 강관열처리제품",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-189346",
+    "original_address": "경상남도 진주시 사봉면 사군로303번길 8-11 외 1필지",
+    "company_name": "(주)우리콘크리트",
+    "product": "콘크리트,농하수로관, 콘크리트 블록, 기타 콘크리트 제품",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-189363",
+    "original_address": "경상남도 진주시 지수면 지수로 239 (총 2 필지) 외 1필지",
+    "company_name": "대창마린테크(주)진주제2공장",
+    "product": "열간단조제품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-189518",
+    "original_address": "경상남도 통영시 도남로 251 (도남동) (총 4 필지) 외 3필지",
+    "company_name": "주식회사 협동",
+    "product": "선박데크하우스",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-189559",
+    "original_address": "경상남도 통영시 도산면 도산일주로 2284 외 2필지",
+    "company_name": "명성 에프알피",
+    "product": "FRP선박",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-189565",
+    "original_address": "경상남도 통영시 도산면 법송3길 65 외 1필지",
+    "company_name": "유일산기",
+    "product": "선박 구성 부분품 제조업, 수상 부유 구조물",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-189585",
+    "original_address": "경상남도 통영시 도산면 도산일주로 111 (총 5 필지) 외 4필지",
+    "company_name": "(주)금명",
+    "product": "선박용케이블셋트",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-189591",
+    "original_address": "경상남도 통영시 도산면 오륜리 28-6번지 외 1필지",
+    "company_name": "청암산업",
+    "product": "선박구성부품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-189617",
+    "original_address": "경상남도 통영시 광도면 은황길 386-38 외 4필지",
+    "company_name": "(주)삼성산업",
+    "product": "레미콘, 아스콘",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-189621",
+    "original_address": "경상남도 통영시 광도면 공단로 940 외 2필지",
+    "company_name": "(주)디에이치아이 통영공장",
+    "product": "해양플랜트부분품(파이프렉, 플랫폼), LNG부분붐(펌프타워), LNG연료탱크, 조선블록",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-189622",
+    "original_address": "경상남도 통영시 광도면 공단로 946 외 1필지",
+    "company_name": "미부테크(주)",
+    "product": "선박구성부분품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-189628",
+    "original_address": "경상남도 통영시 광도면 안정로 558 외 1필지",
+    "company_name": "가야레미콘(주)",
+    "product": "레미콘",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-189629",
+    "original_address": "경상남도 통영시 광도면 안정로 566 외 6필지",
+    "company_name": "우리산업(주)",
+    "product": "레미콘, 아스콘, 골재, 콘크리트 블럭",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-189631",
+    "original_address": "경상남도 통영시 광도면 안정로 563 외 3필지",
+    "company_name": "주식회사 통영산업",
+    "product": "레미콘",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-189659",
+    "original_address": "경상남도 사천시 삼상로 626 (이홀동) 외 1필지",
+    "company_name": "성일레이저",
+    "product": "발전설비 부품, 사다리, 신축관이음, 조선 및 설비부품, 도로명판외 기타",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-189710",
+    "original_address": "경상남도 사천시 대방길 68 (대방동, 금양수산(주)) 외 2필지",
+    "company_name": "(주)금화중공업",
+    "product": "선박구성부분품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-189793",
+    "original_address": "경상남도 사천시 사천읍 유천길 132-23",
+    "company_name": "광남산업",
+    "product": "자동차 주물소재",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-189893",
+    "original_address": "경상남도 사천시 사남면 외국기업로 152-54 (EEW성화산업(주)) 외 1필지",
+    "company_name": "(주)이이더불유 코리아",
+    "product": "대구경 용접 강관",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-189992",
+    "original_address": "경상남도 사천시 사남면 화전리 286-2번지 외 5필지",
+    "company_name": "(주)신동",
+    "product": "아스팔트콘크리트",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-189994",
+    "original_address": "경상남도 사천시 사남면 사남로 886-11 외 1필지",
+    "company_name": "주식회사 풍강",
+    "product": "경량골재, 석분, 모래, 토사",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-189998",
+    "original_address": "경상남도 사천시 용현면 용남길 31-14 외 1필지",
+    "company_name": "(주)한양",
+    "product": "펠릿보일러",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-190011",
+    "original_address": "경상남도 사천시 용현면 온정리 162번지 외 4필지",
+    "company_name": "(주)대원",
+    "product": "선박프레임부품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-190016",
+    "original_address": "경상남도 사천시 용현면 진삼로 940 (선경산업(주)) 외 3필지",
+    "company_name": "선경산업(주)",
+    "product": "타일,벽돌",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-190115",
+    "original_address": "경상남도 사천시 축동면 구호리 산 13-1번지 외 22필지",
+    "company_name": "(주)경남",
+    "product": "레미콘",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-190131",
+    "original_address": "경상남도 사천시 축동면 구호리 4-2번지 외 1필지",
+    "company_name": "중정아키텍",
+    "product": "건축용빔",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-190141",
+    "original_address": "경상남도 사천시 축동면 인절미고갯길 2-45 (총 2 필지) 외 1필지",
+    "company_name": "아이티알포징 주식회사",
+    "product": "금속단조제품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-190146",
+    "original_address": "경상남도 사천시 곤양면 곤양공단길 20 (명진테크) (총 2 필지) 외 1필지",
+    "company_name": "명진테크",
+    "product": "금속탱크류",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-190163",
+    "original_address": "경상남도 사천시 곤양면 맥사리 95 외 1필지",
+    "company_name": "(주)아쿠아리더",
+    "product": "어죽(아쿠아블록)",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-190172",
+    "original_address": "경상남도 사천시 곤명면 곤명1로 201-16 외 14필지",
+    "company_name": "주식회사 한국그린팩토리",
+    "product": "레미콘",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-190178",
+    "original_address": "경상남도 사천시 서포면 구고속도로 1247 외 1필지",
+    "company_name": "(주)한국피씨엠",
+    "product": "코일코팅",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-190187",
+    "original_address": "경상남도 사천시 서포면 외구리 4-1번지 외 2필지 외 2필지",
+    "company_name": "(주)팔방산업",
+    "product": "인조대리석벽돌,타일",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-190212",
+    "original_address": "경상남도 김해시 구산동 462번지",
+    "company_name": "(주)대성레미콘",
+    "product": "레미콘",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-190453",
+    "original_address": "경상남도 김해시 화목동 1145-2번지",
+    "company_name": "유창정공",
+    "product": "구조용철판가공품",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-190473",
+    "original_address": "경상남도 김해시 전하동 325번지",
+    "company_name": "한일시멘트공업사",
+    "product": "벽돌.블록",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-190476",
+    "original_address": "경상남도 김해시 삼정동 1049-2번지",
+    "company_name": "(주)서경",
+    "product": "경량골재충진재",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-190494",
+    "original_address": "경상남도 김해시 어방동 0번지",
+    "company_name": "(주)대양엔지니아링",
+    "product": "산업기계,선박기자재",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-190519",
+    "original_address": "경상남도 김해시 김해대로2567번길 43 (어방동) 외 1필지",
+    "company_name": "(주)성광금속",
+    "product": "조선기자재",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-190554",
+    "original_address": "경상남도 김해시 어방동 0번지",
+    "company_name": "(주)홍신기전",
+    "product": "승강기, 산업기계",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-190636",
+    "original_address": "경상남도 김해시 어방동 0번지",
+    "company_name": "영진산업(주)",
+    "product": "자동차부품제조",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-190654",
+    "original_address": "경상남도 김해시 어방동 0번지",
+    "company_name": "정진기계(주)",
+    "product": "정밀기계부품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-190983",
+    "original_address": "경상남도 김해시 안동 167-5번지",
+    "company_name": "한미산업",
+    "product": "탱크",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-191029",
+    "original_address": "경상남도 김해시 지내동 0번지 4B-2L",
+    "company_name": "(주)우림",
+    "product": "조선의장품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-191236",
+    "original_address": "경상남도 김해시 유하로 204-3(유하동) 외 2필지",
+    "company_name": "(주)진광",
+    "product": "열간단조(ELBOW)",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-191237",
+    "original_address": "경상남도 김해시 유하로 212(유하동) 외 4필지",
+    "company_name": "(주)진광",
+    "product": "자동차단조부품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-191292",
+    "original_address": "경상남도 김해시 유하로133번길 25-3 (유하동) 외 1필지",
+    "company_name": "세현TECH",
+    "product": "선박부품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-191312",
+    "original_address": "경상남도 김해시 유하로 85 (유하동) 외 4필지",
+    "company_name": "주식회사 스틸랜드",
+    "product": "절단가공 철강재",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-191334",
+    "original_address": "경상남도 김해시 장유로149번길 50-25 (부곡동) 외 1필지",
+    "company_name": "(주)넷크레이브",
+    "product": "인터텟게이트웨어,보일러컨트롤러,공기조화장치",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-191493",
+    "original_address": "경상남도 김해시 무계동 291-2번지",
+    "company_name": "장유건재",
+    "product": "벽돌,블록",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-191494",
+    "original_address": "경상남도 김해시 무계동 111-14번지",
+    "company_name": "장유철강공업(주)",
+    "product": "형강.철판가공",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-191509",
+    "original_address": "경상남도 김해시 대청로104번길 92 (삼문동) 외 1필지",
+    "company_name": "한일시멘트(주)김해공장",
+    "product": "레미콘",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-191518",
+    "original_address": "경상남도 김해시 율하동 954-1번지",
+    "company_name": "(주)진영금속",
+    "product": "강관",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-191680",
+    "original_address": "경상남도 김해시 진영읍 김해대로 94-28 외 1필지",
+    "company_name": "(주)서광테크",
+    "product": "철판가공품,금속재진열장철구조물,조립식건물구조물",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-191703",
+    "original_address": "경상남도 김해시 진영읍 김해대로 112 외 1필지",
+    "company_name": "주식회사세경",
+    "product": "레미콘,아스콘",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-191740",
+    "original_address": "경상남도 김해시 진영읍 진산대로177번길 25 외 1필지",
+    "company_name": "동명중공업서비스(주)",
+    "product": "선박부품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-191793",
+    "original_address": "경상남도 김해시 진영읍 본산리 811번지 외 13필지",
+    "company_name": "(주)HOT메탈",
+    "product": "선박부품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-191799",
+    "original_address": "경상남도 김해시 진영읍 본산로269번길 21 (총 2 필지) 외 1필지",
+    "company_name": "(주)광진기계금속",
+    "product": "주물품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-191813",
+    "original_address": "경상남도 김해시 진영읍 본산리 0번지 12B-2L",
+    "company_name": "(주)빅스틸",
+    "product": "철강부품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-191878",
+    "original_address": "경상남도 김해시 진영읍 본산로212번길 22 외 2필지",
+    "company_name": "금부금속 주식회사",
+    "product": "선박부품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-191905",
+    "original_address": "경상남도 김해시 진영읍 본산로241번길 70 외 1필지",
+    "company_name": "명성단조 주식회사",
+    "product": "금속단조품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-191965",
+    "original_address": "경상남도 김해시 진영읍 본산로212번길 22 외 2필지",
+    "company_name": "주식회사 지원에스앤피",
+    "product": "조선기자재,산업플랜트도장",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-192085",
+    "original_address": "경상남도 김해시 진영읍 죽곡리 201-13번지 외 1필지 외 1필지",
+    "company_name": "(주)광성씨앤씨",
+    "product": "강판",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-192221",
+    "original_address": "경상남도 김해시 진영읍 서부로 390 (총 2 필지) 외 1필지",
+    "company_name": "(주)보우이엔지",
+    "product": "선박부품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-192233",
+    "original_address": "경상남도 김해시 진영읍 서부로378번길 52-27 외 2필지",
+    "company_name": "(주)야호텍",
+    "product": "모터코일권선기",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-192262",
+    "original_address": "경상남도 김해시 진영읍 의전리 343-1 번지 외 1필지",
+    "company_name": "강성테크",
+    "product": "선박의장품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-192265",
+    "original_address": "경상남도 김해시 진영읍 서부로378번길 44",
+    "company_name": "누리테크",
+    "product": "선박용밸브",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-192313",
+    "original_address": "경상남도 김해시 장유면 부곡리 207-5번지 외 2필지 외 2필지",
+    "company_name": "(주)부광정공",
+    "product": "선박구성품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-192355",
+    "original_address": "경상남도 김해시 주촌면 서부로 1750",
+    "company_name": "경성벤딩",
+    "product": "선박부품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-192367",
+    "original_address": "경상남도 김해시 주촌면 서부로1701번안길 6 (총 3 필지) 외 2필지",
+    "company_name": "삼성스틸",
+    "product": "철강류",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-192697",
+    "original_address": "경상남도 김해시 주촌면 내삼리 1199-7번지 외 3필지",
+    "company_name": "(주)보성특수강",
+    "product": "선박용 볼트,너트",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-192744",
+    "original_address": "경상남도 김해시 주촌면 서부로1541번안길 33 (총 3 필지) 외 2필지",
+    "company_name": "(주)유창",
+    "product": "냉장고용유리선반",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-192785",
+    "original_address": "경상남도 김해시 주촌면 서부로1541번길 174 (총 2 필지) 외 1필지",
+    "company_name": "BK샌딩",
+    "product": "선박구성품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-192857",
+    "original_address": "경상남도 김해시 주촌면 서부로1499번길 22-24 외 2필지",
+    "company_name": "명성금속 주식회사",
+    "product": "단조금속가공품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-192934",
+    "original_address": "경상남도 김해시 주촌면 서부로1499번길 101-60 외 2필지",
+    "company_name": "우진철강(주)",
+    "product": "철강",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-192948",
+    "original_address": "경상남도 김해시 주촌면 서부로1499번길 25-36 외 1필지",
+    "company_name": "유심산업",
+    "product": "주조유압밸브",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-193310",
+    "original_address": "경상남도 김해시 주촌면 농소리 493-1번지",
+    "company_name": "(주)해동",
+    "product": "시멘트벽돌,보차도용블록,경계석",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-193412",
+    "original_address": "경상남도 김해시 진례면 서부로396번길 31 외 1필지",
+    "company_name": "(주)금하기계",
+    "product": "선박부품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-193415",
+    "original_address": "경상남도 김해시 진례면 서부로436번길 37-28 외 1필지",
+    "company_name": "(주)대일정공",
+    "product": "금속탱크 및 저장용기외",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-193651",
+    "original_address": "경상남도 김해시 진례면 고모로134번길 30-13 외 2필지",
+    "company_name": "(주)새론스틸",
+    "product": "선박부품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-193654",
+    "original_address": "경상남도 김해시 진례면 고모로134번길 4 외 4필지",
+    "company_name": "(주)성보레미콘",
+    "product": "레미콘",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-193659",
+    "original_address": "경상남도 김해시 진례면 송현리 580-1번지 외 6필지",
+    "company_name": "(주)세원화섬",
+    "product": "선박부품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-193669",
+    "original_address": "경상남도 김해시 진례면 고모로216번길 48 외 5필지",
+    "company_name": "(주)우암",
+    "product": "선박구성품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-193729",
+    "original_address": "경상남도 김해시 진례면 고모로 208 외 4필지",
+    "company_name": "보광산업",
+    "product": "철판절단품목",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-193773",
+    "original_address": "경상남도 김해시 진례면 고모로324번안길 96 외 4필지",
+    "company_name": "장유철강공업(주)",
+    "product": "철판",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-193805",
+    "original_address": "경상남도 김해시 진례면 고모로 210 (총 4 필지) 외 3필지",
+    "company_name": "클라크서비스영남센터",
+    "product": "선박부품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-193810",
+    "original_address": "경상남도 김해시 진례면 고모로324번길 110 (총 2 필지) 외 1필지",
+    "company_name": "태진산업(주)",
+    "product": "선박부품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-193829",
+    "original_address": "경상남도 김해시 진례면 담안리 1077-13번지 외 1필지",
+    "company_name": "종삼벤드",
+    "product": "선박부품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-193862",
+    "original_address": "경상남도 김해시 진례면 고모로324번길 135-17 외 4필지",
+    "company_name": "(주)와이엠테크",
+    "product": "선박부품,자동차부품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-193874",
+    "original_address": "경상남도 김해시 진례면 고모로324번길 135-59 (총 17 필지) 외 16필지",
+    "company_name": "(주)티엠씨",
+    "product": "선박구성품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-193881",
+    "original_address": "경상남도 김해시 진례면 고모로 450-41 외 4필지",
+    "company_name": "(주)한일플랜텍",
+    "product": "선박엔진리시버",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-193901",
+    "original_address": "경상남도 김해시 진례면 고모로327번안길 48 외 2필지",
+    "company_name": "광명씨엔씨",
+    "product": "철강제품외",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-193992",
+    "original_address": "경상남도 김해시 진례면 고모로324번길 204 외 3필지",
+    "company_name": "하이에어코리아(주)",
+    "product": "선박부품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-194128",
+    "original_address": "경상남도 김해시 진례면 고모로526번길 3 외 5필지",
+    "company_name": "(주)디에이치에이치아이",
+    "product": "선박용품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-194149",
+    "original_address": "경상남도 김해시 진례면 고모로526번길 100 외 1필지",
+    "company_name": "(주)에스지테크",
+    "product": "선박부품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-194150",
+    "original_address": "경상남도 김해시 진례면 고모로582번길 44 외 2필지",
+    "company_name": "(주)에이치피씨",
+    "product": "선박부품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-194303",
+    "original_address": "경상남도 김해시 진례면 고모로526번길 88 (총 2 필지) 외 1필지",
+    "company_name": "태성정공",
+    "product": "단조금형품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-194566",
+    "original_address": "경상남도 김해시 한림면 김해대로 1102-81 외 1필지",
+    "company_name": "(주)진유중공업",
+    "product": "강관",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-194572",
+    "original_address": "경상남도 김해시 한림면 명동로 29 외 2필지",
+    "company_name": "(주)태광스틸",
+    "product": "단조부품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-194613",
+    "original_address": "경상남도 김해시 한림면 김해대로 1102-100 (총 4 필지) 외 3필지",
+    "company_name": "동우공업",
+    "product": "선박부품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-194634",
+    "original_address": "경상남도 김해시 한림면 김해대로 1224-26 외 1필지",
+    "company_name": "서린기계공업(주)",
+    "product": "제철 압연설비",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-194645",
+    "original_address": "경상남도 김해시 한림면 김해대로 1102-21 외 1필지",
+    "company_name": "신우산업",
+    "product": "자동차부품 및 선박구조물외",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-194653",
+    "original_address": "경상남도 김해시 한림면 명동리 309번지",
+    "company_name": "영풍콘크리트",
+    "product": "기초건축용벽돌,블록,흄관",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-194661",
+    "original_address": "경상남도 김해시 한림면 명동리 1167-23번지 외 1필지",
+    "company_name": "유성기공",
+    "product": "철판절단가공",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-194675",
+    "original_address": "경상남도 김해시 한림면 한림로46번길 52",
+    "company_name": "청어산업",
+    "product": "선박부품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-194687",
+    "original_address": "경상남도 김해시 한림면 외 2필지",
+    "company_name": "해원단조(주)",
+    "product": "금속단조품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-194738",
+    "original_address": "경상남도 김해시 한림면 김해대로927번길 53 (총 5 필지) 외 4필지",
+    "company_name": "(주)두성기술",
+    "product": "기계부품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-194763",
+    "original_address": "경상남도 김해시 한림면 김해대로1031번안길 61-7 외 1필지",
+    "company_name": "(주)엠에스밴드",
+    "product": "선박부품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-194767",
+    "original_address": "경상남도 김해시 한림면 김해대로927번길 33 외 3필지",
+    "company_name": "(주)유주엔지니어링",
+    "product": "조선기자재 배관 및 산업플랜드 제작",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-194779",
+    "original_address": "경상남도 김해시 한림면 김해대로927번길 66-42 외 2필지",
+    "company_name": "(주)피유켐",
+    "product": "선박부품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-194824",
+    "original_address": "경상남도 김해시 한림면 김해대로1031번안길 59 외 1필지",
+    "company_name": "미래산업",
+    "product": "선박부품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-194836",
+    "original_address": "경상남도 김해시 한림면 김해대로1099번안길 46 (총 4 필지) 외 3필지",
+    "company_name": "삼정정밀주조공업사",
+    "product": "유압정밀주조품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-194839",
+    "original_address": "경상남도 김해시 한림면 김해대로1031번길 47-1 (총 3 필지) 외 2필지",
+    "company_name": "서울엔텍",
+    "product": "선박엔진부품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-194842",
+    "original_address": "경상남도 김해시 한림면 김해대로927번길 155 (총 3 필지) 외 2필지",
+    "company_name": "성지산업",
+    "product": "컨테이너철고리",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-194856",
+    "original_address": "경상남도 김해시 한림면 김해대로927번길 66-31 외 3필지",
+    "company_name": "신영기업",
+    "product": "선박부품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-194890",
+    "original_address": "경상남도 김해시 한림면 김해대로1031번안길 98 외 1필지",
+    "company_name": "주식회사 해인금속",
+    "product": "자동차부품 ,조선기자재",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-194909",
+    "original_address": "경상남도 김해시 한림면 김해대로927번길 53 (총 5 필지) 외 4필지",
+    "company_name": "태영기업",
+    "product": "철판제품",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-194947",
+    "original_address": "경상남도 김해시 한림면 김해대로974번길 122 외 1필지",
+    "company_name": "(주)정광테크",
+    "product": "조선배관",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-194962",
+    "original_address": "경상남도 김해시 한림면 김해대로916번길 104-14 외 2필지",
+    "company_name": "광림포장",
+    "product": "선박부품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-194971",
+    "original_address": "경상남도 김해시 한림면 김해대로916번길 54-6 외 1필지",
+    "company_name": "대광기업",
+    "product": "선박부품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-195121",
+    "original_address": "경상남도 김해시 한림면 김해대로1499번길 37-1 (총 2 필지) 외 1필지",
+    "company_name": "(주)광동산업",
+    "product": "라디에타 탱크(자동차용)",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-195208",
+    "original_address": "경상남도 김해시 한림면 김해대로1538번길 6 외 1필지",
+    "company_name": "성광엔텍(주)",
+    "product": "조선기자재",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-195225",
+    "original_address": "경상남도 김해시 한림면 신천리 산 150-1번지",
+    "company_name": "오성단조공업(주)",
+    "product": "프랜지 단조품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-195265",
+    "original_address": "경상남도 김해시 한림면 김해대로 1380-47 외 1필지",
+    "company_name": "한통건업(주)",
+    "product": "레미콘",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-195431",
+    "original_address": "경상남도 김해시 한림면 안곡로492번길 26-1 외 1필지",
+    "company_name": "YS테크",
+    "product": "선박부품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-195469",
+    "original_address": "경상남도 김해시 한림면 안곡로448번길 1-40 외 1필지",
+    "company_name": "은원테크(주)",
+    "product": "선박구성부분품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-195489",
+    "original_address": "경상남도 김해시 한림면 안곡로 265 (총 2 필지) 외 1필지",
+    "company_name": "한통아스콘(주)",
+    "product": "아스콘",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-195506",
+    "original_address": "경상남도 김해시 한림면 안하리 452번지 외 5필지",
+    "company_name": "(주)삼화디엔씨",
+    "product": "조선의장품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-195543",
+    "original_address": "경상남도 김해시 한림면 안하로4번길 16-39 외 3필지",
+    "company_name": "삼덕TK",
+    "product": "선박부품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-195558",
+    "original_address": "경상남도 김해시 한림면 안하로4번길 16 외 2필지",
+    "company_name": "우성산업",
+    "product": "선박구성품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-195629",
+    "original_address": "경상남도 김해시 한림면 장방로 210 외 1필지",
+    "company_name": "(주)경용중공업제3공장",
+    "product": "선박부품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-195630",
+    "original_address": "경상남도 김해시 한림면 한림로343번길 33-9 외 3필지",
+    "company_name": "(주)고려산기",
+    "product": "조선기자재",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-195641",
+    "original_address": "경상남도 김해시 한림면 한림로343번길 33-32 외 1필지",
+    "company_name": "(주)성우산업",
+    "product": "조선기자재",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-195650",
+    "original_address": "경상남도 김해시 한림면 한림로515번길 203-63 외 6필지",
+    "company_name": "(주)영해엔지니어링",
+    "product": "선박부품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-195653",
+    "original_address": "경상남도 김해시 한림면 장방로335번길 8-15 (총 6 필지) 외 5필지",
+    "company_name": "(주)장안산업",
+    "product": "레미콘",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-195654",
+    "original_address": "경상남도 김해시 한림면 한림로343번길 47-42 외 3필지",
+    "company_name": "(주)찬우레미콘",
+    "product": "레미콘,아스팔트",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-195689",
+    "original_address": "경상남도 김해시 한림면 한림로343번길 47-10 (총 2 필지) 외 1필지",
+    "company_name": "승화산업",
+    "product": "선박부품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-195705",
+    "original_address": "경상남도 김해시 한림면 한림로515번길 159 외 3필지",
+    "company_name": "주식회사 에코텍",
+    "product": "선박구성품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-195745",
+    "original_address": "경상남도 김해시 한림면 한림로 854 (총 2 필지) 외 1필지",
+    "company_name": "(주)한창중공업",
+    "product": "선박부품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-195796",
+    "original_address": "경상남도 김해시 한림면 가산로 80 외 4필지",
+    "company_name": "(주)에스제이이엔지",
+    "product": "선박부품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-195823",
+    "original_address": "경상남도 김해시 한림면 가산로 36-12 (총 2 필지) 외 1필지",
+    "company_name": "대현정공",
+    "product": "강판",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-195847",
+    "original_address": "경상남도 김해시 한림면 가동로 69-11 외 1필지",
+    "company_name": "영남기계",
+    "product": "선박부품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-195866",
+    "original_address": "경상남도 김해시 한림면 가동로 9-53 (총 2 필지) 외 1필지",
+    "company_name": "하이원테크",
+    "product": "자동차,선박단조품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-195929",
+    "original_address": "경상남도 김해시 생림면 나전로 115 (총 2 필지) 외 1필지",
+    "company_name": "(주)엘티",
+    "product": "선박부품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-195967",
+    "original_address": "경상남도 김해시 생림면 나전로 156-1",
+    "company_name": "고려에스엔피",
+    "product": "선박부품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-195973",
+    "original_address": "경상남도 김해시 생림면 생림대로259번길 47-12 외 1필지",
+    "company_name": "나현화이바",
+    "product": "유리섬유,단열재",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-196064",
+    "original_address": "경상남도 김해시 생림면 생림대로 298",
+    "company_name": "케이엠중공업(주)",
+    "product": "선박부품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-196166",
+    "original_address": "경상남도 김해시 생림면 나전로 386-26 외 1필지",
+    "company_name": "삼우ENG",
+    "product": "조선기자재",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-196196",
+    "original_address": "경상남도 김해시 생림면 생림대로669번길 46 외 1필지",
+    "company_name": "(주)대화기술",
+    "product": "선박구성부분품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-196209",
+    "original_address": "경상남도 김해시 생림면 봉림로 158 외 1필지",
+    "company_name": "(주)신영기업",
+    "product": "맨홀",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-196250",
+    "original_address": "경상남도 김해시 생림면 생림대로713번길 61 (총 2 필지) 외 1필지",
+    "company_name": "대덕기연(주)",
+    "product": "철관,강관",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-196273",
+    "original_address": "경상남도 김해시 생림면 생림대로928번길 17 외 2필지",
+    "company_name": "삼원엔텍(주)",
+    "product": "선박부품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-196339",
+    "original_address": "경상남도 김해시 생림면 장재로 309 외 2필지",
+    "company_name": "호진산업",
+    "product": "H빔구조물,SUPPORT,플랫폼시트외",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-196385",
+    "original_address": "경상남도 김해시 생림면 안양로 281-1 외 1필지",
+    "company_name": "(주)시호",
+    "product": "조선기자재부품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-196414",
+    "original_address": "경상남도 김해시 상동면 상동로685번길 53-2 (총 3 필지) 외 2필지",
+    "company_name": "(유)유성강재",
+    "product": "철판",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-196439",
+    "original_address": "경상남도 김해시 상동면 상동로 506-24",
+    "company_name": "고려비엔피산업(주)",
+    "product": "선박부품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-196493",
+    "original_address": "경상남도 김해시 상동면 상동로 655 (총 2 필지) 외 1필지",
+    "company_name": "화신플랜트(주)",
+    "product": "플랜트,조선기자재",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-196517",
+    "original_address": "경상남도 김해시 상동면 동북로437번길 58-62 외 7필지",
+    "company_name": "(주)동양산업",
+    "product": "레미콘",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-196548",
+    "original_address": "경상남도 김해시 상동면 동북로437번길 83-52 외 3필지",
+    "company_name": "(주)유안테크",
+    "product": "탱크류",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-196556",
+    "original_address": "경상남도 김해시 상동면 동북로437번길 27-6 (총 3 필지) 외 2필지",
+    "company_name": "(주)태안에이.씨.엔",
+    "product": "아스콘",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-196604",
+    "original_address": "경상남도 김해시 상동면 동북로473번길 29 (총 3 필지) 외 2필지",
+    "company_name": "삼성콘크리트(주)",
+    "product": "콘크리트제품",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-196668",
+    "original_address": "경상남도 김해시 상동면 동북로437번길 27-6 외 2필지",
+    "company_name": "현대개발(주)김해공장",
+    "product": "레미콘",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-196871",
+    "original_address": "경상남도 김해시 상동면 묵방로 103 외 5필지",
+    "company_name": "동아개발",
+    "product": "콘크리트벽돌",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-196872",
+    "original_address": "경상남도 김해시 상동면 묵방로 96 외 4필지",
+    "company_name": "동아개발",
+    "product": "벽돌,블럭",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-196874",
+    "original_address": "경상남도 김해시 상동면 상동로197번길 2-15 외 1필지",
+    "company_name": "동양종합콘크리트",
+    "product": "콘크리트제품",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-196891",
+    "original_address": "경상남도 김해시 상동면 상동로 312-31 외 1필지",
+    "company_name": "비아이레미콘(주)",
+    "product": "레미콘",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-196934",
+    "original_address": "경상남도 김해시 상동면 상동로375번길 9-14 외 1필지",
+    "company_name": "영광목재",
+    "product": "제재및목재가공,선박용보온재BOX",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-197001",
+    "original_address": "경상남도 김해시 상동면 상동로 112 외 3필지",
+    "company_name": "태흥메탈1공장",
+    "product": "선박부품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-197011",
+    "original_address": "경상남도 김해시 상동면 상동로 275-13 (총 2 필지) 외 1필지",
+    "company_name": "해성메탈(주)",
+    "product": "시멘트부원료",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-197034",
+    "original_address": "경상남도 김해시 상동면 장척로 395-10 (문수기업) 외 2필지",
+    "company_name": "(주)문수기업",
+    "product": "선박구성품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-197044",
+    "original_address": "경상남도 김해시 상동면 묵방리 760번지 외 5필지",
+    "company_name": "(주)효두에스엔피",
+    "product": "선박부품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-197054",
+    "original_address": "경상남도 김해시 상동면 장척로 395-8 외 2필지",
+    "company_name": "상기산업",
+    "product": "선박부품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-197060",
+    "original_address": "경상남도 김해시 상동면 소락로 47 외 1필지",
+    "company_name": "주식회사 에스지씨(SGC Co.,Ltd)1지점",
+    "product": "콘크리트",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-197157",
+    "original_address": "경상남도 밀양시 삼랑진읍 용전1길 8 외 1필지",
+    "company_name": "(주)보연엔지니어링",
+    "product": "선박내장제구성부품, 성형기",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-197170",
+    "original_address": "경상남도 밀양시 삼랑진읍 용전1길 12 외 11필지",
+    "company_name": "우미세라믹스",
+    "product": "특수타일",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-197171",
+    "original_address": "경상남도 밀양시 삼랑진읍 미율로 204",
+    "company_name": "우미세라믹스",
+    "product": "화분,타일",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-197200",
+    "original_address": "경상남도 밀양시 삼랑진읍 용전리 990-2번지 외 3필지",
+    "company_name": "주식회사 유아",
+    "product": "H빔",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-197209",
+    "original_address": "경상남도 밀양시 삼랑진읍 미전리 309번지 외 1필지",
+    "company_name": "(주)케이에스이피",
+    "product": "실린더용정밀강판",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-197215",
+    "original_address": "경상남도 밀양시 삼랑진읍 미율로 113 외 1필지",
+    "company_name": "대코",
+    "product": "선박환기장치(루버, 댐파)",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-197217",
+    "original_address": "경상남도 밀양시 삼랑진읍 미전2안길 9 외 16필지",
+    "company_name": "명진산업(주)",
+    "product": "건설자재, H빔",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-197253",
+    "original_address": "경상남도 밀양시 삼랑진읍 미율로 405 외 1필지",
+    "company_name": "삼건세기(주)",
+    "product": "플랜트 산업 강재, 철의장, 조선기자재, 코팅강관",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-197284",
+    "original_address": "경상남도 밀양시 하남읍 대사길 48-22 외 2필지",
+    "company_name": "(주)서울세라텍",
+    "product": "타일",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-197286",
+    "original_address": "경상남도 밀양시 하남읍 파내2길 8-7 외 3필지",
+    "company_name": "(주)한국엔지니어링",
+    "product": "선박엔진부품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-197342",
+    "original_address": "경상남도 밀양시 부북면 사포로 65-1 외 5필지",
+    "company_name": "(주)대성레미콘",
+    "product": "레미콘",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-197355",
+    "original_address": "경상남도 밀양시 부북면 사포로 65-2 외 6필지",
+    "company_name": "대성에이엔씨(A&C)",
+    "product": "아스콘",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-197384",
+    "original_address": "경상남도 밀양시 부북면 사포산단중앙로 80 외 1필지",
+    "company_name": "(주)제이텍(지점)",
+    "product": "선박용 주방전기기기",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-197391",
+    "original_address": "경상남도 밀양시 부북면 사포산단1길 90-27 외 1필지",
+    "company_name": "동은단조(주)",
+    "product": "자동차부품, 단조품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-197394",
+    "original_address": "경상남도 밀양시 부북면 사포산단중앙로 92 (총 2 필지) 외 1필지",
+    "company_name": "삼흥열처리",
+    "product": "자동자부품 및 단조품 열처리",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-197412",
+    "original_address": "경상남도 밀양시 부북면 무안로 800 외 4필지",
+    "company_name": "(주)대우선재",
+    "product": "환봉, 코일",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-197417",
+    "original_address": "경상남도 밀양시 부북면 사포로 452",
+    "company_name": "형제요업",
+    "product": "세라믹벽돌,세라믹팩",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-197421",
+    "original_address": "경상남도 밀양시 부북면 퇴로로 298 외 1필지",
+    "company_name": "삼양요업사",
+    "product": "내화벽돌등",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-197445",
+    "original_address": "경상남도 밀양시 부북면 춘화농공단지길 40 외 1필지",
+    "company_name": "(주)케이에스이피",
+    "product": "정밀강관, 자동차부품, 기계및중장비부품",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-197454",
+    "original_address": "경상남도 밀양시 부북면 춘화로 85 (총 10 필지) 외 9필지",
+    "company_name": "(주)스페이스프로",
+    "product": "유리섬유, 전기",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-197455",
+    "original_address": "경상남도 밀양시 부북면 춘화로 85 외 9필지",
+    "company_name": "(주)한국카본",
+    "product": "탄소섬유,유리섬유",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-197456",
+    "original_address": "경상남도 밀양시 부북면 춘화로 85 외 1필지",
+    "company_name": "(주)한국카본 3공장",
+    "product": "PSB, HSB, RSB, 가공수지, 유리섬유폼 가공품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-197457",
+    "original_address": "경상남도 밀양시 상동면 상동로 130 외 2필지",
+    "company_name": "세정건업주식회사",
+    "product": "석분,쇄석,레미콘",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-197465",
+    "original_address": "경상남도 밀양시 산외면 산외강변로 263 외 3필지",
+    "company_name": "(주)새한그라스테크",
+    "product": "접합.강화유리",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-197466",
+    "original_address": "경상남도 밀양시 산외면 다죽리 1199-11번지 외 1필지",
+    "company_name": "(주)성경티에스",
+    "product": "복층유리",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-197467",
+    "original_address": "경상남도 밀양시 산외면 산외강변로 281 외 2필지",
+    "company_name": "(주)우주",
+    "product": "복층유리",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-197471",
+    "original_address": "경상남도 밀양시 산외면 화동강길 65 외 11필지",
+    "company_name": "(주)찬우",
+    "product": "레미콘",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-197472",
+    "original_address": "경상남도 밀양시 산외면 산외강변로 29 (총 2 필지) 외 1필지",
+    "company_name": "(주)찬우아스콘",
+    "product": "아스콘, 순환아스팔트콘크리트",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-197483",
+    "original_address": "경상남도 밀양시 산외면 남기동길 175 외 2필지",
+    "company_name": "(주)신창지앤윈",
+    "product": "복층유리",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-197534",
+    "original_address": "경상남도 밀양시 상남면 연금리 377-20번지 외 19필지",
+    "company_name": "(주)스페이스프로 제2공장",
+    "product": "항공기부품, 무기관련 부품, 선박구성부분품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-197537",
+    "original_address": "경상남도 밀양시 상남면 상남로 693 (라동) 외 23필지",
+    "company_name": "(주)태림",
+    "product": "철도차량내장재,상하수도용유리섬유복합관",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-197558",
+    "original_address": "경상남도 밀양시 상남면 세천4길 34-4 외 1필지",
+    "company_name": "부경산업사",
+    "product": "벽돌",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-197567",
+    "original_address": "경상남도 밀양시 초동면 초동로 70, 외 1필지 외 1필지",
+    "company_name": "민아트 발전(주)",
+    "product": "AL 클램프, AL 구조물, 태양광 발전장치 배전반, 사다리, 선박 구성 부분품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-197569",
+    "original_address": "경상남도 밀양시 초동면 초동로 68 외 1필지",
+    "company_name": "주식회사 가가테크",
+    "product": "컨테이너, 주립식 조택",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-197578",
+    "original_address": "경상남도 밀양시 초동면 초동농공단지길 12 외 2필지",
+    "company_name": "(주)삼성산업 밀양공장",
+    "product": "콘크리트 침목, 레미콘",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-197605",
+    "original_address": "경상남도 밀양시 초동면 초동농공단지길 55-17 외 1필지",
+    "company_name": "오유세라믹스",
+    "product": "자기질 특수타일",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-197611",
+    "original_address": "경상남도 밀양시 초동면 초동농공단지길 39-33 외 1필지",
+    "company_name": "주식회사 혜림씨엔에스",
+    "product": "조선, 건설-기둥, 보",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-197634",
+    "original_address": "경상남도 밀양시 무안면 사명대사생가로 100",
+    "company_name": "대동석재",
+    "product": "석재가공",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-197643",
+    "original_address": "경상남도 밀양시 무안면 무안로 442 외 1필지",
+    "company_name": "(주)화영제2공장",
+    "product": "선박구성분품등",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-197653",
+    "original_address": "경상남도 밀양시 무안면 무안서로 99-26 외 5필지",
+    "company_name": "주식회사 한국선박기술",
+    "product": "조선기자재, 배관재",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-197704",
+    "original_address": "경상남도 거제시 둔덕면 법동어구로 644 외 1필지",
+    "company_name": "주식회사 제이엘비엘티",
+    "product": "선박용 철가공",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-197715",
+    "original_address": "경상남도 거제시 사등면 피솔길 290 (사등면) 외 1필지",
+    "company_name": "삼성중공업(주)사곡공장",
+    "product": "신조선박,해양구조물",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-197721",
+    "original_address": "경상남도 거제시 사등면 성포로 350 (사등면) 외 1필지",
+    "company_name": "(주)대흥",
+    "product": "기타금속가공제품, 선박구성부분품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-197723",
+    "original_address": "경상남도 거제시 사등면 성포로 349-18 외 18필지",
+    "company_name": "(주)신풍",
+    "product": "레미콘, 아스콘",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-197725",
+    "original_address": "경상남도 거제시 사등면 성포로 365 외 4필지",
+    "company_name": "(주)유경씨엠",
+    "product": "시멘트",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-197729",
+    "original_address": "경상남도 거제시 사등면 거제대로 5330-10 외 1필지",
+    "company_name": "광도기업(2공장)",
+    "product": "선박구성부분품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-197730",
+    "original_address": "경상남도 거제시 사등면 거제대로 5330-34 외 4필지",
+    "company_name": "삼성중공업(주) 성내공장",
+    "product": "선박부품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-197731",
+    "original_address": "경상남도 거제시 사등면 거제대로 5538 외 8필지",
+    "company_name": "에스씨엠 주식회사",
+    "product": "선박구성 부분품, 제강업, 철구조물 및 기타구조물",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-197735",
+    "original_address": "경상남도 거제시 사등면 성포로 217 ((주)녹봉조선) 외 13필지",
+    "company_name": "건화공업주식회사",
+    "product": "선박구성부분품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-197736",
+    "original_address": "경상남도 거제시 사등면 성포로 303 외 11필지",
+    "company_name": "디케이 주식회사",
+    "product": "조선BLOCK",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-197738",
+    "original_address": "경상남도 거제시 사등면 성포로 209 외 1필지",
+    "company_name": "주식회사 금영스틸",
+    "product": "선박블럭",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-197746",
+    "original_address": "경상남도 거제시 사등면 거제대로 6025-17 (㈜정화) 외 2필지",
+    "company_name": "(주)금화",
+    "product": "선박구성부분품(계측관)",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-197755",
+    "original_address": "경상남도 거제시 연초면 연하해안로 725-3 (신영기업) (총 2 필지) 외 1필지",
+    "company_name": "(주)신영기업거제지점",
+    "product": "선박부품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-197759",
+    "original_address": "경상남도 거제시 연초면 연하해안로 777 (연초면) 외 15필지",
+    "company_name": "삼성중공업(주) 한내 제1공장",
+    "product": "선박구성부분품제조업",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-197761",
+    "original_address": "경상남도 거제시 연초면 연하해안로 725-4 (세양기업) 외 3필지",
+    "company_name": "세양기업(주)제2공장",
+    "product": "선박블럭, 선박의장품, 도장품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-197763",
+    "original_address": "경상남도 거제시 연초면 연하해안로 725-1 외 2필지",
+    "company_name": "유원마린테크",
+    "product": "소형선박, 어선, 레저보트",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-197767",
+    "original_address": "경상남도 거제시 연초면 한내리 911번지 외 14필지",
+    "company_name": "삼성중공업(주)신한내 메가단지",
+    "product": "신조선박, 해양구조물,풍력발전설비",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-197771",
+    "original_address": "경상남도 거제시 연초면 오비리 780-13번지 외 6필지",
+    "company_name": "(주)삼녹",
+    "product": "선박구성부분품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-197775",
+    "original_address": "경상남도 거제시 연초면 오비4길 46 외 1필지",
+    "company_name": "(주)제일레미콘",
+    "product": "레미콘",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-197783",
+    "original_address": "경상남도 거제시 연초면 오비리 688번지 외 88필지 외 2필지",
+    "company_name": "삼성중공업(주)오비공장",
+    "product": "선박구성부분품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-197786",
+    "original_address": "경상남도 거제시 연초면 연하해안로 389 (총 2 필지) 외 1필지",
+    "company_name": "우주공업사",
+    "product": "건설기계부품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-197788",
+    "original_address": "경상남도 거제시 연초면 연하해안로 601-20, (총3필지) (연초면) 외 2필지",
+    "company_name": "주식회사 남평산업",
+    "product": "건설용 쇄골재",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-197801",
+    "original_address": "경상남도 거제시 하청면 연하해안로 1570-24, (하청면 유계리 10번지) (총 2 필지) 외 1필지",
+    "company_name": "(주)칸정공",
+    "product": "선박구성부분품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-197808",
+    "original_address": "경상남도 거제시 하청면 실전해안길 121 외 7필지",
+    "company_name": "케이에이치엠티(주)A공장",
+    "product": "선박구성품(DECK HOUSE, HATCH COVER, MEGA BLOCK)",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-197809",
+    "original_address": "경상남도 거제시 하청면 실전해안길 121 외 27필지",
+    "company_name": "케이에이치엠티(주)B공장",
+    "product": "선박구성부분품(블럭)",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-197820",
+    "original_address": "경상남도 양산시 다방동 510-4번지",
+    "company_name": "(주)경동콘크리트",
+    "product": "벽돌, 블록",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-197870",
+    "original_address": "경상남도 양산시 명곡로 217 (신기동) 외 3필지",
+    "company_name": "새인산업(주)",
+    "product": "아스콘",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-197925",
+    "original_address": "경상남도 양산시 산막공단남6길 36 (북정동, 공장) (총 2 필지) 외 1필지",
+    "company_name": "(주)이화정공",
+    "product": "선박용케이스및조선기자재",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-197930",
+    "original_address": "경상남도 양산시 산막공단남1길 43 (북정동, 현대중업) (총 4 필지) 외 3필지",
+    "company_name": "(주)종합정밀",
+    "product": "선박용 피스톤크라운",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-197943",
+    "original_address": "경상남도 양산시 양산대로 1113 (북정동, SK산막주유소)",
+    "company_name": "1급양산종합정비",
+    "product": "건설기계 부품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-197965",
+    "original_address": "경상남도 양산시 산막공단남4길 39 (북정동) 외 1필지",
+    "company_name": "대성경판",
+    "product": "경판,볼탱크",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-198011",
+    "original_address": "경상남도 양산시 산막공단남11길 65 (북정동) 외 2필지",
+    "company_name": "와이비메탈 주식회사",
+    "product": "터보브로와, 탱크류,알루미늄 피막, 승용차용 선루프, 루프랙외",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-198012",
+    "original_address": "경상남도 양산시 북정동 237-31번지 외 2필지 외 2필지",
+    "company_name": "용현비엠(주)북정공장",
+    "product": "선박용엔진부품외",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-198291",
+    "original_address": "경상남도 양산시 산막동 산막일반산업단지 5B-3L",
+    "company_name": "제일단조",
+    "product": "단조품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-198315",
+    "original_address": "경상남도 양산시 산막공단남14길 13 (호계동) 외 1필지",
+    "company_name": "(주)건설글라스테크",
+    "product": "판유리",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-198569",
+    "original_address": "경상남도 양산시 유산공단8길 78-10 (유산동, 에이치디시에스양산(주))",
+    "company_name": "현대스틸(주)",
+    "product": "주물 및 주강",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-198581",
+    "original_address": "경상남도 양산시 유산공단3길 7 (유산동) 외 1필지",
+    "company_name": "(주)동양건재부문 양산공장",
+    "product": "레미콘",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-198615",
+    "original_address": "경상남도 양산시 유산공단4길 47-38 (유산동, 삼원금속) 외 1필지",
+    "company_name": "계원정밀",
+    "product": "선박엔진부품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-198700",
+    "original_address": "경상남도 양산시 어실로 431 (어곡동, 신송레미콘) 외 1필지",
+    "company_name": "(주)신송",
+    "product": "레미콘",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-198714",
+    "original_address": "경상남도 양산시 어실로 300 (어곡동, (주)정우레미콘) 외 4필지",
+    "company_name": "(주)정우레미콘",
+    "product": "레미콘",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-198759",
+    "original_address": "경상남도 양산시 어실로 303 (어곡동, 명성산업(주)) 외 1필지",
+    "company_name": "명성산업(주)",
+    "product": "금속탱크",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-198771",
+    "original_address": "경상남도 양산시 어곡동 1128번지 외 1필지",
+    "company_name": "삼현IND",
+    "product": "선박 내장제",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-198805",
+    "original_address": "경상남도 양산시 어실로 403-13 (어곡동, 진성산업) 외 2필지",
+    "company_name": "진성산업",
+    "product": "탱크",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-198823",
+    "original_address": "경상남도 양산시 어실로 324 (어곡동, 한라정공) 외 3필지",
+    "company_name": "한라정공",
+    "product": "유량조절벨브.맨홀.배수변벨브",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-199139",
+    "original_address": "경상남도 양산시 소주공단2길 78 (주남동, (주)지석산업) 외 1필지",
+    "company_name": "(주)지석산업",
+    "product": "아스콘",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-199140",
+    "original_address": "경상남도 양산시 주남로 69-36, (주)진보산업 (주남동) 외 1필지",
+    "company_name": "(주)진보산업",
+    "product": "쇄석, 석분",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-199141",
+    "original_address": "경상남도 양산시 소주공단2길 78 (주남동, (주)지석산업) 외 1필지",
+    "company_name": "(주)진보아스콘",
+    "product": "아스콘",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-199216",
+    "original_address": "경상남도 양산시 소주공단로 31 (주남동) 외 2필지",
+    "company_name": "주식회사아진글라스",
+    "product": "복층유리,강화유리",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-199242",
+    "original_address": "경상남도 양산시 주남산단로 40 (주남동) 외 1필지",
+    "company_name": "(주)유로인터내셔날",
+    "product": "선박 선실구역 배관 PIECE 및 부자재",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-199246",
+    "original_address": "경상남도 양산시 주남산단3로 21 (주남동) 외 1필지",
+    "company_name": "WJ인더스트리",
+    "product": "산업기계 철구조물, 철판 환봉",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-199251",
+    "original_address": "경상남도 양산시 주남산단3로 17 (주남동) 외 1필지",
+    "company_name": "비케이웰텍",
+    "product": "조선기자재 부품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-199252",
+    "original_address": "경상남도 양산시 주남산단4로 3 (주남동) 외 1필지",
+    "company_name": "선문테크",
+    "product": "유리섬유가공재",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-199253",
+    "original_address": "경상남도 양산시 주남산단로 55 (주남동) 외 1필지",
+    "company_name": "세진",
+    "product": "산업기계 철구조물, 철판 환봉",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-199365",
+    "original_address": "경상남도 양산시 소주공단4길 25 (소주동, 금강주강(주)) (총 2 필지) 외 1필지",
+    "company_name": "금화주강산기(주)",
+    "product": "BELLMOOTH 외 선박주강품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-199421",
+    "original_address": "경상남도 양산시 소주로 143 (소주동, (주)진양튜브텍) 외 2필지",
+    "company_name": "진양정밀강관(주) 2공장",
+    "product": "강관",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-199492",
+    "original_address": "경상남도 양산시 그린공단2길 46-1 (덕계동) 외 2필지",
+    "company_name": "(주)미림아트텍",
+    "product": "석재성형가공품",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-199520",
+    "original_address": "경상남도 양산시 신덕계1길 24 (덕계동) 외 6필지",
+    "company_name": "부일산업개발(주)",
+    "product": "레미콘,아스콘",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-199558",
+    "original_address": "경상남도 양산시 그린공단2길 27 (매곡동) 외 2필지",
+    "company_name": "(주)동화에스앤에스",
+    "product": "열간압연및압출제품(부스바.후렌지)등",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-199695",
+    "original_address": "경상남도 양산시 원동면 화제리 2961-2번지 외 11필지",
+    "company_name": "물금개발(주)",
+    "product": "레미콘 골재",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-199900",
+    "original_address": "경상남도 양산시 상북면 소토리 479-19번지 외 1필지 외 1필지",
+    "company_name": "(주)아이언",
+    "product": "건설기계정비",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-199969",
+    "original_address": "경상남도 양산시 상북면 와곡3길 15 (남양산종합정비) 외 1필지",
+    "company_name": "남양종합정비",
+    "product": "건설기계 유압부품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-200274",
+    "original_address": "경상남도 양산시 하북면 진목로 71 (총 2 필지) 외 1필지",
+    "company_name": "초가집이동식황토방건재",
+    "product": "시멘트 벽돌 황토 벽돌",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-200318",
+    "original_address": "경상남도 의령군 의령읍 구룡로4남길 14-3 외 1필지",
+    "company_name": "(주)거양금속",
+    "product": "알루미늄가공품,금속단조제품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-200335",
+    "original_address": "경상남도 의령군 의령읍 구룡로4남길 53 (총 3 필지) 외 2필지",
+    "company_name": "주식회사 쎄니트",
+    "product": "스테인레스강.강판",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-200395",
+    "original_address": "경상남도 의령군 칠곡면 신포리 277번지 277-1,278-2,289,285-6번지",
+    "company_name": "유한회사의령산업",
+    "product": "벽돌, 블록",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-200423",
+    "original_address": "경상남도 의령군 용덕면 소상로 459 외 3필지",
+    "company_name": "(주)여명테크",
+    "product": "조선소의장품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-200503",
+    "original_address": "경상남도 의령군 봉수면 직금로 289 외 1필지",
+    "company_name": "청호산업유한회사",
+    "product": "콘크리트타일,기와,벽돌,블록",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-200505",
+    "original_address": "경상남도 의령군 봉수면 한지18길 59 (CONCORD) (총 2 필지) 외 1필지",
+    "company_name": "콩코드인터내셔날(주)",
+    "product": "콘크리트펌프",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-200512",
+    "original_address": "경상남도 의령군 봉수면 직금로 296 외 1필지",
+    "company_name": "(주)에이치케이스마트콘",
+    "product": "콘크리트 타일, 블록, 관 등 콘크리트 제품",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-200513",
+    "original_address": "경상남도 의령군 봉수면 직금로 289 외 1필지",
+    "company_name": "(주)코리아컨스텍",
+    "product": "철근 콘크리트",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-200570",
+    "original_address": "경상남도 함안군 가야읍 남문길 66 ((주)원일) (총 2 필지) 외 1필지",
+    "company_name": "(주)원일(함안1공장)",
+    "product": "선박추진용 감속기",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-200575",
+    "original_address": "경상남도 함안군 가야읍 남문길 55 외 1필지",
+    "company_name": "우원테크(함안2공장)",
+    "product": "선박엔진의 turbocharger용 filter silencer",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-200584",
+    "original_address": "경상남도 함안군 가야읍 산서리 368번지 외 2필지",
+    "company_name": "(주)피에스이",
+    "product": "선박프레임, 격판및해치등",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-200635",
+    "original_address": "경상남도 함안군 칠원읍 용산리 551번지 외 1필지",
+    "company_name": "(주)아이디티",
+    "product": "하이큐브 펫스타일러",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-200662",
+    "original_address": "경상남도 함안군 칠원읍 용두산안길 17-3 (미래산업) 외 1필지",
+    "company_name": "미래산업",
+    "product": "선박구성품 및 기타선박플랜트",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-200666",
+    "original_address": "경상남도 함안군 칠원읍 용산5길 101 외 1필지",
+    "company_name": "부성",
+    "product": "자동차부품 및 선박부품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-200719",
+    "original_address": "경상남도 함안군 칠원읍 삼칠로 219 외 8필지",
+    "company_name": "칠성1급 종합정비",
+    "product": "건설기계부품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-200723",
+    "original_address": "경상남도 함안군 칠원읍 삼칠로 223-1 외 3필지",
+    "company_name": "태산철강",
+    "product": "철강제품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-200782",
+    "original_address": "경상남도 함안군 칠원읍 유원리 721 번지 외 1필지",
+    "company_name": "에이스모형산업",
+    "product": "주조목형",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-200791",
+    "original_address": "경상남도 함안군 칠원읍 유장길 355 (총 3 필지) 외 2필지",
+    "company_name": "하나엔지니어링",
+    "product": "상하수도관련산업기계,선박구성품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-200795",
+    "original_address": "경상남도 함안군 칠원읍 오곡리 253 번지 외 2필지 외 2필지",
+    "company_name": "(주)동원판넬",
+    "product": "컨테이너",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-200808",
+    "original_address": "경상남도 함안군 칠원읍 오곡리 180-33번지 외 2필지",
+    "company_name": "동양하이테크(주)",
+    "product": "선박부품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-200835",
+    "original_address": "경상남도 함안군 칠원읍 예용로 39 외 3필지",
+    "company_name": "(주)영광판유리",
+    "product": "복층유리",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-200840",
+    "original_address": "경상남도 함안군 칠원읍 야촌강변길 120-5 (총 2 필지) 외 1필지",
+    "company_name": "TSP",
+    "product": "선박구성부분품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-200890",
+    "original_address": "경상남도 함안군 칠원읍 용정리 48-2번지 외 1필지",
+    "company_name": "(유)지원중기정비",
+    "product": "조선기자재, 금속절삭기계",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-200910",
+    "original_address": "경상남도 함안군 칠원읍 원서로 213-11 외 4필지",
+    "company_name": "(주)세명정공",
+    "product": "조선기자재, 철구조물",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-200914",
+    "original_address": "경상남도 함안군 칠원읍 예용로 251-1 외 3필지",
+    "company_name": "(주)에스제이테크",
+    "product": "선박부품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-200917",
+    "original_address": "경상남도 함안군 칠원읍 경남대로 1688 ((주)정우) 외 8필지",
+    "company_name": "(주)정우콘크리트",
+    "product": "콘크리트벽돌,인터로킹 블럭",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-200922",
+    "original_address": "경상남도 함안군 칠원읍 용정리 943-21번지 외 5필지 외 9필지",
+    "company_name": "(주)해송",
+    "product": "승강기 부품, 조선기자재",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-201037",
+    "original_address": "경상남도 함안군 칠원읍 무기로 103 ((주)동아산업함안레미콘) 외 1필지",
+    "company_name": "(주)동아레미콘",
+    "product": "레미콘",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-201038",
+    "original_address": "경상남도 함안군 칠원읍 무기로 103 ((주)동아산업함안레미콘) 외 4필지",
+    "company_name": "(주)동아레미콘(제2공장)",
+    "product": "아스콘",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-201064",
+    "original_address": "경상남도 함안군 칠원읍 무기2길 100 (총 3 필지) 외 2필지",
+    "company_name": "금호금속",
+    "product": "알미늄 주조품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-201097",
+    "original_address": "경상남도 함안군 칠원읍 동대이길 42 (일반공장) 외 1필지",
+    "company_name": "연서산업",
+    "product": "선박엔진부품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-201186",
+    "original_address": "경상남도 함안군 칠원읍 운서리 1062-98 번지 외 4필지",
+    "company_name": "진명산업",
+    "product": "레이저절단가공품(유압탱크)",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-201189",
+    "original_address": "경상남도 함안군 칠원읍 운서리 873-6번지 외 1필지",
+    "company_name": "진흥기계",
+    "product": "조선엔진부품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-201192",
+    "original_address": "경상남도 함안군 칠원읍 운무로 26-1 (칠원콘크리트) 외 6필지",
+    "company_name": "칠원콘크리트",
+    "product": "벽돌,블록",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-201209",
+    "original_address": "경상남도 함안군 칠원읍 운무로 217-55 (총 2 필지) 외 1필지",
+    "company_name": "(주)씨엠텍",
+    "product": "선박 구성부분품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-201241",
+    "original_address": "경상남도 함안군 함안면 비봉로 58-1 ((주)두성코텍) (총 2 필지) 외 1필지",
+    "company_name": "(주)두성코텍",
+    "product": "선박구성품,도장처리",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-201295",
+    "original_address": "경상남도 함안군 군북면 오장골길 159, 외 1필지",
+    "company_name": "삼화비철공업(주)함안2공장",
+    "product": "압연,압출제품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-201332",
+    "original_address": "경상남도 함안군 군북면 모로리 126번지 외 7필지 외 7필지",
+    "company_name": "(주)대진기업",
+    "product": "크레인 부품 및 선박부품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-201333",
+    "original_address": "경상남도 함안군 군북면 모로리 141번지 외 10필지",
+    "company_name": "(주)동양테크",
+    "product": "조선기자재 및 구성품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-201337",
+    "original_address": "경상남도 함안군 군북면 여명로 193 외 2필지",
+    "company_name": "(주)일성벤드",
+    "product": "선박구성품및기타산업플랜트",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-201350",
+    "original_address": "경상남도 함안군 군북면 모로리 138번지 외 1필지",
+    "company_name": "창조산업",
+    "product": "철판, 각재",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-201362",
+    "original_address": "경상남도 함안군 군북면 석교천길 373 (세영산업(주))",
+    "company_name": "(주)하이원",
+    "product": "자동차부품(단조반제품)",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-201377",
+    "original_address": "경상남도 함안군 군북면 사도리 317 번지 외 6필지",
+    "company_name": "티에스에이 주식회사",
+    "product": "콘크리트용 잔골재(프라임샌드)",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-201475",
+    "original_address": "경상남도 함안군 군북면 장지1길 193 외 2필지",
+    "company_name": "(주)부경콘크리트",
+    "product": "콘크리트 수로관 및 콘크리트 맨홀",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-201483",
+    "original_address": "경상남도 함안군 군북면 장지리 596번지 외 3필지 외 3필지",
+    "company_name": "동일콘크리트",
+    "product": "콘크리트U형 플륨관 및 멘홀",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-201491",
+    "original_address": "경상남도 함안군 군북면 장백로 122 (군북면) 외 10필지",
+    "company_name": "비에이치아이(주)",
+    "product": "항공기용열교환기,선박용프레임외 다수",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-201502",
+    "original_address": "경상남도 함안군 군북면 유전1길 110 외 9필지",
+    "company_name": "(주)성일에스아이엠 함안1공장",
+    "product": "파이프,금속탱크, 철구조물",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-201503",
+    "original_address": "경상남도 함안군 군북면 삼봉로 29 외 3필지",
+    "company_name": "(주)성일에스아이엠 함안4공장",
+    "product": "FRP,PIPE,SPOOL,LINE(선박사용제품)",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-201519",
+    "original_address": "경상남도 함안군 군북면 유현리 1066번지 외 3필지 외 3필지",
+    "company_name": "(주)홍인테크윈",
+    "product": "산업기계,조선기자재",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-201534",
+    "original_address": "경상남도 함안군 군북면 국우로 100 외 2필지",
+    "company_name": "성진ENG",
+    "product": "압연 성형 판재 BOX",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-201555",
+    "original_address": "경상남도 함안군 군북면 장백로 394 (한국제강(주)) 외 5필지",
+    "company_name": "한국제강(주)",
+    "product": "이형철근 및 파레트",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-201561",
+    "original_address": "경상남도 함안군 군북면 월촌리 353번지 외 5필지 외 5필지",
+    "company_name": "(주)금하네이벌텍",
+    "product": "조선기자재(철의장품, 유압설비)",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-201563",
+    "original_address": "경상남도 함안군 군북면 효자골길 26 (주식회사미래테크) 외 2필지",
+    "company_name": "(주)미래테크",
+    "product": "풍력프랜지 및 기계부붐, 선박구조물, 신재생에너지기계, 가로등 등",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-201571",
+    "original_address": "경상남도 함안군 군북면 함마대로 364 외 1필지",
+    "company_name": "경민산업(주)",
+    "product": "선박용부품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-201580",
+    "original_address": "경상남도 함안군 군북면 월촌리 151-6번지 외 2필",
+    "company_name": "평화산업(주)",
+    "product": "선박구성부분품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-201613",
+    "original_address": "경상남도 함안군 군북면 박곡리 276번지 외1필지",
+    "company_name": "호랑이표세라믹스",
+    "product": "벽돌",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-201614",
+    "original_address": "경상남도 함안군 군북면 방어산로 509 외 1필지",
+    "company_name": "(주)대경 함안지점",
+    "product": "아스콘",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-201632",
+    "original_address": "경상남도 함안군 법수면 강주리 1076-1번지 외 16필지 외 16필지",
+    "company_name": "(주)서린",
+    "product": "선박부품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-201633",
+    "original_address": "경상남도 함안군 법수면 장백로 502 ((주)제이엔씨) 외 3필지",
+    "company_name": "(주)성보플랜트",
+    "product": "배관및선박기자재",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-201634",
+    "original_address": "경상남도 함안군 법수면 장백로 623-26 외 1필지",
+    "company_name": "(주)세강메카텍",
+    "product": "조선기자재, WINCH",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-201639",
+    "original_address": "경상남도 함안군 법수면 장백로 624-4 ((주)대진2공장) 외 3필지",
+    "company_name": "(주)에이제이테크",
+    "product": "유리판넬",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-201651",
+    "original_address": "경상남도 함안군 법수면 장백로 507 외 4필지",
+    "company_name": "우정엔지니어링(주)",
+    "product": "선박구성부분품, 특수가공 파이프",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-201654",
+    "original_address": "경상남도 함안군 법수면 강주3길 74 외 1필지",
+    "company_name": "주식회사 스틸마켓코리아",
+    "product": "건축구조제품 및 철근가공업",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-201657",
+    "original_address": "경상남도 함안군 법수면 강주리 708-8번지 외 1필지",
+    "company_name": "준세기업(주)",
+    "product": "해양선박구성부분품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-201685",
+    "original_address": "경상남도 함안군 법수면 국우로 215 ((주)성진,(주)SJ하이) (총 7 필지) 외 6필지",
+    "company_name": "(주)성진",
+    "product": "선박부품,철구조물",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-201692",
+    "original_address": "경상남도 함안군 법수면 국우로 272 외 3필지",
+    "company_name": "동해기계(주)함안지점",
+    "product": "철구조물, 철판절단",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-201694",
+    "original_address": "경상남도 함안군 법수면 우거리 654번지 외 12필지 외 12필지",
+    "company_name": "에스탱크엔지니어링(주)",
+    "product": "저장탱크",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-201720",
+    "original_address": "경상남도 함안군 법수면 법수로 516 외 4필지",
+    "company_name": "(주)상보",
+    "product": "콘크리트관 및 콘크리트 제품",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-201728",
+    "original_address": "경상남도 함안군 법수면 법정로 83-26 (법수면) 외 7필지",
+    "company_name": "(주)한림",
+    "product": "건축,토목용 가설기재,조선파이프기계시스템",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-201733",
+    "original_address": "경상남도 함안군 법수면 윤외공단길 26-60 외 1필지",
+    "company_name": "동양정화조",
+    "product": "정화조, 물탱크",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-201735",
+    "original_address": "경상남도 함안군 법수면 윤외리 1552번지 외 1필지",
+    "company_name": "백전플랜트(주)",
+    "product": "조선기자재",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-201747",
+    "original_address": "경상남도 함안군 법수면 윤외공단길 26-96 외 13필지",
+    "company_name": "함안콘크리트(주)",
+    "product": "콘크리트벽돌, 속빈콘크리트 블록",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-201752",
+    "original_address": "경상남도 함안군 법수면 윤외공단길 35 ((주)동산) 외 1필지",
+    "company_name": "(주)동산",
+    "product": "파일헤드,카바",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-201837",
+    "original_address": "경상남도 함안군 대산면 대부로 332 ((주)대한) 외 1필지",
+    "company_name": "(주)대한",
+    "product": "아스콘",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-201841",
+    "original_address": "경상남도 함안군 대산면 부목리 183-3번지 외 3필지",
+    "company_name": "(주)송정",
+    "product": "열교환기,집진기,압력탱크",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-201842",
+    "original_address": "경상남도 함안군 대산면 부목리 935-1번지 외 6필지",
+    "company_name": "(주)승일",
+    "product": "레미콘",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-201843",
+    "original_address": "경상남도 함안군 대산면 부목리 183-3번지 외 3필지 외 3필지",
+    "company_name": "(주)정텍",
+    "product": "산업설비,저장탱크",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-201872",
+    "original_address": "경상남도 함안군 대산면 대사리 1346번지 외 1필지",
+    "company_name": "에이씨티(주)",
+    "product": "선박용 부품 표면처리",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-201884",
+    "original_address": "경상남도 함안군 대산면 평림리 200-1번지 외 2필지",
+    "company_name": "(주)삼인스틸",
+    "product": "H빔 보강재",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-201891",
+    "original_address": "경상남도 함안군 대산면 평림1길 132-24 외 1필지",
+    "company_name": "(주)우제산업",
+    "product": "골재,아스콘",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-201927",
+    "original_address": "경상남도 함안군 대산면 옥렬리 62-7번지 외 4필지",
+    "company_name": "(주)보성산업",
+    "product": "아스콘",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-201928",
+    "original_address": "경상남도 함안군 대산면 송산로 621 외 12필지",
+    "company_name": "(주)삼보산업",
+    "product": "레미콘",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-201929",
+    "original_address": "경상남도 함안군 대산면 송산로 621-2 외 11필지",
+    "company_name": "(주)삼성아스콘",
+    "product": "아스콘",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-201937",
+    "original_address": "경상남도 함안군 대산면 하기길 77-2 외 1필지",
+    "company_name": "(주)에이스엔지니어링 함안2공장",
+    "product": "ESS 컨테이너",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-201941",
+    "original_address": "경상남도 함안군 대산면 대법로 573-21 (삼부ENG) 외 1필지",
+    "company_name": "엔튜브텍",
+    "product": "강관 및 가공품",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-201956",
+    "original_address": "경상남도 함안군 대산면 장암길 317 외 1필지",
+    "company_name": "(주)에스제이스틸(함안,대산)",
+    "product": "컨테이너 부품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-201958",
+    "original_address": "경상남도 함안군 대산면 장암길 317 외 1필지",
+    "company_name": "(주)한국에스제이",
+    "product": "굴삭기부품,철도차량부품,컨테이너부품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-201969",
+    "original_address": "경상남도 함안군 칠서면 함의로 311-5 외 2필지",
+    "company_name": "(주)다올산업",
+    "product": "1차 철강재, 풍력발전기용 베어링, 터널굴착기",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-201975",
+    "original_address": "경상남도 함안군 칠서면 회산길 205-1 외 1필지",
+    "company_name": "(주)링단조",
+    "product": "각종 단조품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-201981",
+    "original_address": "경상남도 함안군 칠서면 함의로 209-87 외 1필지",
+    "company_name": "(주)에스엠텍",
+    "product": "조선기자재",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-201991",
+    "original_address": "경상남도 함안군 칠서면 함의로 209-110 외 3필지",
+    "company_name": "HK테크",
+    "product": "탈취기, 수문, 제진기, 선박엔진부품, 반도체공정부품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-202009",
+    "original_address": "경상남도 함안군 칠서면 회산리 산 742번지 외 2필지",
+    "company_name": "삼인특수산업주식회사",
+    "product": "선박구성품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-202024",
+    "original_address": "경상남도 함안군 칠서면 함의로 343 (총 3 필지) 외 2필지",
+    "company_name": "정명테크",
+    "product": "산업기계, 선박부품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-202072",
+    "original_address": "경상남도 함안군 칠서면 구포리 202-7번지 외 1필지",
+    "company_name": "(주)에이치이아이",
+    "product": "선박부품 및 관련기자재",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-202087",
+    "original_address": "경상남도 함안군 칠서면 구포리 182-12번지",
+    "company_name": "두진산업",
+    "product": "선박엔진부품가공",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-202088",
+    "original_address": "경상남도 함안군 칠서면 가연로 14 외 1필지",
+    "company_name": "두진산업 제2공장",
+    "product": "선박구성품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-202116",
+    "original_address": "경상남도 함안군 칠서면 삼칠로 767 외 1필지",
+    "company_name": "(주)보광산업",
+    "product": "아스콘, 특수콘크리트",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-202122",
+    "original_address": "경상남도 함안군 칠서면 삼칠로 715-1 외 3필지",
+    "company_name": "동신아스콘 주식회사",
+    "product": "아스콘",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-202126",
+    "original_address": "경상남도 함안군 칠서면 태곡3길 19 외 1필지",
+    "company_name": "태창산업",
+    "product": "자동차부품, 철도차량 내외장재, 선박구성 부분업",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-202132",
+    "original_address": "경상남도 함안군 칠서면 대치리 10-2번지 외 8필지 외 7필지",
+    "company_name": "미래인더스트리(주)",
+    "product": "선박부품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-202198",
+    "original_address": "경상남도 함안군 칠서면 계룡로 102 외 7필지",
+    "company_name": "(주)서림산기 제3공장",
+    "product": "산업기계 외 선박부품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-202203",
+    "original_address": "경상남도 함안군 칠서면 공단안길 149-2 외 2필지",
+    "company_name": "동양석재산업(주)",
+    "product": "석재가공품",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-202212",
+    "original_address": "경상남도 함안군 칠서면 공단동3길 65 외 2필지",
+    "company_name": "(주)더블유에스",
+    "product": "단조품가공, 선박크랑크사프트가공",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-202272",
+    "original_address": "경상남도 함안군 칠서면 삼칠로 471-15 (신일자티씨) 외 1필지",
+    "company_name": "(주)지티씨",
+    "product": "공기 및 가스압축기,드라이어,저장탱크",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-202279",
+    "original_address": "경상남도 함안군 칠서면 삼칠로 455-46 (선진정밀) (총 3 필지) 외 2필지",
+    "company_name": "선진정밀",
+    "product": "선박엔진베이스",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-202290",
+    "original_address": "경상남도 함안군 칠서면 청계리 561-2번지",
+    "company_name": "한국강제",
+    "product": "철근제조품",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-202323",
+    "original_address": "경상남도 함안군 칠북면 화천리 340 번지 외 4필지",
+    "company_name": "선명기계",
+    "product": "자동차부품 및 선박구조물",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-202337",
+    "original_address": "경상남도 함안군 칠북면 화천길 246 (일반공장) 외 2필지",
+    "company_name": "정현금속(주)",
+    "product": "목형제품,선박부품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-202374",
+    "original_address": "경상남도 함안군 칠북면 검단리 1369-4번지 외 4필지",
+    "company_name": "주식회사 선진",
+    "product": "레미콘",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-202389",
+    "original_address": "경상남도 함안군 칠북면 가연1길 39 (칠북면) 외 1필지",
+    "company_name": "벽진산업(주)",
+    "product": "폴리에틸렌하수관, 합성목재,폴리에틸렌 피복스테인리스 강관",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-202392",
+    "original_address": "경상남도 함안군 칠북면 가연로 124 외 5필지",
+    "company_name": "승지금속(주)",
+    "product": "철강 봉재, 각재, 판재",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-202407",
+    "original_address": "경상남도 함안군 칠북면 북원로 172 외 2필지",
+    "company_name": "(주)고맥스",
+    "product": "공작기계",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-202412",
+    "original_address": "경상남도 함안군 칠북면 북원로 172 외 2필지",
+    "company_name": "(주)에이치알앤티",
+    "product": "선박엔진부품,방산부품,기타 정밀부품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-202455",
+    "original_address": "경상남도 함안군 산인면 산인로 346-2 외 3필지",
+    "company_name": "(주)세나코",
+    "product": "선박엔진부품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-202458",
+    "original_address": "경상남도 함안군 산인면 성산로 520 외 1필지",
+    "company_name": "(주)영일정공",
+    "product": "내연기관, 선박용 및 내연기관용 엔진",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-202476",
+    "original_address": "경상남도 함안군 산인면 신산로 175 외 2필지",
+    "company_name": "다솔테크",
+    "product": "건설기계정비",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-202486",
+    "original_address": "경상남도 함안군 산인면 신산로 117 외 1필지",
+    "company_name": "부광정비",
+    "product": "부분건설기계정비",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-202487",
+    "original_address": "경상남도 함안군 산인면 함마대로 2326 (일반공장) (총 6 필지) 외 5필지",
+    "company_name": "산인산업",
+    "product": "컨테이너",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-202607",
+    "original_address": "경상남도 창녕군 창녕읍 창밀로 259-33 외 1필지",
+    "company_name": "(주)화인베스틸",
+    "product": "조선용형강",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-202644",
+    "original_address": "경상남도 창녕군 남지읍 성사리 556-6번지 외 5필지 외 5필지",
+    "company_name": "진영정공",
+    "product": "자동차부품, 선박부품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-202673",
+    "original_address": "경상남도 창녕군 성산면 창한로 278 (총 4 필지) 외 3필지",
+    "company_name": "토산 ENG",
+    "product": "건설용철판",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-202685",
+    "original_address": "경상남도 창녕군 성산면 곽천대산로 292 외 3필지",
+    "company_name": "수성산업",
+    "product": "레미콘",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-202692",
+    "original_address": "경상남도 창녕군 대합면 등지리 264번지 외 3필지 외 3필지",
+    "company_name": "(주)경민",
+    "product": "선박구성부분품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-202725",
+    "original_address": "경상남도 창녕군 대합면 소야모전길 98-91 외 6필지",
+    "company_name": "세기산업",
+    "product": "선박용 배관파이프, 소규모철구조",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-202739",
+    "original_address": "경상남도 창녕군 대합면 평지리 967번지 외 6필지",
+    "company_name": "(주)영등산업",
+    "product": "벽돌,블록",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-202747",
+    "original_address": "경상남도 창녕군 대합면 수장퇴산로 78 외 3필지",
+    "company_name": "(주)한본산업",
+    "product": "콘크리트타일,기와,벽돌 및블록",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-202751",
+    "original_address": "경상남도 창녕군 대합면 평지퇴산로 239 외 1필지",
+    "company_name": "대유중공업(주)",
+    "product": "철근,H빔, 구조물조립",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-202753",
+    "original_address": "경상남도 창녕군 대합면 평지리 5-10번지 외 3필지",
+    "company_name": "소금성",
+    "product": "소금벽돌,소금보드, 누룽지",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-202769",
+    "original_address": "경상남도 창녕군 대합면 대동월포로 381 (총 2 필지) 외 1필지",
+    "company_name": "(주)수창",
+    "product": "레미콘",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-202802",
+    "original_address": "경상남도 창녕군 대합면 합리 1396번지 10-3블록",
+    "company_name": "(주)창녕",
+    "product": "콘크리트 펌프카 실린더",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-202841",
+    "original_address": "경상남도 창녕군 유어면 광산길 109 (총 2 필지) 외 1필지",
+    "company_name": "농업회사법인(주)웰빙라이프",
+    "product": "미숫가루,전통한차,즉석비빔밥류",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-202870",
+    "original_address": "경상남도 창녕군 대지면 대대효정길 136-29 외 2필지",
+    "company_name": "(주)상원이엔씨",
+    "product": "선박용 문,창문,계단,난간",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-202925",
+    "original_address": "경상남도 창녕군 계성면 영산계성로 556 외 3필지",
+    "company_name": "대성ENG",
+    "product": "선박계류장치외 산업기계",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-202934",
+    "original_address": "경상남도 창녕군 계성면 광계리 1120번지 외 2필지",
+    "company_name": "(주)대림산업",
+    "product": "가스탱크 등",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-202939",
+    "original_address": "경상남도 창녕군 계성면 광계마을길 149-16 외 8필지",
+    "company_name": "금강공업(주)",
+    "product": "철구조물,조선기자재",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-203003",
+    "original_address": "경상남도 창녕군 영산면 월령리 32번지 외 11필지 외 11필지",
+    "company_name": "(주)대명스틸",
+    "product": "건축철골, 금속재 빔구조물",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-203004",
+    "original_address": "경상남도 창녕군 영산면 신제로 69 (총 3 필지) 외 2필지",
+    "company_name": "(주)대왕",
+    "product": "선박부품,플랜트",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-203015",
+    "original_address": "경상남도 창녕군 영산면 영산월령로 438 외 1필지",
+    "company_name": "(주)상진화력",
+    "product": "산업용보일러",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-203017",
+    "original_address": "경상남도 창녕군 영산면 영산월령로 384 외 3필지",
+    "company_name": "대명스틸",
+    "product": "철강구조물구조용,철근콘크리트구조물구조용",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-203018",
+    "original_address": "경상남도 창녕군 영산면 영산월령로 353 외 12필지",
+    "company_name": "동해기계(주) 창녕지점",
+    "product": "건설기계 부품(BOOM, ARM, BUCKET, BLADE 등)",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-203029",
+    "original_address": "경상남도 창녕군 장마면 창녕장마로 321 외 2필지",
+    "company_name": "(주)극동",
+    "product": "컨테이너",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-203047",
+    "original_address": "경상남도 창녕군 도천면 도천리 726-17번지 외 1필지",
+    "company_name": "대원콘크리트(주)",
+    "product": "벽돌 및 블록",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-203079",
+    "original_address": "경상남도 창녕군 도천면 경남대로 3103 외 4필지",
+    "company_name": "(주)금화스틸",
+    "product": "가공철근",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-203087",
+    "original_address": "경상남도 창녕군 도천면 영산도천로 88 외 13필지",
+    "company_name": "(주)한일",
+    "product": "레미콘, 기포콘크리트",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-203100",
+    "original_address": "경상남도 창녕군 부곡면 수다리 14번지 외 2필지",
+    "company_name": "영남콘크리트",
+    "product": "벽돌, 블록",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-203103",
+    "original_address": "경상남도 고성군 고성읍 송학리 246-9번지 외 11필지",
+    "company_name": "건설기업",
+    "product": "콘크리트벽돌, 블럭",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-203108",
+    "original_address": "경상남도 고성군 고성읍 덕선리 산 50-1",
+    "company_name": "고성기업",
+    "product": "선박용의장철구조물",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-203124",
+    "original_address": "경상남도 고성군 고성읍 죽계리 195번지 외 6필지",
+    "company_name": "제이엘중공업(주)",
+    "product": "조선기자재, 산업기계설비, 강선",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-203133",
+    "original_address": "경상남도 고성군 고성읍 공단로 87 외 9필지",
+    "company_name": "신우시앤시코리아(주)",
+    "product": "조선기자재",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-203137",
+    "original_address": "경상남도 고성군 고성읍 율대5길 69 외 1필지",
+    "company_name": "(주)덕광기업",
+    "product": "선박용기자재 철판절단품",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-203167",
+    "original_address": "경상남도 고성군 고성읍 신월로 193-14 외 2필지",
+    "company_name": "한방황토",
+    "product": "황토벽돌",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-203169",
+    "original_address": "경상남도 고성군 고성읍 이당6길 237 외 18필지",
+    "company_name": "(주)조선",
+    "product": "철구조물 및 조선기자재",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-203201",
+    "original_address": "경상남도 고성군 하이면 삼상로 892 외 13필지",
+    "company_name": "정암레미콘 주식회사",
+    "product": "레미콘",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-203212",
+    "original_address": "경상남도 고성군 상리면 상정대로 1213 외 3필지",
+    "company_name": "진산아스콘 주식회사",
+    "product": "아스콘",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-203218",
+    "original_address": "경상남도 고성군 상리면 부포로 110 외 4필지",
+    "company_name": "주식회사 범우",
+    "product": "조선기자재",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-203219",
+    "original_address": "경상남도 고성군 대가면 금호로 308-198 외 1필지",
+    "company_name": "세경중공업 주식회사",
+    "product": "선박부분 품(셀가이드,블록)",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-203229",
+    "original_address": "경상남도 고성군 구만면 영회로 1642 (주)지엠 외 2필지",
+    "company_name": "디아이철강 주식회사",
+    "product": "철구조물, 철강재 가공",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-203230",
+    "original_address": "경상남도 고성군 구만면 영회로 1642 (주)지엠 외 2필지",
+    "company_name": "제이에스",
+    "product": "철강재 가공",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-203231",
+    "original_address": "경상남도 고성군 구만면 영회로 1586 외 7필지",
+    "company_name": "제이엘중공업(주) 구만지점",
+    "product": "철판가공",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-203232",
+    "original_address": "경상남도 고성군 구만면 화림2길 81 외 1필지",
+    "company_name": "주식회사 영광",
+    "product": "선박용 유니트",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-203234",
+    "original_address": "경상남도 고성군 회화면 엑스포로 94-41 ((주)비엔에스산업) (총 6 필지) 외 5필지",
+    "company_name": "(주)비엔에스산업",
+    "product": "선박구성부분품제조업",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-203239",
+    "original_address": "경상남도 고성군 회화면 영회로 2197 (총 3 필지) 외 2필지",
+    "company_name": "주식회사 배둔콘크리트",
+    "product": "가정용,토목용 콘크리트제품",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-203244",
+    "original_address": "경상남도 고성군 회화면 배둔공단길 129 외 3필지",
+    "company_name": "(주)이래fr 고성공장",
+    "product": "선박부분품도장품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-203249",
+    "original_address": "경상남도 고성군 회화면 배둔공단길 67 외 3필지",
+    "company_name": "비아이피(주) 고성공장",
+    "product": "선박구성부분품(선박용 벽체, 천장, 화장실, 객실 등)",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-203255",
+    "original_address": "경상남도 고성군 마암면 두호1길 103 외 3필지",
+    "company_name": "(주)태창이엔지",
+    "product": "금속탱크,압력용기및저장용기,선박구성부분품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-203267",
+    "original_address": "경상남도 고성군 마암면 당항만로 412 (마암면) 외 1필지",
+    "company_name": "(주)가덕중공업",
+    "product": "선박부품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-203273",
+    "original_address": "경상남도 고성군 동해면 동해로 1510 외 3필지",
+    "company_name": "금강중공업 주식회사 제2공장",
+    "product": "선박구성부분품제조업(블럭)",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-203279",
+    "original_address": "경상남도 고성군 동해면 조선특구로 1108-14 외 1필지",
+    "company_name": "주식회사 지평중공업",
+    "product": "선박구성부분품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-203280",
+    "original_address": "경상남도 고성군 동해면 조선특구로 1236 외 81필지",
+    "company_name": "이케이중공업(주)",
+    "product": "선박구성 부분품, 기타터빈제조, 컨베이어장치, 기타물품취급장비 등",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-203283",
+    "original_address": "경상남도 고성군 동해면 조선특구로 740 외 1필지",
+    "company_name": "삼강에스앤씨 주식회사",
+    "product": "선박,철구조물",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-203284",
+    "original_address": "경상남도 고성군 동해면 조선특구로 144 외 1필지",
+    "company_name": "(주)동운조선해양",
+    "product": "강선, 선박 블록",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-203285",
+    "original_address": "경상남도 고성군 동해면 조선특구로 488-4 (덕광중공업(주)) 외 19필지",
+    "company_name": "덕광중공업주식회사",
+    "product": "선박구성부분품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-203302",
+    "original_address": "경상남도 고성군 거류면 신용리 1851번지 외 1필지",
+    "company_name": "주식회사 나라이엔지 제2공장",
+    "product": "선박구성부분품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-203317",
+    "original_address": "경상남도 고성군 거류면 용산리 54-1번지 외 6필지",
+    "company_name": "고성레미콘 주식회사",
+    "product": "레미콘",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-203319",
+    "original_address": "경상남도 고성군 거류면 감서리 1248번지 외 9필지 외 9필지",
+    "company_name": "(주)금아",
+    "product": "강관(하우스파이프)",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-203320",
+    "original_address": "경상남도 고성군 거류면 동해로 661-34 (총 6 필지) 외 5필지",
+    "company_name": "(주)디에이치에이치아이",
+    "product": "선박부품,발전설비기자재",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-203324",
+    "original_address": "경상남도 고성군 거류면 동해로 679 외 2필지",
+    "company_name": "주식회사 하나이엔지",
+    "product": "선박외형제품, 열교환기",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-203360",
+    "original_address": "경상남도 남해군 미조면 미조리 77-4번지 외 1필지 외 1필지",
+    "company_name": "미조조선소",
+    "product": "선박(목선, 합성수지선) 건조 및 수리",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-203366",
+    "original_address": "경상남도 남해군 남면 평산리 1739-1번지 외 2필지 외 2필지",
+    "company_name": "남해평산조선소",
+    "product": "선박(강선, 합성수지선) 건조 및 수리",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-203506",
+    "original_address": "경상남도 하동군 금남면 섬진강대로 863-10 외 3필지",
+    "company_name": "대하산업(주)",
+    "product": "레미콘",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-203536",
+    "original_address": "경상남도 하동군 양보면 진양로 356-95 외 1필지",
+    "company_name": "(주)남양산업",
+    "product": "해조류 양식 블록, 골재",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-203551",
+    "original_address": "경상남도 하동군 옥종면 병천리 957-13번지 외 2필지",
+    "company_name": "(주)예미담황토",
+    "product": "황토벽돌",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-203572",
+    "original_address": "경상남도 산청군 산청읍 산수로 116-28 (총 2 필지) 외 1필지",
+    "company_name": "성동기업(주)",
+    "product": "콘크리트관",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-203595",
+    "original_address": "경상남도 산청군 생초면 산수로1153번길 46-47 (흙예성) 외 3필지",
+    "company_name": "한국몰딩 주식회사",
+    "product": "타일 및 비내화요업제품",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-203603",
+    "original_address": "경상남도 산청군 금서면 동의보감로 167 (금서면) (총 3 필지) 외 2필지",
+    "company_name": "(주)경산세라믹 산청지점",
+    "product": "도자기,타일류",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-203655",
+    "original_address": "경상남도 산청군 단성면 지리산대로3362번길 14-4 ((주)삼정세라믹) (총 10 필지) 외 9필지",
+    "company_name": "(주)삼정비알",
+    "product": "내화벽돌(적벽돌)",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-203709",
+    "original_address": "경상남도 함양군 함양읍 이은리 238-2번지 외 2필지",
+    "company_name": "성운기계",
+    "product": "건설기계정비업",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-203735",
+    "original_address": "경상남도 함양군 휴천면 목현옥매로 209-1 (총 6 필지) 외 5필지",
+    "company_name": "남양기업(주)",
+    "product": "잔 골재(모래)",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-203770",
+    "original_address": "경상남도 함양군 수동면 거함대로 561-1 외 2필지",
+    "company_name": "(주)동주산업",
+    "product": "레미콘",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-203771",
+    "original_address": "경상남도 함양군 수동면 거함대로 561 외 1필지",
+    "company_name": "(주)동주아스콘",
+    "product": "아스콘",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-203780",
+    "original_address": "경상남도 함양군 지곡면 정취길 80-22 외 1필지",
+    "company_name": "드림하우징",
+    "product": "철골제작품(금속제 조립식건물 부품, 철골세트, 철판)",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-203785",
+    "original_address": "경상남도 함양군 안의면 황마로 89, 황곡리 1834-6 외 2필지",
+    "company_name": "(유)석주산업",
+    "product": "콘크리트 블록",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-203786",
+    "original_address": "경상남도 함양군 안의면 황마로 61-48 외 1필지",
+    "company_name": "(주)근하기공",
+    "product": "STEEL Form, 철물창호, 철근콘크리트공사, PC콘크리트",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-203842",
+    "original_address": "경상남도 거창군 거창읍 정장리 205-1번지 외 2필지",
+    "company_name": "주식회사 두인",
+    "product": "건설기계부품 제조,재생",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-203844",
+    "original_address": "경상남도 거창군 거창읍 밤티재로 1298 (충남석재) 외 2필지",
+    "company_name": "한국철강산업(주) 제2공장",
+    "product": "철근가공품",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-203935",
+    "original_address": "경상남도 거창군 남상면 승강기길 171 외 2필지",
+    "company_name": "(주)와이엘이",
+    "product": "선박용부품, 시험용기구",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-203948",
+    "original_address": "경상남도 거창군 남상면 대산리 2416번지 외 1필지",
+    "company_name": "디아이특수장비(주)",
+    "product": "승강기부품(플랫폼),건설기계(부품)",
+    "heavy_class": "고중량 후보 중",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-204012",
+    "original_address": "경상남도 합천군 합천읍 마령로 401-26, 용계리210,211,212,213,214,215,216,220,222",
+    "company_name": "(주)합천레미콘",
+    "product": "레미콘",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-204057",
+    "original_address": "경상남도 합천군 율곡면 동부로 268-11, 경상남도 합천군 율곡면 문림리 604번지 외 1필지",
+    "company_name": "반달콘크리트(주)",
+    "product": "콘크리트 타일, 기와, 벽돌",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-204077",
+    "original_address": "경상남도 합천군 율곡면 임북공단길 40 외 2필지",
+    "company_name": "참빛동아산업(주)",
+    "product": "레미콘,수로관, 콘크리트 제품, 콘크리트 호안 및 옹벽 블록",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-204089",
+    "original_address": "경상남도 합천군 쌍책면 황강옥전로 1057 외 5필지",
+    "company_name": "제일석재",
+    "product": "석재품",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-204105",
+    "original_address": "경상남도 합천군 대양면 대한로 276 외 3필지",
+    "company_name": "(주)경남실업",
+    "product": "레미콘, 골재",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  },
+  {
+    "id": "heavy-factory-204115",
+    "original_address": "경상남도 합천군 용주면 연촌우곡길 165-24 외 7필지",
+    "company_name": "(주)보림산업",
+    "product": "플라스틱관, 레미콘, 콘크리트관",
+    "heavy_class": "고중량 후보 강",
+    "fail_reason": "검색결과 없음"
+  }
+]

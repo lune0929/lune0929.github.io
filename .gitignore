@@ -24,6 +24,15 @@ venv/
 *.log
 *.err.log
 
+# generated data backups
+public/data/*.backup.json
+public/data/*.backup-*.json
+public/data/*.phone.backup.json
+public/data/*.partial.json
+data/*.partial.csv
+data/geocode-cache-kakao.json
+scale-map-static.zip
+
 # local database
 backend/collection.db
 

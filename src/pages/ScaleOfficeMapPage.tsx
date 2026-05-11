@@ -31,6 +31,7 @@ export default function ScaleOfficeMapPage() {
       emptyMessage="민간계량소 지도 데이터 준비 중입니다."
       searchPlaceholder="사업장명, 주소, 전화번호 검색"
       normalizeItem={normalizeItem}
+      currentLayer="scale-offices"
     />
   );
 }

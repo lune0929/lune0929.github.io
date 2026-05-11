@@ -36,6 +36,7 @@ export default function OverloadCheckpointMapPage() {
       normalizeItem={normalizeItem}
       markerVariant="checkpoint"
       showCheckpointToggle={false}
+      currentLayer="overload-checkpoints"
     />
   );
 }

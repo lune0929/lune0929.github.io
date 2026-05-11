@@ -36,6 +36,7 @@ export default function HighwayTollOfficeMapPage() {
       emptyMessage="전국 영업소 지도 데이터 준비 중입니다."
       searchPlaceholder="영업소명, 주소, 노선명 검색"
       normalizeItem={normalizeItem}
+      currentLayer="highway-toll-offices"
     />
   );
 }

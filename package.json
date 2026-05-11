@@ -10,7 +10,15 @@
     "convert": "python scripts/convert-scale-csv.py",
     "fetch:highway": "python scripts/fetch-highway-toll-offices.py",
     "geocode:checkpoints": "python data/naver_geocode_batch.py data/naver_geocode_input_addresses.csv data/naver_geocoded_output.csv",
-    "geocode:checkpoints:kakao": "python scripts/geocode-checkpoints-kakao.py data/naver_geocode_input_addresses.csv data/kakao_geocoded_output.csv"
+    "geocode:checkpoints:kakao": "python scripts/geocode-checkpoints-kakao.py data/naver_geocode_input_addresses.csv data/kakao_geocoded_output.csv",
+    "convert:rest-areas": "python scripts/convert-rest-areas-csv.py",
+    "convert:accident-hotspots": "python scripts/convert-accident-hotspots-csv.py",
+    "convert:ports": "python scripts/convert-port-shp-to-geojson.py",
+    "convert:warehouses": "python scripts/convert-logistics-warehouses.py",
+    "convert:industrial-complexes": "python scripts/convert-industrial-complex-boundaries.py",
+    "convert:truck-accidents": "python scripts/convert-truck-accident-hotspots.py",
+    "classify:factories": "python scripts/classify-heavy-factories.py",
+    "geocode:heavy-factories": "python scripts/classify-heavy-factories.py --geocode"
   },
   "dependencies": {
     "@vitejs/plugin-react": "^4.3.4",

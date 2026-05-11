@@ -84,6 +84,118 @@ export interface OverloadCheckpoint {
   geocode_status?: string;
 }
 
+export interface RestArea {
+  id: string;
+  rest_area_name: string;
+  business_name: string;
+  status: string;
+  phone: string;
+  address: string;
+  road_address: string;
+  longitude: number | null;
+  latitude: number | null;
+  sido: string;
+  sigungu: string;
+  road_type?: string;
+  road_number?: string;
+  route_name?: string;
+  direction?: string;
+  open_time?: string;
+  close_time?: string;
+  parking_spaces?: string;
+  has_gas_station?: string;
+  has_lpg?: string;
+  has_ev_charger?: string;
+  signature_food?: string;
+  source?: string;
+  data_date?: string;
+  search_text?: string;
+}
+
+export interface AccidentHotspot {
+  id: string;
+  hotspot_id?: string;
+  business_name: string;
+  status: string;
+  phone: string;
+  address: string;
+  road_address: string;
+  longitude: number | null;
+  latitude: number | null;
+  sido: string;
+  sigungu: string;
+  accident_year?: string;
+  location_code?: string;
+  region_name?: string;
+  accident_type?: string;
+  accident_count?: string;
+  casualty_count?: string;
+  fatality_count?: string;
+  serious_injury_count?: string;
+  minor_injury_count?: string;
+  reported_injury_count?: string;
+  source?: string;
+  data_date?: string;
+  search_text?: string;
+}
+
+export interface TruckAccidentHotspot {
+  id: string;
+  hotspot_id: string;
+  legal_dong_code: string;
+  spot_code: string;
+  region_name: string;
+  spot_name: string;
+  accident_count: number;
+  casualty_count: number;
+  death_count: number;
+  serious_injury_count: number;
+  minor_injury_count: number;
+  reported_injury_count: number;
+  longitude: number;
+  latitude: number;
+  source: string;
+}
+
+export interface HeavyFactory {
+  id: string;
+  company_name: string;
+  product: string;
+  factory_address: string;
+  complex_name: string;
+  heavy_class: "고중량 후보 강" | "고중량 후보 중" | "일반/저중량" | "확인 필요" | string;
+  heavy_score: number;
+  reason_keywords: string[];
+  map_include: boolean;
+  latitude: number | null;
+  longitude: number | null;
+  geocode_status: string;
+  geocode_provider: string;
+  matched_address: string;
+  road_address: string;
+  jibun_address: string;
+}
+
+export interface LogisticsWarehouse {
+  id: string;
+  business_name: string;
+  status: string;
+  road_address: string;
+  jibun_address: string;
+  total_warehouse_area: number;
+  general_warehouse_area: number;
+  cold_storage_area: number;
+  storage_place_area: number;
+  warehouse_size_class: "대형" | "중형" | "소형" | string;
+  is_mega: boolean;
+  business_storage: string;
+  business_transport: string;
+  latitude: number | null;
+  longitude: number | null;
+  source: string;
+  coordinate_status: string;
+}
+
 export interface MapOffice {
   id: string;
   business_name: string;
@@ -96,6 +208,23 @@ export interface MapOffice {
   sido: string;
   sigungu: string;
   search_text?: string;
+  total_warehouse_area?: number;
+  general_warehouse_area?: number;
+  cold_storage_area?: number;
+  storage_place_area?: number;
+  warehouse_size_class?: string;
+  is_mega?: boolean;
+  business_storage?: string;
+  business_transport?: string;
+  accident_count?: number;
+  casualty_count?: number;
+  death_count?: number;
+  serious_injury_count?: number;
+  minor_injury_count?: number;
+  reported_injury_count?: number;
+  hotspot_id?: string;
+  region_name?: string;
+  spot_code?: string;
 }
 
 declare global {
@@ -110,6 +239,7 @@ export interface KakaoNamespace {
     LatLng: new (latitude: number, longitude: number) => KakaoLatLng;
     Map: new (container: HTMLElement, options: KakaoMapOptions) => KakaoMap;
     Marker: new (options: KakaoMarkerOptions) => KakaoMarker;
+    Polygon: new (options: KakaoPolygonOptions) => KakaoPolygon;
     MarkerImage: new (src: string, size: KakaoSize) => KakaoMarkerImage;
     InfoWindow: new (options: KakaoInfoWindowOptions) => KakaoInfoWindow;
     LatLngBounds: new () => KakaoLatLngBounds;
@@ -127,7 +257,7 @@ export interface KakaoNamespace {
     };
     event: {
       addListener: (
-        target: KakaoMarker | KakaoMap,
+        target: KakaoMarker | KakaoMap | KakaoPolygon,
         type: string,
         handler: (event: KakaoMouseEvent) => void,
       ) => void;
@@ -173,6 +303,21 @@ export interface KakaoMarker {
   setDraggable: (draggable: boolean) => void;
 }
 
+export interface KakaoPolygonOptions {
+  map?: KakaoMap | null;
+  path?: KakaoLatLng[] | KakaoLatLng[][];
+  strokeWeight?: number;
+  strokeColor?: string;
+  strokeOpacity?: number;
+  strokeStyle?: string;
+  fillColor?: string;
+  fillOpacity?: number;
+}
+
+export interface KakaoPolygon {
+  setMap: (map: KakaoMap | null) => void;
+}
+
 export interface KakaoSize {}
 
 export interface KakaoMarkerImage {}
@@ -182,10 +327,11 @@ export interface KakaoMapTypeId {}
 export interface KakaoInfoWindowOptions {
   content: string;
   removable?: boolean;
+  position?: KakaoLatLng;
 }
 
 export interface KakaoInfoWindow {
-  open: (map: KakaoMap, marker: KakaoMarker) => void;
+  open: (map: KakaoMap, marker?: KakaoMarker) => void;
   close: () => void;
 }
 
